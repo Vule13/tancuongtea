@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+:root {
+  --grid: 12;
+  --grid-container-width: 1700px;
+  --grid-container-gap: 15px;
+  --grid-col-gap-vertical: 30px;
+  --grid-col-gap-horizontal: 30px;
+  --text-heading: #2D3958;
+  --text-text:#7B88A8;
+  --action-blue: #4F77FF;
+  --bgbg-light:#F8FAFC;
+  --text-dark-alt: #321370;
+  --bgbg-white:#ffff;
+  --action-purple: #886CFF;
+  --action-blue: #4F77FF;
+  --lines-gray-line: #E7E5EA;
+  --action-green: #34C635;
+  --bgbg-gray: #292F3A;
+  --bgbg-gray: #292F3A;
+  --text-text-gray:#E7E5EA;
+  --purple-gradient: #61dcdf #886cff;
+}
+
+body {
+  background-color: #fff;
+  color: #7B88A8;
+  font-family: outfit;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "SVN-Gilroy";
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-heading, #2D3958);
+  font-feature-settings: "clig" off, "liga" off;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  max-width: 1320px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--grid-col-gap-vertical) / -2);
+  margin-right: calc(var(--grid-col-gap-vertical) / -2);
+}
+
+.col {
+  width: calc(var(--col-xs) / var(--grid) * 100%);
+  padding-left: calc(var(--grid-col-gap-vertical) / 2);
+  padding-right: calc(var(--grid-col-gap-vertical) / 2);
+  padding-top: var(--grid-col-gap-horizontal);
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: calc(var(--col-xs) / var(--grid) * 100%);
+  }
+}
+@media (min-width: 992px) {
+  .col {
+    width: calc(var(--col-lg) / var(--grid) * 100%);
+  }
+}
+@media (min-width: 1100px) {
+  .col {
+    width: calc(var(--col-lg) / var(--grid) * 100%);
+  }
+}
+@media (min-width: 1200px) {
+  .col {
+    width: calc(var(--col-lg) / var(--grid) * 100%);
+  }
+}
+@media (max-width: 576px) {
+  .col {
+    width: calc(var(--col-md) / var(--grid) * 100%);
+  }
+}/*# sourceMappingURL=style.css.map */

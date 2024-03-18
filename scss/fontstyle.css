@@ -1,0 +1,91 @@
+/* @font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-GilroyBoldItalic.eot');
+    src: url('./../font/SVN-GilroyBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-GilroyBoldItalic.woff2') format('woff2'),
+        url('./../font/SVN-GilroyBoldItalic.woff') format('woff'),
+        url('./../font/SVN-GilroyBoldItalic.ttf') format('truetype'),
+        url('./../font/SVN-GilroyBoldItalic.svg#SVN-GilroyBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-GilroyBold.eot');
+    src: url('./../font/SVN-GilroyBold.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-GilroyBold.woff2') format('woff2'),
+        url('./../font/SVN-GilroyBold.woff') format('woff'),
+        url('./../font/SVN-GilroyBold.ttf') format('truetype'),
+        url('./../font/SVN-GilroyBold.svg#SVN-GilroyBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-GilroyMediumItalic.eot');
+    src: url('./../font/SVN-GilroyMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-GilroyMediumItalic.woff2') format('woff2'),
+        url('./../font/SVN-GilroyMediumItalic.woff') format('woff'),
+        url('./../font/SVN-GilroyMediumItalic.ttf') format('truetype'),
+        url('./../font/SVN-GilroyMediumItalic.svg#SVN-GilroyMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-GilroyMedium.eot');
+    src: url('./../font/SVN-GilroyMedium.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-GilroyMedium.woff2') format('woff2'),
+        url('./../font/SVN-GilroyMedium.woff') format('woff'),
+        url('./../font/SVN-GilroyMedium.ttf') format('truetype'),
+        url('./../font/SVN-GilroyMedium.svg#SVN-GilroyMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-GilroyThin.eot');
+    src: url('./../font/SVN-GilroyThin.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-GilroyThin.woff2') format('woff2'),
+        url('./../font/SVN-GilroyThin.woff') format('woff'),
+        url('./../font/SVN-GilroyThin.ttf') format('truetype'),
+        url('./../font/SVN-GilroyThin.svg#SVN-GilroyThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-Gilroy.eot');
+    src: url('./../font/SVN-Gilroy.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-Gilroy.woff2') format('woff2'),
+        url('./../font/SVN-Gilroy.woff') format('woff'),
+        url('./../font/SVN-Gilroy.ttf') format('truetype'),
+        url('./../font/SVN-Gilroy.svg#SVN-Gilroy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./../font/SVN-GilroySemiBold.eot');
+    src: url('./../font/SVN-GilroySemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./../font/SVN-GilroySemiBold.woff2') format('woff2'),
+        url('./../font/SVN-GilroySemiBold.woff') format('woff'),
+        url('./../font/SVN-GilroySemiBold.ttf') format('truetype'),
+        url('./../font/SVN-GilroySemiBold.svg#SVN-GilroySemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+ */
