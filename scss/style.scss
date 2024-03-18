@@ -1,16 +1,16 @@
 // Components
-@import './components/button';
-@import './components/footer';
-@import './components/header';
-@import './components/sidebar';
+@import './components/_button';
+@import './components/_footer';
+@import './components/_header';
+@import './components/_sidebar';
 
 // Page
-@import './page/home-page';
+@import './page/_home-page';
 
 // Base
-@import './base/reset';
+@import './base/_reset';
 
 // Layout
-@import './layout/grid'
+@import './layout/_grid'
 
 
