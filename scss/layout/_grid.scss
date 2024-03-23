@@ -21,9 +21,21 @@
   padding-top: var(--grid-col-gap-horizontal);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 390px) {
   .col {
     width: calc(var(--col-xs) / var(--grid) * 100%);
+  }
+}
+
+@media (min-width: 576px) {
+  .col {
+    width: calc(var(--col-sm) / var(--grid) * 100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: calc(var(--col-md) / var(--grid) * 100%);
   }
 }
 
@@ -33,18 +45,8 @@
   }
 }
 
-@media (min-width: 1100px) {
-  .col {
-    width: calc(var(--col-lg) / var(--grid) * 100%);
-  }
-}
 @media (min-width: 1200px) {
   .col {
-    width: calc(var(--col-lg) / var(--grid) * 100%);
-  }
-}
-@media (max-width: 576px) {
-  .col {
-    width: calc(var(--col-md) / var(--grid) * 100%);
+    width: calc(var(--col-xl) / var(--grid) * 100%);
   }
 }

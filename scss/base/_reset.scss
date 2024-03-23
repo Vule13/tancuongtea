@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,36 +10,47 @@
   --grid-container-gap: 15px;
   --grid-col-gap-vertical: 30px;
   --grid-col-gap-horizontal: 30px;
-  --text-heading: #2D3958;
-  --text-text :#7B88A8;
-  --action-blue: #4F77FF;
-  --bgbg-light :#F8FAFC;
-  --text-dark-alt: #321370;
-  --bgbg-white :#ffff;
-  --action-purple: #886CFF;
-  --action-blue: #4F77FF;
-  --lines-gray-line: #E7E5EA;
-  --action-green: #34C635;
-  --bgbg-gray: #292F3A;
-  --bgbg-gray: #292F3A;
-  --text-text-gray:#E7E5EA;
-  --purple-gradient: #61dcdf #886cff;
+  --color-foreground: #000;
+  --color-background: #ffff;
+  --color-accent: #FDA043;
+  --color-primary: #194A33;
 }
 body {
   background-color: #fff;
-  color: #7B88A8;
-  font-family: outfit;
+  color: var(--color-foreground);
+  font-family: SVN-Gilroy;
   font-size: 15px;
-  line-height: 1.6;
-  font-weight: 400;
+  line-height: 1.375;
+  font-weight: 500;
 }
 .wrapper {
   overflow: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'SVN-Gilroy';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SVN-Gilroy";
   font-weight: 600;
   line-height: 1.4;
-  color: var(--text-heading, #2D3958);
-  font-feature-settings: 'clig' off, 'liga' off;
+  color: var(--color-background);
+  font-feature-settings: "clig" off, "liga" off;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(var(--color-foreground));
+}
+
+.disable {
+  opacity: 0.5;
+  cursor: default;
 }
