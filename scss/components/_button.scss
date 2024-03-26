@@ -1,0 +1,31 @@
+.button {
+  padding: 15px 40px;
+  color: var(--color-background);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+  border: none;
+  @media (max-width: 991px) {
+    margin: 0;
+  }
+}
+
+button {
+  border: unset;
+  cursor: pointer;
+}
+
+.button-italic {
+  font-style: italic;
+  text-decoration: underline;
+  background: none;
+}
+
+.button-accent {
+  background-color: var(--color-accent);
+  padding: 15px 20px;
+}

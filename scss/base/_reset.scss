@@ -19,13 +19,14 @@ body {
   background-color: #fff;
   color: var(--color-foreground);
   font-family: SVN-Gilroy;
-  font-size: 15px;
-  line-height: 1.375;
+  font-size: 16px;
+  line-height: 1.6;
   font-weight: 500;
 }
 .wrapper {
   overflow: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -33,10 +34,9 @@ h4,
 h5,
 h6 {
   font-family: "SVN-Gilroy";
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
-  color: var(--color-background);
-  font-feature-settings: "clig" off, "liga" off;
+  color: var(--color-foreground);
 }
 
 img {
@@ -53,4 +53,12 @@ a {
 .disable {
   opacity: 0.5;
   cursor: default;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding: 40px 0;
 }

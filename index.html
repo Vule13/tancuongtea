@@ -7,16 +7,54 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="scss/fontstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Tân Cương</title>
 </head>
 
 <body>
   <div class="wrapper">
+    <!-- section our store -->
     <div class="section">
       <div class="container">
         <div class="row">
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <div class="col our-store" style=" --col-xs: 12;--col-md: 6;--col-lg: 6; --col-xl: 6">
+            <div class="our-store__box">
+              <div class="our-store__subtitle">Câu chuyện về tân cương </div>
+              <h2 class="our-store__title">Đồng hành cùng <br class="our-store__br"> Trà Việt</h2>
+              <div class="our-store__description">
+                Tân Cương không chỉ là nơi để bán trà, mà còn là một biểu tượng cho sự kết hợp giữa truyền thống và hiện
+                đại. Ý nghĩa của nó nằm ở việc kế thừa và phát triển di sản trà truyền thống của vùng, đồng thời đem lại
+                trải nghiệm mới mẻ và độc đáo cho khách hàng. Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu
+                tinh tế, từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. Hương thơm của lá trà
+                hòa quyện với không khí, mang lại cảm giác nhẹ nhàng và yên bình, như một lá thư tình yêu từ thiên
+                nhiên.
+              </div>
+              <button class="button">Xem thêm</button>
+            </div>
+          </div>
+          <div class="col" style="--col-xs: 12;--col-md: 6; --col-lg: 6; --col-xl: 6">
+            <div class="our-store-img">
+              <img src="./images/our-store.jpg" alt="our store">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section product -->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -36,7 +74,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -46,8 +84,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -63,11 +101,10 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -87,7 +124,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -97,8 +134,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -114,11 +151,10 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -138,7 +174,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -148,8 +184,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -165,11 +201,10 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img product-item__img--sold-out">
@@ -191,7 +226,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -201,8 +236,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart disable">
+              </button>
+              <button class="product-item__icon-cart disable">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -218,12 +253,11 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
-            
+
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -243,7 +277,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -253,8 +287,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -270,11 +304,10 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -282,7 +315,7 @@
                 </div>
               </div>
               <div class="product-item__content">
-                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-item__title">Trà thảo mộc </div>
                 <div class="product-item__price">
                   <span class="product-item__price-sale">324.000đ</span>
                   <span class="product-item__price-del">350.000đ</span>
@@ -293,7 +326,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -303,8 +336,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -320,11 +353,10 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -344,7 +376,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -354,8 +386,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -371,11 +403,10 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item"
-            style="--col-md: 4; --col-xs: 6; --col-sm:6;--col-lg: 3; --col-xl: 3">
+          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -394,7 +425,7 @@
               </div>
             </div>
             <div class="product-item__icon">
-              <div class="product-item__icon-wishlist">
+              <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
                   <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
                     <g transform="scale(0.1)" id="g12">
@@ -404,8 +435,8 @@
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="product-item__icon-cart">
+              </button>
+              <button class="product-item__icon-cart">
                 <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
                   <path
@@ -421,14 +452,268 @@
                     d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
+              </button>
             </div>
           </a>
         </div>
       </div>
     </div>
+    <!-- section testimonial -->
+    <div class="section">
+      <div class="container">
+        <div class="section-title">
+          <div class="section-title__subtitle">Đánh giá và bình luận</div>
+          <h2 class="section-title__title">Trải nghiệm của khách hàng</h2>
+        </div>
+        <div class="testimonial">
+          <div class="contact-carousel owl-carousel owl-theme">
+            <div class="item testimonial__box">
+              <div class="testimonial__star">
+                <img src="./images/rate.svg" alt="">
+              </div>
+              <div class="testimonial__description">
+                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
+                ngon như một hành trình khám phá mới.
+              </div>
+              <div class="testimonial__info">
+                <div class="testimonial__avata">
+                  <img src="./images/avata.jpg" alt="avata">
+                </div>
+                <div class="testimonial__name">Nguyễn Thảo Phương</div>
+              </div>
+            </div>
+            <div class="item testimonial__box">
+              <div class="testimonial__star">
+                <img src="./images/rate.svg" alt="">
+              </div>
+              <div class="testimonial__description">
+                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
+                ngon như một hành trình khám phá mới.
+              </div>
+              <div class="testimonial__info">
+                <div class="testimonial__avata">
+                  <img src="./images/avata.jpg" alt="avata">
+                </div>
+                <div class="testimonial__name">Nguyễn Thảo Phương</div>
+              </div>
+            </div>
+            <div class="item testimonial__box">
+              <div class="testimonial__star">
+                <img src="./images/rate.svg" alt="">
+              </div>
+              <div class="testimonial__description">
+                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
+                ngon như một hành trình khám phá mới.
+              </div>
+              <div class="testimonial__info">
+                <div class="testimonial__avata">
+                  <img src="./images/avata.jpg" alt="avata">
+                </div>
+                <div class="testimonial__name">Nguyễn Thảo Phương</div>
+              </div>
+            </div>
+            <div class="item testimonial__box">
+              <div class="testimonial__star">
+                <img src="./images/rate.svg" alt="">
+              </div>
+              <div class="testimonial__description">
+                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
+                ngon như một hành trình khám phá mới.
+              </div>
+              <div class="testimonial__info">
+                <div class="testimonial__avata">
+                  <img src="./images/avata.jpg" alt="avata">
+                </div>
+                <div class="testimonial__name">Nguyễn Thảo Phương</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+    <!-- section banner video -->
+    <div class="section banner-video">
+      <div class="container" style="min-height: 92vh;">
+        <div class="banner-video__box">
+          <h2 class="banner-video__title">Truyền thống trà Việt Nam</h2>
+          <div class="banner-video__content">Trong nền văn hóa Việt, việc thưởng trà không chỉ là sở thích mà còn là một
+            nghi lễ truyền thống. Trà được coi là biểu tượng của sự tinh tế, sự thanh lịch và là biểu hiện của sự đón
+            nhận và chia sẻ tinh thần gia đình và bạn bè.</div>
+          <div class="banner-video__icon-play">
+            <a class="banner-video__play-now" href="#" id="video-link">
+              <img src="./images/play-now.png" alt="playnow">
+              <span class="ripple"></span>
+            </a>
+
+            <div class="popup" id="popup" onclick="closePopup()">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lFpq-qIRc4M?si=frmhLz27X0ffcx6n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- section blog -->
+    <div class="section">
+      <div class="container">
+        <div class="section-title">
+          <div class="section-title__subtitle">Tin tức của chúng tôi</div>
+          <h2 class="section-title__title">Bài viết nổi bật</h2>
+        </div>
+        <div class="row">
+          <div class="col blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
+            <div class="blog__image-tag">
+              <div class="blog__image">
+                <img src="./images/img-blog.jpg" alt="image blog">
+              </div>
+              <div class="blog__tag">
+                <div class="blog__tag-item">Sức khỏe</div>
+                <div class="blog__tag-item">Trà đen</div>
+              </div>
+            </div>
+            <div class="blog__content">
+              <div class="blog__date">20-12-2024</div>
+              <div class="blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+              <div class="blog__text">
+                Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
+                ...
+              </div>
+              <button class="button-italic">Xem thêm</button>
+            </div>
+          </div>
+          <div class="col blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
+            <div class="blog__image-tag">
+              <div class="blog__image">
+                <img src="./images/img-blog.jpg" alt="image blog">
+              </div>
+              <div class="blog__tag">
+                <div class="blog__tag-item">Sức khỏe</div>
+                <div class="blog__tag-item">Trà đen</div>
+              </div>
+            </div>
+            <div class="blog__content">
+              <div class="blog__date">20-12-2024</div>
+              <div class="blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+              <div class="blog__text">
+                Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
+                ...
+              </div>
+              <button class="button-italic">Xem thêm</button>
+            </div>
+          </div>
+          <div class="col blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
+            <div class="blog__image-tag">
+              <div class="blog__image">
+                <img src="./images/img-blog.jpg" alt="image blog">
+              </div>
+              <div class="blog__tag">
+                <div class="blog__tag-item">Sức khỏe</div>
+                <div class="blog__tag-item">Trà đen</div>
+              </div>
+            </div>
+            <div class="blog__content">
+              <div class="blog__date">20-12-2024</div>
+              <div class="blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+              <div class="blog__text">
+                Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
+                ...
+              </div>
+              <button class="button-italic">Xem thêm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="section footer">
+      <div class="footer__border">
+        <div class="container">
+          <div class="row">
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__logo">
+                <img src="./images/logo.png" alt="logo">
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Thưởng thức hương vị thanh tao, cảm nhận bình yên trong tâm hồn</div>
+                <div class="footer__address">Địa chỉ: 96 Định Công, Hoàng Mai, Hà Nội</div>
+                <div class="footer__phone">Số điện thoại: 18006868</div>
+                <div class="footer__mail">Mail: tancuongtea@gmail.com</div>
+              </div>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Thông tin
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Liên hệ </a></li>
+                <li><a href="#"> Sản phẩm </a></li>
+                <li><a href="#"> Thanh toán </a></li>
+                <li><a href="#"> Sự kiện </a></li>
+                <li><a href="#"> Điều khoản </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Danh mục
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Trà xanh </a></li>
+                <li><a href="#"> Trà đen </a></li>
+                <li><a href="#"> Trà trái cây </a></li>
+                <li><a href="#"> Trà matcha </a></li>
+                <li><a href="#"> Trà thảo mộc </a></li>
+                <li><a href="#"> Trà an thần </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Kết nối
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Đăng ký để tận hưởng miễn phí vận chuyển cho đơn hàng đầu tiên của bạn
+                </div>
+                <form class="mail-form" methot="post" action="subcrible">
+                  <input type="text" class="input-mail" name="contact[email]" placeholder="Nhập email của bạn">
+                  <button type="submit" class="button-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
+                      <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 6 4.821 3.214L14.643 6" />
+                      <path stroke="#fff" stroke-linecap="round" stroke-width="2"
+                        d="M1 3.679v-.536C1 1.959 1.96 1 3.143 1H17.07c1.184 0 2.143.96 2.143 2.143v10.714c0 1.184-.96 2.143-2.143 2.143H3.143A2.143 2.143 0 0 1 1 13.857v-.536" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © Copyright 2024 \ Giấy phép đăng ký doanh nghiệp số: 0108989168 cấp ngày 15/01/2024 tại sở kế hoạch đầu tư
+            Hà Nội.
+          </div>
+          <div class="footer__payment">
+            <img src="./images/paymet5.png" alt="payment">
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
