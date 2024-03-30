@@ -18,13 +18,85 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <title>Tân Cương</title>
 </head>
 
 <body>
   <div class="wrapper">
+    <!-- section slide show -->
+    <section>
+        <div class="slide-show" id="slide">
+          <div class="slide-show__items" style="background-image: url(./images/slideshow.jpg);">
+            <div class="container">
+              <div class="slide-show__box">
+                <div class="slide-show__content">
+                  <div class="slide-show__subheading">Trà thiên nhiên</div>
+                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
+                  <div class="slide-show__description">Giảm đến 30%</div>
+                  <button class="button-accent slide-show__button">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-show__items" style="background-image: url(./images/slideshow4.jpg);">
+            <div class="container">
+              <div class="slide-show__box">
+                <div class="slide-show__content">
+                  <div class="slide-show__subheading">Trà thiên nhiên</div>
+                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
+                  <div class="slide-show__description">Giảm đến 30%</div>
+                  <button class="button-accent slide-show__button">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-show__items" style="background-image: url(./images/slideshow5.jpg);">
+            <div class="container">
+              <div class="slide-show__box">
+                <div class="slide-show__content">
+                  <div class="slide-show__subheading">Trà thiên nhiên</div>
+                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
+                  <div class="slide-show__description">Giảm đến 30%</div>
+                  <button class="button-accent slide-show__button">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-show__items" style="background-image: url(./images/slideshow2.jpg);">
+            <div class="container">
+              <div class="slide-show__box">
+                <div class="slide-show__content">
+                  <div class="slide-show__subheading">Trà thiên nhiên</div>
+                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
+                  <div class="slide-show__description">Giảm đến 30%</div>
+                  <button class="button-accent slide-show__button">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-show__items" style="background-image: url(./images/slideshow3.jpg);">
+            <div class="container">
+              <div class="slide-show__box">
+                <div class="slide-show__content">
+                  <div class="slide-show__subheading">Trà thiên nhiên</div>
+                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
+                  <div class="slide-show__description">Giảm đến 30%</div>
+                  <button class="button-accent slide-show__button">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-show-button">
+          <button id="prev" class="slide-show-button__prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="next" class="slide-show-button__next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
     <!-- section our store -->
-    <div class="section">
+    <section class="section">
       <div class="container">
         <div class="row">
           <div class="col our-store" style=" --col-xs: 12;--col-md: 6;--col-lg: 6; --col-xl: 6">
@@ -49,9 +121,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- section product -->
-    <div class="section">
+    <section class="section">
       <div class="container">
         <div class="row">
           <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
@@ -457,9 +529,9 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
     <!-- section testimonial -->
-    <div class="section">
+    <section class="section">
       <div class="container">
         <div class="section-title">
           <div class="section-title__subtitle">Đánh giá và bình luận</div>
@@ -531,9 +603,9 @@
         </div>
 
       </div>
-    </div>
+    </section>
     <!-- section banner video -->
-    <div class="section banner-video">
+    <section class="section banner-video">
       <div class="container" style="min-height: 92vh;">
         <div class="banner-video__box">
           <h2 class="banner-video__title">Truyền thống trà Việt Nam</h2>
@@ -548,15 +620,18 @@
 
             <div class="popup" id="popup" onclick="closePopup()">
               <span class="close-btn" onclick="closePopup()">&times;</span>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/lFpq-qIRc4M?si=frmhLz27X0ffcx6n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lFpq-qIRc4M?si=frmhLz27X0ffcx6n"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
 
         </div>
       </div>
-    </div>
+    </section>
     <!-- section blog -->
-    <div class="section">
+    <section class="section">
       <div class="container">
         <div class="section-title">
           <div class="section-title__subtitle">Tin tức của chúng tôi</div>
@@ -625,7 +700,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- footer -->
     <footer class="section footer">
       <div class="footer__border">
@@ -704,7 +779,7 @@
       </div>
     </footer>
   </div>
-
+  <a class="backtop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
   <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="

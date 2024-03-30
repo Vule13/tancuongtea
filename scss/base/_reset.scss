@@ -4,6 +4,11 @@
   box-sizing: border-box;
   word-break: break-word;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --grid: 12;
   --grid-container-width: 1700px;
@@ -12,8 +17,8 @@
   --grid-col-gap-horizontal: 30px;
   --color-foreground: #000;
   --color-background: #ffff;
-  --color-accent: #FDA043;
-  --color-primary: #194A33;
+  --color-accent: #fda043;
+  --color-primary: #194a33;
 }
 body {
   background-color: #fff;
@@ -61,4 +66,24 @@ li {
 
 .section {
   padding: 40px 0;
+}
+
+.backtop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  font-size: 20px;
+  color: #fff;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
 }

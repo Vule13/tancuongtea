@@ -22,6 +22,21 @@ $('.contact-carousel').owlCarousel({
 })
 
 
+//product detail
+console.log('111');
+
+$(document).ready(function() {
+  $('.color-choose input').on('click', function() {
+      var headphonesColor = $(this).attr('data-image');
+      $('.active').removeClass('active');
+      $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+      $(this).addClass('active');
+  });
+
+});
+
+// banner video
+
 function openPopup(videoId) {
   var videoFrame = document.querySelector('.popup iframe');
   videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
@@ -43,3 +58,20 @@ document.getElementById('popup').addEventListener('click', function(event) {
   // Ngăn chặn sự kiện click trên popup từ propagate lên các phần tử cha
   event.stopPropagation();
 });
+
+
+// slideshow
+
+
+document.getElementById('next').onclick = function() {
+  let lists = document.querySelectorAll('.slide-show__items');
+  document.getElementById('slide').appendChild(lists[0]);
+}
+
+document.getElementById('prev').onclick = function() {
+  let lists = document.querySelectorAll('.slide-show__items');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
+
+
+
