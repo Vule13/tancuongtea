@@ -1,0 +1,27 @@
+.star-comment-sale {
+  display: flex;
+}
+
+.star-comment-sale__comment, .star-comment-sale__sale {
+  margin: 0 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--color-foreground) 0.5;
+  opacity: 0.5;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background-color: var(--color-foreground);
+    opacity: 0.5;
+    left: -15px;
+  }
+}
+
+.star-comment-sale__star {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}

@@ -5,7 +5,7 @@
 @import './components/_sidebar';
 @import './components/_product-item';
 @import './components/our-store';
-@import './components/blogs';
+@import './components/blog';
 @import './components/testimonial';
 @import './components/heading';
 @import './components/input';
@@ -14,7 +14,10 @@
 @import './components/slideshow';
 @import './components/pagination';
 @import './components/product-detail';
-
+@import './components/star';
+@import './components/tab-item';
+@import './components/review-comment';
+@import './components/breadcrumb';
 
 // Page
 @import './page/_home-page';

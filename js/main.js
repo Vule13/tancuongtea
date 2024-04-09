@@ -22,17 +22,51 @@ $('.contact-carousel').owlCarousel({
 })
 
 
-//product detail
-console.log('111');
+// product detail
 
 $(document).ready(function() {
-  $('.color-choose input').on('click', function() {
+  $('.product-detail__size-choose input').on('click', function() {
       var headphonesColor = $(this).attr('data-image');
       $('.active').removeClass('active');
-      $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+      $('.product-detail__left img[data-image = ' + headphonesColor + ']').addClass('active');
       $(this).addClass('active');
   });
 
+});
+
+// slideshow
+
+
+document.getElementById('next').onclick = function() {
+  let lists = document.querySelectorAll('.slide-show__items');
+  document.getElementById('slide').appendChild(lists[0]);
+}
+
+document.getElementById('prev').onclick = function() {
+  let lists = document.querySelectorAll('.slide-show__items');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
+
+// quantity
+
+const plus = document.querySelector(".quantity__plus"),
+minus = document.querySelector(".quantity__minus"),
+number = document.querySelector(".quantity__number");
+let soluong = 1;
+plus.addEventListener("click", ()=>{
+  soluong ++;
+  soluong = (soluong < 10) ? "0" + soluong : soluong;
+  number.value = soluong;
+  console.log(soluong);
+});
+
+minus.addEventListener("click", ()=>{
+  if(soluong > 1) {
+    soluong--;
+    soluong = (soluong < 10) ? "0" + soluong : soluong;
+    number.value = soluong;
+  }
+  
 });
 
 // banner video
@@ -60,18 +94,35 @@ document.getElementById('popup').addEventListener('click', function(event) {
 });
 
 
-// slideshow
 
 
-document.getElementById('next').onclick = function() {
-  let lists = document.querySelectorAll('.slide-show__items');
-  document.getElementById('slide').appendChild(lists[0]);
-}
+// tab-item
+// const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
 
-document.getElementById('prev').onclick = function() {
-  let lists = document.querySelectorAll('.slide-show__items');
-  document.getElementById('slide').prepend(lists[lists.length - 1]);
-}
+// const tabs = $$(".tab-item");
+// const panes = $$(".tab-pane");
 
+// const tabActive = $(".tab-item.active");
+// const line = $(".tabs .line");
 
+// requestIdleCallback(function () {
+//   line.style.left = tabActive.offsetLeft + "px";
+//   line.style.width = tabActive.offsetWidth + "px";
+// });
+
+// tabs.forEach((tab, index) => {
+//   const pane = panes[index];
+
+//   tab.onclick = function () {
+//     $(".tab-item.active").classList.remove("active");
+//     $(".tab-pane.active").classList.remove("active");
+
+//     line.style.left = this.offsetLeft + "px";
+//     line.style.width = this.offsetWidth + "px";
+
+//     this.classList.add("active");
+//     pane.classList.add("active");
+//   };
+// });
 

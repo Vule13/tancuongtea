@@ -1,0 +1,24 @@
+.breadcrumb {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  background-position: center 60px;
+  background-image: url(../images/background-breadcumb.png);
+}
+
+.breadcrumb__heading-box {
+  padding: 210px 0;
+}
+
+.breadcrumb__heading {
+  color: var(--color-accent);
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+.breadcrumb__subheading {
+  color: var(--color-accent);
+  font-size: 20px;
+  padding-top: 15px;
+}

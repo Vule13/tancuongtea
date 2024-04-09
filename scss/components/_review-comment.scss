@@ -1,0 +1,55 @@
+.review-comment__box {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.review-comment__name {
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.review-comment__title {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.review-comment__star {
+  display: flex;
+  align-items: center;
+}
+
+.review-comment__product-detail {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 0.5px solid;
+  font-size: 12px;
+}
+
+.review-comment__description {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.review-comment__box-img {
+  padding-top: 5px;
+  display: flex;
+  gap: 16px;
+}
+
+.review-comment__avata {
+  border-radius: 50%;
+  border: 1px dashed;
+  width: 70px;
+  height: 70px;
+  padding: 4px;
+}
+
+.review-comment {
+  padding-bottom: 40px;
+}
