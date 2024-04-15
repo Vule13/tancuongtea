@@ -157,6 +157,7 @@
   align-items: center;
   font-family: "SVN-Gilroy";
 }
+
 .sidebar-checkbox--pb {
   padding-bottom: 6px;
 }
@@ -168,6 +169,7 @@
   align-items: center;
   font-family: "SVN-Gilroy";
 }
+
 .sidebar-checkbox--pd {
   padding-left: 25px;
   padding-top: 26px;
@@ -181,6 +183,7 @@
   background-color: var(--text-text-gray);
   width: 15px;
 }
+
 .sidebar-checkbox__item {
   letter-spacing: -0.3px;
   color: var(--text-heading);
@@ -228,23 +231,23 @@ input[type="checkbox"]:checked::after {
   display: block;
 }
 
-input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 40px;
-  height: 40px;
-  background-color: var(--box-color);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
+// input[type="radio"] {
+//   appearance: none;
+//   -webkit-appearance: none;
+//   width: 40px;
+//   height: 40px;
+//   background-color: var(--box-color);
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 50%;
+// }
 
-input[type="radio"]:checked {
-  background-color: var(--box-color);
-  border: 1px solid;
-}
+// input[type="radio"]:checked {
+//   background-color: var(--box-color);
+//   border: 1px solid;
+// }
 
 .price {
   position: relative;
@@ -386,7 +389,7 @@ input[type="radio"]:checked {
 }
 
 .text--blue {
-  color: #4F77FF;
+  color: #4f77ff;
 }
 
 .price__dot--left::before {
@@ -394,7 +397,7 @@ input[type="radio"]:checked {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #4F77FF;
+  background-color: #4f77ff;
   border-radius: 50%;
   top: -5px;
   transform: translateX(10px);
@@ -405,7 +408,7 @@ input[type="radio"]:checked {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #4F77FF;
+  background-color: #4f77ff;
   border-radius: 50%;
   top: -5px;
   right: 0;
@@ -418,10 +421,10 @@ input[type="radio"]:checked {
 .select {
   border-radius: 5px;
   outline: none;
-  border: 1px solid #E7E5EA;
+  border: 1px solid #e7e5ea;
   padding-left: 20px;
   padding-right: 20px;
-  color: #7B88A8;
+  color: #7b88a8;
   cursor: pointer;
   font-size: 16px;
   height: 48px;

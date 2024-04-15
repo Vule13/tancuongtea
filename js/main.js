@@ -21,6 +21,24 @@ $('.contact-carousel').owlCarousel({
   }
 })
 
+// scroll header
+
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.header-box');
+  var scrollPosition = window.scrollY;
+  var logo = document.querySelector('.header__logo-green')
+  var logo_white = document.querySelector('.header__logo-white')
+  if (scrollPosition > 100) { // Adjust 100 to your desired scroll position
+      header.classList.add('header-fixed');
+      logo.classList.add('logo-block');
+      logo_white.classList.add('logo-hidden');
+  } else {
+      header.classList.remove('header-fixed');
+      logo_white.classList.remove('logo-hidden');
+      logo.classList.remove('logo-block');
+  }
+});
+
 
 // product detail
 

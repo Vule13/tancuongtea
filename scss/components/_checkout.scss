@@ -1,0 +1,37 @@
+.checkout-button {
+  padding: 20px 80px 30px 80px;
+}
+
+.checkout-button__bill {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-button__label, .checkout-button__money {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout-button__money {
+  text-align: right;
+  max-width: 200px;
+  width: 100%;
+  span {
+    &:nth-child(2) {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+  }
+}
+
+.checkout-button__buy-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.checkout-button__link-policy {
+  text-decoration: underline;
+}

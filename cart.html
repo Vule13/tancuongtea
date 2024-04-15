@@ -7,174 +7,282 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="scss/fontstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <title>Tân Cương</title>
+  <title>Sản phẩm - Tân Cương</title>
 </head>
 
 <body>
   <div class="wrapper">
     <!-- header -->
-    <header class="header ">
-      <div class="header-box header--fixed header--transparent">
-        <div class="container">
-          <div class=" row">
-            <div style="--col-xs: 4;--col-md: 4; --col-lg: 2; --col-xl: 3" class="header__logo col">
-              <img class="header__logo-white" src="./images/logo.png" alt="logo">
-              <img class="header__logo-green" src="./images/logo-xanh.png" alt="logo-xanh">
-            </div>
-            <div style="--col-xs: 4;--col-md: 4; --col-lg: 8; --col-xl: 6" class=" col">
-              <ul class="header-menu">
-                <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
-                <li class="header-menu__item"><a href="product.html">Sản phẩm</a></li>
-                <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
-                <li class="header-menu__item"><a href="#">Liên hệ</a></li>
-              </ul>
-              <div class="hamburger-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="14" viewBox="0 0 23 14" fill="none">
-                  <path d="M1 1H21.6596" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
-                  <path d="M1 7H21.6596" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
-                  <path d="M1 13H21.6596" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
-                </svg>
+    <header class="header header--fixed">
+      <div class="container">
+        <div class=" row">
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header__logo col">
+            <img src="./images/logo.png" alt="logo">
+          </div>
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 6; --col-xl: 6" class=" col">
+            <ul class="header-menu">
+              <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
+              <li class="header-menu__item"><a href="product.html">Sản phẩm</a></li>
+              <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
+              <li class="header-menu__item"><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header-icon col">
+            <div class="header-icon__box">
+              <div class="header-icon__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
               </div>
-            </div>
-            <div style="--col-xs: 4;--col-md: 4; --col-lg: 2; --col-xl: 3" class="header-icon col">
-              <div class="header-icon__box">
-                <div class="header-icon__search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <a href="order.html" class="header-icon__avata">
-                  <img src="./images/avata.jpg" alt="account">
-                </a>
-                <div class="header-icon__wishlist">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="header-icon__cart">
+              <div class="header-icon__avata">
+                <img src="./images/avata.jpg" alt="account">
+              </div>
+              <div class="header-icon__wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="header-icon__cart">
+                <a href="./cart.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                    <path d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z" fill="white"/>
-                    <path d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z" fill="white"/>
-                    <path d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z" fill="white"/>
+                    <path
+                      d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
+                      fill="white" />
+                    <path
+                      d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
+                      fill="white" />
+                    <path
+                      d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
+                      fill="white" />
                   </svg>
-                </div>
+                </a>
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- section slide show -->
-    <section>
-        <div class="slide-show" id="slide">
-          <div class="slide-show__items" style="background-image: url(./images/slideshow.jpg);">
-            <div class="container">
-              <div class="slide-show__box">
-                <div class="slide-show__content">
-                  <div class="slide-show__subheading">Trà thiên nhiên</div>
-                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
-                  <div class="slide-show__description">Giảm đến 30%</div>
-                  <button class="button-accent slide-show__button">Xem thêm</button>
+    <!-- cart -->
+    <section style="padding-top: 100px;">
+      <div class="container">
+        <div class="cart-box">
+          <div class="cart-box__title">Giỏ hàng của bạn</div>
+          <div class="cart-title">
+            <div class="cart-title__checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Tất cả sản phẩm</p>
+                </div>
+              </label>
+            </div>
+            <div class="cart-title__list">
+              <div class="cart-title__content">Đơn giá</div>
+              <div class="cart-title__content">Số lượng</div>
+              <div class="cart-title__content">Thành tiền</div>
+            </div>
+          </div>
+          <div class="cart-mini">
+            <div class="cart-mini__checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                </div>
+              </label>
+            </div>
+            <div class="cart-mini__box">
+              <div class="cart-mini__img">
+                <img src="./images/product-cart.jpg" alt="product-cart">
+              </div>
+              <div class="cart-mini__content">
+                <div class="cart-mini__name-product">
+                  <h4 class="cart-mini__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                  <div class="cart-mini__description">
+                    <p>Phân loại hàng: 200 gram</p>
+                  </div>
+                </div>
+                <div class="cart-mini__list-item">
+                  <div class="cart-mini__price">
+                    <div class="cart-mini__sale">$ 392.000</div>
+                    <div class="cart-mini__del">$ 560.000</div>
+                  </div>
+                  <div class="cart-mini__quantity">
+                    <div class="cart-quantity">
+                      <button class="cart-quantity__minus"> - </button>
+                      <input class="cart-quantity__number" type="number" value="01" min="01" name="quantity">
+                      <button class="cart-quantity__plus"> + </button>
+                    </div>
+                  </div>
+
+                  <div class="cart-mini__money">$ 784.000</div>
+                  <div class="cart-mini__edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M15 5.99994L18 8.99994M13 19.9999H21M5 15.9999L4 19.9999L8 18.9999L19.586 7.41394C19.9609 7.03889 20.1716 6.53027 20.1716 5.99994C20.1716 5.46961 19.9609 4.961 19.586 4.58594L19.414 4.41394C19.0389 4.039 18.5303 3.82837 18 3.82837C17.4697 3.82837 16.9611 4.039 16.586 4.41394L5 15.9999Z"
+                        stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slide-show__items" style="background-image: url(./images/slideshow4.jpg);">
-            <div class="container">
-              <div class="slide-show__box">
-                <div class="slide-show__content">
-                  <div class="slide-show__subheading">Trà thiên nhiên</div>
-                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
-                  <div class="slide-show__description">Giảm đến 30%</div>
-                  <button class="button-accent slide-show__button">Xem thêm</button>
+          <div class="cart-mini">
+            <div class="cart-mini__checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                </div>
+              </label>
+            </div>
+            <div class="cart-mini__box">
+              <div class="cart-mini__img">
+                <img src="./images/product-cart.jpg" alt="product-cart">
+              </div>
+              <div class="cart-mini__content">
+                <div class="cart-mini__name-product">
+                  <h4 class="cart-mini__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                  <div class="cart-mini__description">
+                    <p>Phân loại hàng: 200 gram</p>
+                  </div>
+                </div>
+                <div class="cart-mini__list-item">
+                  <div class="cart-mini__price">
+                    <div class="cart-mini__sale">$ 392.000</div>
+                    <div class="cart-mini__del">$ 560.000</div>
+                  </div>
+                  <div class="cart-mini__quantity">
+                    <div class="cart-quantity">
+                      <button class="cart-quantity__minus"> - </button>
+                      <input class="cart-quantity__number" type="number" value="01" min="01" name="quantity">
+                      <button class="cart-quantity__plus"> + </button>
+                    </div>
+                  </div>
+
+                  <div class="cart-mini__money">$ 784.000</div>
+                  <div class="cart-mini__edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M15 5.99994L18 8.99994M13 19.9999H21M5 15.9999L4 19.9999L8 18.9999L19.586 7.41394C19.9609 7.03889 20.1716 6.53027 20.1716 5.99994C20.1716 5.46961 19.9609 4.961 19.586 4.58594L19.414 4.41394C19.0389 4.039 18.5303 3.82837 18 3.82837C17.4697 3.82837 16.9611 4.039 16.586 4.41394L5 15.9999Z"
+                        stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slide-show__items" style="background-image: url(./images/slideshow5.jpg);">
-            <div class="container">
-              <div class="slide-show__box">
-                <div class="slide-show__content">
-                  <div class="slide-show__subheading">Trà thiên nhiên</div>
-                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
-                  <div class="slide-show__description">Giảm đến 30%</div>
-                  <button class="button-accent slide-show__button">Xem thêm</button>
+          <div class="cart-mini cart-mini--boder">
+            <div class="cart-mini__checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                </div>
+              </label>
+            </div>
+            <div class="cart-mini__box">
+              <div class="cart-mini__img">
+                <img src="./images/product-cart.jpg" alt="product-cart">
+              </div>
+              <div class="cart-mini__content">
+                <div class="cart-mini__name-product">
+                  <h4 class="cart-mini__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                  <div class="cart-mini__description">
+                    <p>Phân loại hàng: 200 gram</p>
+                  </div>
+                </div>
+                <div class="cart-mini__list-item">
+                  <div class="cart-mini__price">
+                    <div class="cart-mini__sale">$ 392.000</div>
+                    <div class="cart-mini__del">$ 560.000</div>
+                  </div>
+                  <div class="cart-mini__quantity">
+                    <div class="cart-quantity">
+                      <button class="cart-quantity__minus"> - </button>
+                      <input class="cart-quantity__number" type="number" value="01" min="01" name="quantity">
+                      <button class="cart-quantity__plus"> + </button>
+                    </div>
+                  </div>
+
+                  <div class="cart-mini__money">$ 784.000</div>
+                  <div class="cart-mini__edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M15 5.99994L18 8.99994M13 19.9999H21M5 15.9999L4 19.9999L8 18.9999L19.586 7.41394C19.9609 7.03889 20.1716 6.53027 20.1716 5.99994C20.1716 5.46961 19.9609 4.961 19.586 4.58594L19.414 4.41394C19.0389 4.039 18.5303 3.82837 18 3.82837C17.4697 3.82837 16.9611 4.039 16.586 4.41394L5 15.9999Z"
+                        stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slide-show__items" style="background-image: url(./images/slideshow2.jpg);">
-            <div class="container">
-              <div class="slide-show__box">
-                <div class="slide-show__content">
-                  <div class="slide-show__subheading">Trà thiên nhiên</div>
-                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
-                  <div class="slide-show__description">Giảm đến 30%</div>
-                  <button class="button-accent slide-show__button">Xem thêm</button>
+          <div class="cart-mini cart-mini--boder">
+            <div class="cart-mini__checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
                 </div>
-              </div>
+              </label>
             </div>
-          </div>
-          <div class="slide-show__items" style="background-image: url(./images/slideshow3.jpg);">
-            <div class="container">
-              <div class="slide-show__box">
-                <div class="slide-show__content">
-                  <div class="slide-show__subheading">Trà thiên nhiên</div>
-                  <h1 class="slide-show__heading">Trà Tân Cương </h1>
-                  <div class="slide-show__description">Giảm đến 30%</div>
-                  <button class="button-accent slide-show__button">Xem thêm</button>
+            <div class="cart-mini__box">
+              <div class="cart-mini__img">
+                <img src="./images/product-cart.jpg" alt="product-cart">
+              </div>
+              <div class="cart-mini__content">
+                <div class="cart-mini__name-product">
+                  <h4 class="cart-mini__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                  <div class="cart-mini__description">
+                    <p>Phân loại hàng: 200 gram</p>
+                  </div>
+                </div>
+                <div class="cart-mini__list-item">
+                  <div class="cart-mini__price">
+                    <div class="cart-mini__sale">$ 392.000</div>
+                    <div class="cart-mini__del">$ 560.000</div>
+                  </div>
+                  <div class="cart-mini__quantity">
+                    <div class="cart-quantity">
+                      <button class="cart-quantity__minus"> - </button>
+                      <input class="cart-quantity__number" type="number" value="01" min="01" name="quantity">
+                      <button class="cart-quantity__plus"> + </button>
+                    </div>
+                  </div>
+
+                  <div class="cart-mini__money">$ 784.000</div>
+                  <div class="cart-mini__edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M15 5.99994L18 8.99994M13 19.9999H21M5 15.9999L4 19.9999L8 18.9999L19.586 7.41394C19.9609 7.03889 20.1716 6.53027 20.1716 5.99994C20.1716 5.46961 19.9609 4.961 19.586 4.58594L19.414 4.41394C19.0389 4.039 18.5303 3.82837 18 3.82837C17.4697 3.82837 16.9611 4.039 16.586 4.41394L5 15.9999Z"
+                        stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="slide-show-button">
-          <button id="prev" class="slide-show-button__prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <button id="next" class="slide-show-button__next"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="cart-checkout">
+          <div class="cart-checkout__checkbox">
+            <label class="product-checkbox d-flex">
+              <div class="product-checkbox__content d-flex ">
+                <input type="checkbox" class="product-checkbox__input">
+                <p class="product-checkbox__item">Chọn tất cả (8 sản phẩm)</p>
+              </div>
+            </label>
+          </div>
+          <div class="cart-checkout__money">
+            <div class="cart-checkout__text">Tổng thanh toán ( 4 sản phẩm)</div>
+            <div class="cart-checkout__sum">$ 2.234.000</div>
+            <button onclick="window.location.href='checkout.html'" class="button cart-checkout__buy-button">Mua hàng</button>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- section our store -->
+    <!-- product -->
     <section class="section">
       <div class="container">
-        <div class="row">
-          <div class="col our-store" style=" --col-xs: 12;--col-md: 6;--col-lg: 6; --col-xl: 6">
-            <div class="our-store__box">
-              <div class="our-store__subtitle">Câu chuyện về tân cương </div>
-              <h2 class="our-store__title">Đồng hành cùng <br class="our-store__br"> Trà Việt</h2>
-              <div class="our-store__description">
-                Tân Cương không chỉ là nơi để bán trà, mà còn là một biểu tượng cho sự kết hợp giữa truyền thống và hiện
-                đại. Ý nghĩa của nó nằm ở việc kế thừa và phát triển di sản trà truyền thống của vùng, đồng thời đem lại
-                trải nghiệm mới mẻ và độc đáo cho khách hàng. Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu
-                tinh tế, từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. Hương thơm của lá trà
-                hòa quyện với không khí, mang lại cảm giác nhẹ nhàng và yên bình, như một lá thư tình yêu từ thiên
-                nhiên.
-              </div>
-              <button class="button">Xem thêm</button>
-            </div>
-          </div>
-          <div class="col" style="--col-xs: 12;--col-md: 6; --col-lg: 6; --col-xl: 6">
-            <div class="our-store-img">
-              <img src="./images/our-store.jpg" alt="our store">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section product -->
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+        <h3 class="title-border">Có thể bạn cũng thích</h3>
+        <div class="cart-product row">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -224,7 +332,8 @@
               </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -274,7 +383,8 @@
               </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -324,60 +434,8 @@
               </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
-              <div class="product-item__img-content">
-                <div class="product-item__img product-item__img--sold-out">
-                  <img src="images/product.jpg" alt="product">
-                </div>
-                <div class="product-item__sold-out">
-                  Hết hàng
-                </div>
-              </div>
-              <div class="product-item__content">
-                <div class="product-item__title">Trà thảo mộc</div>
-                <div class="product-price">
-                  <span class="product-price__sale">324.000đ</span>
-                  <span class="product-price__del">350.000đ</span>
-                </div>
-                <div class="product-item__star">
-                  <img src="./images/rate.svg" alt="star">
-                </div>
-              </div>
-            </div>
-            <div class="product-item__icon">
-              <button class="product-item__icon-wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                    <g transform="scale(0.1)" id="g12">
-                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                        fill="rgb(var(--color-foreground))"></path>
-                    </g>
-                  </g>
-                </svg>
-              </button>
-              <button class="product-item__icon-cart disable">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
-                  </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
-                </svg>
-              </button>
-            </div>
-
-          </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -427,56 +485,8 @@
               </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
-              <div class="product-item__img-content">
-                <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
-                </div>
-              </div>
-              <div class="product-item__content">
-                <div class="product-item__title">Trà thảo mộc </div>
-                <div class="product-price">
-                  <span class="product-price__sale">324.000đ</span>
-                  <span class="product-price__del">350.000đ</span>
-                </div>
-                <div class="product-item__star">
-                  <img src="./images/rate.svg" alt="star">
-                </div>
-              </div>
-            </div>
-            <div class="product-item__icon">
-              <button class="product-item__icon-wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                    <g transform="scale(0.1)" id="g12">
-                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                        fill="rgb(var(--color-foreground))"></path>
-                    </g>
-                  </g>
-                </svg>
-              </button>
-              <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
-                  </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
-                </svg>
-              </button>
-            </div>
-          </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
@@ -526,12 +536,14 @@
               </button>
             </div>
           </a>
-          <a href="product.html" class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
             <div class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
                   <img src="images/product.jpg" alt="product">
                 </div>
+                <div class="product-item__sale">30%</div>
               </div>
               <div class="product-item__content">
                 <div class="product-item__title">Trà thảo mộc</div>
@@ -575,181 +587,113 @@
               </button>
             </div>
           </a>
-        </div>
-      </div>
-    </section>
-    <!-- section testimonial -->
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <div class="section-title__subtitle">Đánh giá và bình luận</div>
-          <h2 class="section-title__title">Trải nghiệm của khách hàng</h2>
-        </div>
-        <div class="testimonial">
-          <div class="contact-carousel owl-carousel owl-theme">
-            <div class="item testimonial__box">
-              <div class="testimonial__star">
-                <img src="./images/rate.svg" alt="">
-              </div>
-              <div class="testimonial__description">
-                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-                ngon như một hành trình khám phá mới.
-              </div>
-              <div class="testimonial__info">
-                <div class="testimonial__avata">
-                  <img src="./images/avata.jpg" alt="avata">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
                 </div>
-                <div class="testimonial__name">Nguyễn Thảo Phương</div>
+                <div class="product-item__sale">30%</div>
               </div>
-            </div>
-            <div class="item testimonial__box">
-              <div class="testimonial__star">
-                <img src="./images/rate.svg" alt="">
-              </div>
-              <div class="testimonial__description">
-                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-                ngon như một hành trình khám phá mới.
-              </div>
-              <div class="testimonial__info">
-                <div class="testimonial__avata">
-                  <img src="./images/avata.jpg" alt="avata">
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
                 </div>
-                <div class="testimonial__name">Nguyễn Thảo Phương</div>
-              </div>
-            </div>
-            <div class="item testimonial__box">
-              <div class="testimonial__star">
-                <img src="./images/rate.svg" alt="">
-              </div>
-              <div class="testimonial__description">
-                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-                ngon như một hành trình khám phá mới.
-              </div>
-              <div class="testimonial__info">
-                <div class="testimonial__avata">
-                  <img src="./images/avata.jpg" alt="avata">
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
                 </div>
-                <div class="testimonial__name">Nguyễn Thảo Phương</div>
               </div>
             </div>
-            <div class="item testimonial__box">
-              <div class="testimonial__star">
-                <img src="./images/rate.svg" alt="">
-              </div>
-              <div class="testimonial__description">
-                Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-                ngon như một hành trình khám phá mới.
-              </div>
-              <div class="testimonial__info">
-                <div class="testimonial__avata">
-                  <img src="./images/avata.jpg" alt="avata">
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
                 </div>
-                <div class="testimonial__name">Nguyễn Thảo Phương</div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
               </div>
             </div>
-          </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
         </div>
-
-      </div>
+        <div class="cart-product-btn">
+          <button class="button-italic">Xem thêm</button>
+        </div>
     </section>
-    <!-- section banner video -->
-    <section class="section banner-video">
-      <div class="container" style="min-height: 92vh;">
-        <div class="banner-video__box">
-          <h2 class="banner-video__title">Truyền thống trà Việt Nam</h2>
-          <div class="banner-video__content">Trong nền văn hóa Việt, việc thưởng trà không chỉ là sở thích mà còn là một
-            nghi lễ truyền thống. Trà được coi là biểu tượng của sự tinh tế, sự thanh lịch và là biểu hiện của sự đón
-            nhận và chia sẻ tinh thần gia đình và bạn bè.</div>
-          <div class="banner-video__icon-play">
-            <a class="banner-video__play-now" href="#" id="video-link">
-              <img src="./images/play-now.png" alt="playnow">
-              <span class="ripple"></span>
-            </a>
-
-            <div class="popup" id="popup" onclick="closePopup()">
-              <span class="close-btn" onclick="closePopup()">&times;</span>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/lFpq-qIRc4M?si=frmhLz27X0ffcx6n"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- section blog -->
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <div class="section-title__subtitle">Tin tức của chúng tôi</div>
-          <h2 class="section-title__title">Bài viết nổi bật</h2>
-        </div>
-        <div class="row">
-          <div class="col section-blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
-            <div class="section-blog__image-tag">
-              <div class="section-blog__image">
-                <img src="./images/img-blog.jpg" alt="image blog">
-              </div>
-              <div class="section-blog__tag">
-                <div class="section-blog__tag-item">Sức khỏe</div>
-                <div class="section-blog__tag-item">Trà đen</div>
-              </div>
-            </div>
-            <div class="section-blog__content">
-              <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
-              <div class="section-blog__text">
-                Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
-                ...
-              </div>
-              <button class="button-italic">Xem thêm</button>
-            </div>
-          </div>
-          <div class="col section-blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
-            <div class="section-blog__image-tag">
-              <div class="section-blog__image">
-                <img src="./images/img-blog.jpg" alt="image blog">
-              </div>
-              <div class="section-blog__tag">
-                <div class="section-blog__tag-item">Sức khỏe</div>
-                <div class="section-blog__tag-item">Trà đen</div>
-              </div>
-            </div>
-            <div class="section-blog__content">
-              <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
-              <div class="section-blog__text">
-                Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
-                ...
-              </div>
-              <button class="button-italic">Xem thêm</button>
-            </div>
-          </div>
-          <div class="col section-blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
-            <div class="section-blog__image-tag">
-              <div class="section-blog__image">
-                <img src="./images/img-blog.jpg" alt="image blog">
-              </div>
-              <div class="section-blog__tag">
-                <div class="section-blog__tag-item">Sức khỏe</div>
-                <div class="section-blog__tag-item">Trà đen</div>
-              </div>
-            </div>
-            <div class="section-blog__content">
-              <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
-              <div class="section-blog__text">
-                Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
-                ...
-              </div>
-              <button class="button-italic">Xem thêm</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
     <footer class="section footer">
       <div class="footer__border">
         <div class="container">
@@ -827,7 +771,7 @@
       </div>
     </footer>
   </div>
-  <a class="backtop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
   <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -836,7 +780,6 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
-
 </body>
 
 </html>

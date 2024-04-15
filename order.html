@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="scss/fontstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Checkout</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header header--fixed">
+      <div class="container">
+        <div class=" row">
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header__logo col">
+            <img src="./images/logo.png" alt="logo">
+          </div>
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 6; --col-xl: 6" class=" col">
+            <ul class="header-menu">
+              <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
+              <li class="header-menu__item"><a href="product.html">Sản phẩm</a></li>
+              <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
+              <li class="header-menu__item"><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header-icon col">
+            <div class="header-icon__box">
+              <div class="header-icon__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="header-icon__avata">
+                <img src="./images/avata.jpg" alt="account">
+              </div>
+              <div class="header-icon__wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="header-icon__cart">
+                <a href="./cart.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                      d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
+                      fill="white" />
+                    <path
+                      d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
+                      fill="white" />
+                    <path
+                      d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
+                      fill="white" />
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- tab -->
+    <section class="section-tab" style="padding: 160px 0;">
+      <div class="container">
+        <!-- Tab items -->
+        <div class="row">
+          <div class="col" style="--col-xs: 12;--col-md: 6; --col-lg: 3; --col-xl: 3">
+            <div class="account-tab">
+              <div class="account-tab__item active">
+                <div class="account-tab__box">
+                  <div class="account-tab__avata">
+                    <img src="./images/avata1.png" alt="avata">
+                  </div>
+                  <div class="account-tab__name">
+                    <h3 class="account-tab__name-title">ntphuongdung</h3>
+                    <div class="account-tab__edit">
+                      Nguyễn Thị Phương Dung
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="dropdown">
+                <div class="account-tab__box-icon" onclick="toggleDropdown(this)">
+                  <div class="account-tab__icon">
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <span>Tài khoản của tôi</span>
+                </div>
+                <div class="dropdown-content " id="myDropdown" style="display: block;">
+                  <div class="account-tab__item ">Hồ sơ</div>
+                  <div class="account-tab__item">Địa chỉ</div>
+                  <div class="account-tab__item ">Đổi mật khẩu</div>
+                </div>
+              </div>
+              <div class="account-tab__item">
+                <div class="account-tab__box-icon">
+                  <div class="account-tab__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 29" fill="none">
+                      <g clip-path="url(#clip0_1_9657)">
+                        <path
+                          d="M20.6667 3.66675H3.33333C2.59695 3.66675 2 4.2637 2 5.00008V26.3334C2 27.0698 2.59695 27.6667 3.33333 27.6667H20.6667C21.403 27.6667 22 27.0698 22 26.3334V5.00008C22 4.2637 21.403 3.66675 20.6667 3.66675Z"
+                          stroke="#000" stroke-width="2" stroke-linejoin="round" />
+                        <path
+                          d="M8.00033 1V5M16.0003 1V5M6.66699 11H17.3337M6.66699 16.3333H14.667M6.66699 21.6667H12.0003"
+                          stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_9657">
+                          <rect width="24" height="28.6667" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <span>Lịch sử mua hàng</span>
+                </div>
+              </div>
+              <div class="account-tab__item">
+                <div class="account-tab__box-icon">
+                  <div class="account-tab__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 22 22" fill="none">
+                      <path
+                        d="M18 3H4C2.89543 3 2 3.89543 2 5V19C2 20.1046 2.89543 21 4 21H18C19.1046 21 20 20.1046 20 19V5C20 3.89543 19.1046 3 18 3Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.16699 7H6.41699V16H9.16699V7Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M15.583 7H12.833V12H15.583V7Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <span>Bảo mật và điều khoản</span>
+                </div>
+              </div>
+              <div class="account-tab__item">
+                <div class="account-tab__box-icon">
+                  <div class="account-tab__icon">
+                    <i class="fa-regular fa-circle-question"></i>
+                  </div>
+                  <span>Trợ giúp và yêu cầu hỗ trợ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="-col-xs: 12;--col-md: 6; --col-lg: 9; --col-xl: 9">
+            <div class="order-tab active">
+              <div class="order-info">
+                <h3>Thông tin tài khoản</h3>
+                <table class="order-info__box">
+                  <tr>
+                    <td>Tên đăng nhập:</td>
+                    <td>ntphuongdung</td>
+                  </tr>
+                  <tr>
+                    <td>Họ và tên: </td>
+                    <td>Nguyễn Thị Phương Dung</td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td>nguyendung1234@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Số điện thoại:</td>
+                    <td>0965271313</td>
+                  </tr>
+                  <tr>
+                    <td>Giới tính:</td>
+                    <td>Nữ</td>
+                  </tr>
+                  <tr>
+                    <td>Ngày sinh:</td>
+                    <td>15/10/2001</td>
+                  </tr>
+                  <tr>
+                    <td>Địa chỉ:</td>
+                    <td>Số nhà 56A, đường Lý Thường Kiệt
+                      <br>Phường Suối Hoa, thành phố Bắc Ninh, tỉnh Bắc Ninh
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="order-tab ">
+              <div class="order-file">
+                <div>
+                  <h3>Hồ sơ của tôi</h3>
+                  <div class="order-file__description">Quản lý thông tin hồ sơ để bảo mật tài khoản</div>
+                  <form action="" class="file-form">
+                    <table>
+                      <tr class="order-file__name">
+                        <td class="order-table-left">Tên đăng nhập</td>
+                        <td class="order-table-right">ntphuongdung</td>
+                      </tr>
+                      <tr class="order-file__edit-name ">
+                        <td class="order-table-left"> <label for="username">Tên</label></td>
+                        <td class="order-table-right"><input type="text" id="editusername" name="username" value="Dung"
+                            placeholder="Dung"></td>
+                      </tr>
+                      <tr class="order-file__edit-email">
+                        <td class="order-table-left">
+                          <label for="username">Email</label>
+                        </td>
+                        <td class="order-table-right">
+                          <span>ng************@gmail.com</span>
+                          <div class="order-file__edit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                              fill="none">
+                              <path
+                                d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                                stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Chỉnh sửa</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="order-file__phone">
+                        <td class="order-table-left"><span class="order-file__phone-label">Số điện thoại</span></td>
+                        <td class="order-table-right">
+                          <span>********13</span>
+                          <div class="order-file__edit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                              fill="none">
+                              <path
+                                d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                                stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Chỉnh sửa</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="order-file__edit-sex ">
+                        <td class="order-table-left"><span>Giới tính</span></td>
+                        <td class="order-table-right">
+                          <div class="file-gender">
+                            <label for="male">Nam</ label>
+                              <input type="radio" id="male" name="drone" value="male" />
+                          </div>
+                          <div class="file-gender">
+                            <label for="female">Nữ</label>
+                            <input type="radio" id="female" name="drone" value="female" checked />
+                          </div>
+                          <div class="file-gender">
+                            <label for="other">Khác</label>
+                            <input type="radio" id="other" name="drone" value="other" />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="order-file__edit-date ">
+                        <td class="order-table-left">
+                          <label for="date">Ngày sinh</label>
+                        </td>
+                        <td class="order-table-right">
+                          <input type="text" value="20/10/2001" id="editphone" name="username" placeholder="20/10/2001">
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+                <div class="order-file__avata">
+                  <h3>Ảnh đại diện</h3>
+                  <div class="order-file__avata-img">
+                    <img src="./images/avata2.png" alt="anh dai dien">
+                  </div>
+                  <div class="order-file__edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                        stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Chỉnh sửa</span>
+                  </div>
+                  <span class="order-file__info">Dung lượng file tối đa 1 MB <br>
+                    Định dạng: .JPEG, .PNG</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="order-tab ">
+              <div class="order-address">
+                <div class="order-address__title">
+                  <h3>Địa chỉ của tôi</h3>
+                  <button class="order-address__button add-new">+ Thêm mới địa chỉ</button>
+                </div>
+                <div class="order-address__box">
+                  <div class="order-address__item">
+                    <div class="order-address__content">
+                      <div class="order-address__name-phone">Phương Dung | (+84) 965272813 </div>
+                      <div class="order-address__text">
+                        Số nhà 56A, đường Lý Thường Kiệt<br>
+                        Phường Suối Hoa, thành phố Bắc Ninh, tỉnh Bắc Ninh
+                      </div>
+                    </div>
+                    <div class="order-address__button-edit">
+                      <div class="order-file__edit order-address__edit ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path
+                            d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                            stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Chỉnh sửa</span>
+                      </div>
+                      <button class="order-address__button order-address__button--accent">Mặc định</button>
+                    </div>
+
+                  </div>
+                  <div class="order-address__item">
+                    <div class="order-address__content">
+                      <div class="order-address__name-phone">Phương Dung | (+84) 965272813 </div>
+                      <div class="order-address__text">
+                        Số nhà 56A, đường Lý Thường Kiệt<br>
+                        Phường Suối Hoa, thành phố Bắc Ninh, tỉnh Bắc Ninh
+                      </div>
+                    </div>
+                    <div class="order-address__button-edit">
+                      <div class="order-file__edit order-address__edit ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path
+                            d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                            stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Chỉnh sửa</span>
+                      </div>
+                      <button class="order-address__button order-address__button--border">Đặt làm mặc định</button>
+                    </div>
+                  </div>
+                  <div class="order-address__item">
+                    <div class="order-address__content">
+                      <div class="order-address__name-phone">Phương Dung | (+84) 965272813 </div>
+                      <div class="order-address__text">
+                        Số nhà 56A, đường Lý Thường Kiệt<br>
+                        Phường Suối Hoa, thành phố Bắc Ninh, tỉnh Bắc Ninh
+                      </div>
+                    </div>
+                    <div class="order-address__button-edit">
+                      <div class="order-file__edit order-address__edit ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path
+                            d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                            stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Chỉnh sửa</span>
+                      </div>
+                      <button class="order-address__button order-address__button--border">Đặt làm mặc định</button>
+                    </div>
+                  </div>
+                  <div class="order-address__item">
+                    <div class="order-address__content">
+                      <div class="order-address__name-phone">Phương Dung | (+84) 965272813 </div>
+                      <div class="order-address__text">
+                        Số nhà 56A, đường Lý Thường Kiệt<br>
+                        Phường Suối Hoa, thành phố Bắc Ninh, tỉnh Bắc Ninh
+                      </div>
+                    </div>
+                    <div class="order-address__button-edit">
+                      <div class="order-file__edit order-address__edit ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path
+                            d="M12.4997 5.00001L14.9997 7.50001M10.833 16.6667H17.4997M4.16634 13.3333L3.33301 16.6667L6.66634 15.8333L16.3213 6.17835C16.6338 5.8658 16.8093 5.44195 16.8093 5.00001C16.8093 4.55807 16.6338 4.13423 16.3213 3.82168L16.178 3.67835C15.8655 3.36589 15.4416 3.19037 14.9997 3.19037C14.5577 3.19037 14.1339 3.36589 13.8213 3.67835L4.16634 13.3333Z"
+                            stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Chỉnh sửa</span>
+                      </div>
+                      <button class="order-address__button order-address__button--border">Đặt làm mặc định</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="address-popup">
+                <h3>Địa chỉ mới</h3>
+                <form action="#" class="address-popup__form">
+                  <div class="address-popup__input">
+                    <input placeholder="Tên người nhận" type="text" id="userAddress" name="userAddress">
+                    <input placeholder="Số điện thoại" type="text" id="phoneAddress" name="phoneAddress">
+                  </div>
+                  <input placeholder="Tỉnh, thành phố, quận/Huyện, Phường/Xã" type="text" id="inputAddress"
+                    name="inputAddress">
+                  <input placeholder="Địa chỉ cụ thể" type="text" id="detailAddress" name="detailAddress">
+                  <div class="address-popup__new-address">Địa chỉ mới</div>
+                  <div class="address-popup__button">
+                    <button class="button-border">Nhà riêng</button>
+                    <button class="button-border">Văn phòng</button>
+                  </div>
+                  <div class="cart-title__checkbox">
+                    <label class="product-checkbox d-flex">
+                      <div class="product-checkbox__content d-flex ">
+                        <input type="checkbox" class="product-checkbox__input">
+                        <p class="product-checkbox__item">Đặt làm địa chỉ mặc định</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="address-popup__submit">
+                    <button class="button-border address-popup__submit-back">Trở lại</button>
+                    <button class="button">Hoàn thành</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="order-tab ">
+              <div class="order-forgot-pw">
+                <h3>Thay đổi mật khẩu</h3>
+                <form class="order-forgot-pw__box" id="order-forgot">
+                  <div class="order-forgot-pw__input">
+                    <label for="password">Mật khẩu hiện tại</label>
+                    <input placeholder="Mật khẩu hiện tại" type="text" id="passwordNow" name="passwordNow" required>
+                  </div>
+                  <div class="order-forgot-pw__input">
+                    <label for="passwordNew">Mật khẩu mới</label>
+                    <input placeholder="Mật khẩu mới" type="text" id="passwordNew" name="passwordNew" required>
+                  </div>
+                  <div class="order-forgot-pw__input">
+                    <label for="repasswordNew">Nhập lại mật khẩu mới</label>
+                    <input placeholder="Nhập lại mật khẩu mới" type="text" id="repasswordNew" name="repasswordNew"
+                      required>
+                  </div>
+                  <ul>
+                    <li>Hệ thống sẽ gửi mã xác nhận đến số điện thoại bạn dùng để đăng ký tài khoản</li>
+                    <li>Vui lòng nhập mã xác nhận vào ô bên dưới trong <span>180</span> giây để xác nhận thay đổi mật
+                      khẩu</li>
+                  </ul>
+                  <div class="order-forgot-pw__input">
+                    <label for="otp">Mã xác nhận</label>
+                    <input placeholder="Mã xác nhận" type="text" id="otp" name="otp" required>
+                  </div>
+                  <div style="text-align: center;">
+                    <button class=" button">Xác nhận </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="order-tab ">
+              <div class="tabs tabs--cart">
+                <div class="tab-item active">
+                  Tất cả đơn hàng
+                </div>
+                <div class="tab-item">
+                  Đang đợi duyệt
+                </div>
+                <div class="tab-item">
+                  Đã thanh toán
+                </div>
+                <div class="tab-item">
+                  Đã hủy
+                </div>
+                <div class="line"></div>
+              </div>
+              <!-- Tab content -->
+              <div class="tab-content">
+                <div class="tab-pane active">
+                  <div class="tab-pane__box-product">
+                    <div class="tab-pane__label">
+                      <div class="tab-pane__id-order">Mã đơn hàng: #000A4781</div>
+                      <div class="tab-pane__status">Trạng thái: Đang đợi duyệt</div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+
+                      </div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+                      </div>
+                    </div>
+                    <div class="order-money">
+                      <div class="order-money__label">
+                        Thành tiền: <span>$ 2.234.000</span>
+                      </div>
+                      <button class="button-border">Liên hệ với cửa hàng</button>
+                    </div>
+                  </div>
+                  <div class="tab-pane__box-product">
+                    <div class="tab-pane__label">
+                      <div class="tab-pane__id-order">Mã đơn hàng: #000A4781</div>
+                      <div class="tab-pane__status">Trạng thái: Đã hoàn thành</div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+
+                      </div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+                      </div>
+                    </div>
+                    <div class="order-money">
+                      <div class="order-money__label">
+                        Thành tiền: <span>$ 2.234.000</span>
+                      </div>
+                      <button class="button">Đánh giá</button>
+                    </div>
+                  </div>
+                  <div class="tab-pane__box-product">
+                    <div class="tab-pane__label">
+                      <div class="tab-pane__id-order">Mã đơn hàng: #000A4781</div>
+                      <div class="tab-pane__status">Trạng thái: Đã hủy</div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+
+                      </div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+                      </div>
+                    </div>
+                    <div class="order-money">
+                      <div class="order-money__label">
+                        Thành tiền: <span>$ 2.234.000</span>
+                      </div>
+                      <div class="order-money__button">
+                        <button class="button">Mua lại</button>
+                        <button class="button-border">Xem chi tiết đơn hủy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane">
+                  <div class="tab-pane__box-product">
+                    <div class="tab-pane__label">
+                      <div class="tab-pane__id-order">Mã đơn hàng: #000A4781</div>
+                      <div class="tab-pane__status">Trạng thái: Đang đợi duyệt</div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+
+                      </div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+                      </div>
+                    </div>
+                    <div class="order-money">
+                      <div class="order-money__label">
+                        Thành tiền: <span>$ 2.234.000</span>
+                      </div>
+                      <button class="button-border">Liên hệ với cửa hàng</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane ">
+                  <div class="tab-pane__box-product">
+                    <div class="tab-pane__label">
+                      <div class="tab-pane__id-order">Mã đơn hàng: #000A4781</div>
+                      <div class="tab-pane__status">Trạng thái: Đã hoàn thành</div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+
+                      </div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+                      </div>
+                    </div>
+                    <div class="order-money">
+                      <div class="order-money__label">
+                        Thành tiền: <span>$ 2.234.000</span>
+                      </div>
+                      <button class="button">Đánh giá</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane ">
+                  <div class="tab-pane__box-product">
+                    <div class="tab-pane__label">
+                      <div class="tab-pane__id-order">Mã đơn hàng: #000A4781</div>
+                      <div class="tab-pane__status">Trạng thái: Đã hủy</div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+
+                      </div>
+                    </div>
+                    <div class="product-order">
+                      <div class="product-order__img">
+                        <img src="./images/product-cart.jpg" alt="product-cart">
+                      </div>
+                      <div class="product-order__content">
+                        <div class="product-order__name-product">
+                          <h4 class="product-order__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                          <div class="product-order__description">
+                            <p>Phân loại hàng: 200 gram</p>
+                          </div>
+                          <div class="product-order__quantity">
+                            x2
+                          </div>
+                        </div>
+                        <div class="product-order__money">$ 784.000</div>
+                      </div>
+                    </div>
+                    <div class="order-money">
+                      <div class="order-money__label">
+                        Thành tiền: <span>$ 2.234.000</span>
+                      </div>
+                      <div class="order-money__button">
+                        <button class="button">Mua lại</button>
+                        <button class="button-border">Xem chi tiết đơn hủy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-tab">
+              <div class="terms-privacy">
+                <h3>Điều khoản và bảo mật</h3>
+                <div class="terms-privacy__content">
+                  <h4>1. Mục đích</h4>
+                  <span>
+                    Mục đích của Điều khoản và Bảo mật này là quy định các quyền và nghĩa vụ của trang web thuộc sở hữu
+                    của cửa hàng trà Tân Cương (sau đây gọi là "Trang web") và người sử dụng (sau đây gọi là "Khách
+                    hàng") khi truy cập và sử dụng Trang web.
+                  </span>
+                  <h4>2. Quyền và nghĩa vụ của Trang web</h4>
+                  <ul>
+                    <li>Cung cấp dịch vụ: Trang web cam kết cung cấp cho Khách hàng các dịch vụ sau:</li>
+                    <li>Truy cập và mua sắm các sản phẩm trà Tân Cương chính hãng.</li>
+                    <li>Nhận thông tin về sản phẩm, dịch vụ và các chương trình khuyến mãi của Trang web.</li>
+                    <li>Tham gia các hoạt động tương tác và chia sẻ thông tin trên Trang web.</li>
+                    <li>Bảo mật thông tin: Trang web cam kết bảo mật thông tin cá nhân của Khách hàng theo quy định của
+                      pháp luật Việt Nam. Trang web chỉ thu thập và sử dụng thông tin cá nhân của Khách hàng cho các mục
+                      đích sau:</li>
+                    <li>Cung cấp dịch vụ cho Khách hàng.</li>
+                    <li>Gửi thông tin về sản phẩm, dịch vụ và các chương trình khuyến mãi của Trang web.</li>
+                    <li>Giải đáp thắc mắc và hỗ trợ Khách hàng.</li>
+                    <li>Chính sách thanh toán: Trang web hỗ trợ nhiều hình thức thanh toán khác nhau, bao gồm thanh toán
+                      trực tuyến, thanh toán khi nhận hàng (COD) và thanh toán tại cửa hàng.</li>
+                    <li>Chính sách vận chuyển: Trang web giao hàng toàn quốc với thời gian giao hàng dự kiến từ 2-5 ngày
+                      làm việc.</li>
+                    <li>Chính sách đổi trả: Trang web hỗ trợ đổi trả sản phẩm trong vòng 7 ngày kể từ ngày nhận hàng nếu
+                      sản phẩm bị lỗi hoặc không đúng mô tả.</li>
+                  </ul>
+                  <h4>3. Quyền và nghĩa vụ của Khách hàng</h4>
+                  <ul>
+                    <li>Cung cấp thông tin chính xác: Khách hàng cam kết cung cấp thông tin cá nhân chính xác và đầy đủ khi sử dụng dịch vụ trên Trang web.</li>
+                    <li>Tuân thủ pháp luật: Khách hàng cam kết tuân thủ pháp luật Việt Nam và các quy định của Trang web khi sử dụng dịch vụ.</li>
+                    <li>Bảo mật thông tin tài khoản: Khách hàng tự chịu trách nhiệm bảo mật thông tin tài khoản của mình.</li>
+                    <li>Thanh toán đúng hạn: Khách hàng cam kết thanh toán đầy đủ và đúng hạn cho các sản phẩm đã mua trên Trang web.</li>
+                    <li>Đánh giá và phản hồi: Khách hàng có quyền đánh giá và phản hồi về sản phẩm, dịch vụ và chất lượng phục vụ của Trang web.</li>
+                  </ul>
+                  <h4>4. Giải quyết tranh chấp</h4>
+                  <span>Mọi tranh chấp phát sinh giữa Trang web và Khách hàng sẽ được giải quyết theo quy định của pháp
+                    luật Việt Nam.</span>
+                  <h4>5. Quy định chung</h4>
+                  <ul>
+                    <li>Trang web có quyền thay đổi Điều khoản và Bảo mật này bất kỳ lúc nào mà không cần thông báo
+                      trước.</li>
+                    <li>Điều khoản và Bảo mật này có hiệu lực từ ngày ban hành.</li>
+                  </ul>
+                  <h4>6. Liên hệ</h4>
+                  <span>Mọi thắc mắc về Điều khoản và Bảo mật này, vui lòng liên hệ với Trang web qua:</span>
+                  <ul>
+                    <li>Email: tancuongtea@gmai.com</li>
+                    <li>
+                      Số điện thoại: 1900.1080</li>
+                    <li>Địa chỉ: Công ty TNHH trà Tân Cương</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="order-tab">
+              <div class="terms-privacy">
+                <h3>Trợ giúp và yêu cầu hỗ trợ</h3>
+                <div class="terms-privacy__content">
+                  <h4>1. Trang web bán trà Tân Cương cung cấp cho Khách hàng nhiều thông tin hữu ích để sử dụng dịch vụ một cách dễ dàng và thuận tiện. Khách hàng có thể tham khảo các nội dung sau đây:</h4>
+                  <ul>
+                    <li>Hướng dẫn mua sắm: Quy trình mua sắm chi tiết, từ việc tìm kiếm sản phẩm, đặt hàng, thanh toán đến nhận hàng.</li>
+                    <li>Câu hỏi thường gặp (FAQ): Giải đáp các thắc mắc thường gặp của Khách hàng về sản phẩm, dịch vụ, chính sách thanh toán, vận chuyển, đổi trả,...</li>
+                    <li>Bài viết và tin tức: Cung cấp thông tin về trà Tân Cương, cách pha trà, bảo quản trà,...</li>
+                    <li>Video hướng dẫn: Hướng dẫn cách pha trà, bảo quản trà,...</li>
+                  </ul>
+                  <h4>2. Yêu cầu hỗ trợ</h4>
+                  <span>
+                    Nếu Khách hàng gặp bất kỳ vấn đề nào khi sử dụng dịch vụ trên trang web bán trà Tân Cương, vui lòng liên hệ với bộ phận hỗ trợ khách hàng qua các kênh sau:
+                  </span>
+                  <ul>
+                    <li>Email: tancuongtea@gmail.com</li>
+                    <li>Số điện thoại: 1900.1080</li>
+                    <li>Bộ chat trực tuyến: Hỗ trợ 24/7 trên website.</li>
+                    <li>Fanpage: <a href="https://www.facebook.com/TraTanCuongLD/">https://www.facebook.com/TraTanCuong/</a></li>
+                    <li>Zalo: [Zalo Official Account]</li>
+                   
+                  </ul>
+                  <h4>Thời gian hỗ trợ:</h4>
+                  <ul>
+                    <li>Bộ phận hỗ trợ khách hàng của trang web bán trà Tân Cương hoạt động 24/7, tất cả các ngày trong tuần.</li>
+                    <li>Khách hàng có thể liên hệ với bộ phận hỗ trợ khách hàng bất cứ lúc nào khi gặp vấn đề.</li>
+                  </ul>
+                  <h4>4. Cam kết hỗ trợ</h4>
+                  <span>Bộ phận hỗ trợ khách hàng của trang web bán trà Tân Cương cam kết:</span>
+                  <ul>
+                    <li>Giải đáp thắc mắc của Khách hàng một cách nhanh chóng, chính xác và hiệu quả.</li>
+                    <li>Cung cấp cho Khách hàng các giải pháp hỗ trợ phù hợp với từng vấn đề.</li>
+                    <li>Mang đến cho Khách hàng trải nghiệm dịch vụ tốt nhất.</li>
+                  </ul>
+                  <span>Ngoài ra, Khách hàng cũng có thể tham khảo thêm các nội dung sau đây:</span>
+                  <ul>
+                    <li>Chính sách bảo mật: Quy định về việc thu thập, sử dụng và bảo mật thông tin cá nhân của Khách hàng.</li>
+                    <li>Điều khoản và quy định: Quy định về quyền và nghĩa vụ của Trang web và Khách hàng khi sử dụng dịch vụ.</li>
+                    <span>
+                      Hy vọng với những thông tin trên, Khách hàng sẽ có thể sử dụng dịch vụ trên trang web bán trà Tân Cương một cách dễ dàng và thuận tiện.
+                    </span>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- product -->
+    <section class="section">
+      <div class="container">
+        <h3 class="title-border">Có thể bạn cũng thích</h3>
+        <div class="cart-product row">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="cart-product-btn">
+          <button class="button-italic">Xem thêm</button>
+        </div>
+    </section>
+    <footer class="section footer">
+      <div class="footer__border">
+        <div class="container">
+          <div class="row">
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__logo">
+                <img src="./images/logo.png" alt="logo">
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Thưởng thức hương vị thanh tao, cảm nhận bình yên trong tâm hồn</div>
+                <div class="footer__address">Địa chỉ: 96 Định Công, Hoàng Mai, Hà Nội</div>
+                <div class="footer__phone">Số điện thoại: 18006868</div>
+                <div class="footer__mail">Mail: tancuongtea@gmail.com</div>
+              </div>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Thông tin
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Liên hệ </a></li>
+                <li><a href="#"> Sản phẩm </a></li>
+                <li><a href="#"> Thanh toán </a></li>
+                <li><a href="#"> Sự kiện </a></li>
+                <li><a href="#"> Điều khoản </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Danh mục
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Trà xanh </a></li>
+                <li><a href="#"> Trà đen </a></li>
+                <li><a href="#"> Trà trái cây </a></li>
+                <li><a href="#"> Trà matcha </a></li>
+                <li><a href="#"> Trà thảo mộc </a></li>
+                <li><a href="#"> Trà an thần </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Kết nối
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Đăng ký để tận hưởng miễn phí vận chuyển cho đơn hàng đầu tiên của bạn
+                </div>
+                <form class="mail-form" methot="post" action="subcrible">
+                  <input type="text" class="input-mail" name="contact[email]" placeholder="Nhập email của bạn">
+                  <button type="submit" class="button-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
+                      <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 6 4.821 3.214L14.643 6" />
+                      <path stroke="#fff" stroke-linecap="round" stroke-width="2"
+                        d="M1 3.679v-.536C1 1.959 1.96 1 3.143 1H17.07c1.184 0 2.143.96 2.143 2.143v10.714c0 1.184-.96 2.143-2.143 2.143H3.143A2.143 2.143 0 0 1 1 13.857v-.536" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © Copyright 2024 \ Giấy phép đăng ký doanh nghiệp số: 0108989168 cấp ngày 15/01/2024 tại sở kế hoạch đầu tư
+            Hà Nội.
+          </div>
+          <div class="footer__payment">
+            <img src="./images/paymet5.png" alt="payment">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elementA = document.querySelector('.add-new');
+      var elementB = document.querySelector('.address-popup');
+      var elementC = document.querySelector('.address-popup__submit-back');
+      elementA.addEventListener('click', function () {
+        if (elementB.classList.contains('address-popup--opacity')) {
+          elementB.classList.remove('address-popup--opacity');
+        } else {
+          elementB.classList.add('address-popup--opacity');
+        }
+      });
+      elementC.addEventListener('click', function () {
+        if (elementB.classList.contains('address-popup--opacity')) {
+          elementB.classList.remove('address-popup--opacity');
+        } else {
+          elementB.classList.add('address-popup--opacity');
+        }
+      });
+    });
+
+    function toggleDropdown(element) {
+
+      var dropdown = document.getElementById("myDropdown");
+      dropdown.classList.toggle("clicked");
+
+      if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    const tabs = $$(".tab-item");
+    const panes = $$(".tab-pane");
+    const account = $$(".account-tab__item");
+    const orders = $$(".order-tab");
+
+    const tabActive = $(".tab-item.active");
+    const accActive = $(".account-tab__item.active");
+    const line = $(".tabs .line");
+
+    requestIdleCallback(function () {
+      line.style.left = tabActive.offsetLeft + "px";
+      line.style.width = tabActive.offsetWidth + "px";
+    });
+
+    account.forEach((tab, index) => {
+      const order = orders[index];
+
+      tab.onclick = function () {
+        $(".account-tab__item.active").classList.remove("active");
+        $(".order-tab.active").classList.remove("active");
+
+        this.classList.add("active");
+        order.classList.add("active");
+      };
+    });
+
+    tabs.forEach((tab, index) => {
+      const pane = panes[index];
+
+      tab.onclick = function () {
+        $(".tab-item.active").classList.remove("active");
+        $(".tab-pane.active").classList.remove("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active");
+        pane.classList.add("active");
+      };
+    });
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

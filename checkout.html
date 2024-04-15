@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="scss/fontstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Checkout</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header header--fixed">
+      <div class="container">
+        <div class=" row">
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header__logo col">
+            <img src="./images/logo.png" alt="logo">
+          </div>
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 6; --col-xl: 6" class=" col">
+            <ul class="header-menu">
+              <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
+              <li class="header-menu__item"><a href="product.html">Sản phẩm</a></li>
+              <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
+              <li class="header-menu__item"><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header-icon col">
+            <div class="header-icon__box">
+              <div class="header-icon__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="header-icon__avata">
+                <img src="./images/avata.jpg" alt="account">
+              </div>
+              <div class="header-icon__wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="header-icon__cart">
+                <a href="./cart.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                      d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
+                      fill="white" />
+                    <path
+                      d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
+                      fill="white" />
+                    <path
+                      d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
+                      fill="white" />
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- cart -->
+    <section style="padding-top: 100px;">
+      <div class="container">
+        <h4 class="title-border title-border--none">Thanh toán</h4>
+        <div class="cart-box-checkout">
+          <div class="cart-address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Thông tin nhận hàng</p>
+          </div>
+          <div class="cart-info">
+            <div class="cart-info__account">
+              <div class="cart-info__account-name">Nguyễn Đăng Trường</div>
+              <div class="cart-info__account-phone">
+                (+84) 965234567</div>
+            </div>
+            <div class="cart-info__address">Số nhà 167, đường Lý Thái Tổ, phường Hoàng Liệt, quận Hoàng Mai, Hà Nội
+            </div>
+            <div class="cart-info__edit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M15 5.99994L18 8.99994M13 19.9999H21M5 15.9999L4 19.9999L8 18.9999L19.586 7.41394C19.9609 7.03889 20.1716 6.53027 20.1716 5.99994C20.1716 5.46961 19.9609 4.961 19.586 4.58594L19.414 4.41394C19.0389 4.039 18.5303 3.82837 18 3.82837C17.4697 3.82837 16.9611 4.039 16.586 4.41394L5 15.9999Z"
+                  stroke="#111111" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Chỉnh sửa</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-box-checkout">
+          <div class="cart-title cart-title--end ">
+            <div class="cart-title__checkbox">
+              Sản phẩm
+            </div>
+            <div class="cart-title__list cart-title__list--end">
+              <div class="cart-title__content">Đơn giá</div>
+              <div class="cart-title__content">Số lượng</div>
+              <div class="cart-title__content">Thành tiền</div>
+            </div>
+          </div>
+          <div class="cart-mini--pd">
+            <div class="cart-mini__box">
+              <div class="cart-mini__img">
+                <img src="./images/product-cart.jpg" alt="product-cart">
+              </div>
+              <div class="cart-mini__content">
+                <div class="cart-mini__name-product">
+                  <h4 class="cart-mini__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                  <div class="cart-mini__description">
+                    <p>Phân loại hàng: 200 gram</p>
+                  </div>
+                </div>
+                <div class="cart-mini__list-item cart-mini__list-item--end">
+                  <div class="cart-mini__price">
+                    <div class="cart-mini__sale">$ 392.000</div>
+                  </div>
+                  <div class="cart-mini__quantity">
+                    2
+                  </div>
+                  <div class="cart-mini__money">$ 784.000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-mini--pd">
+            <div class="cart-mini__box">
+              <div class="cart-mini__img">
+                <img src="./images/product-cart.jpg" alt="product-cart">
+              </div>
+              <div class="cart-mini__content">
+                <div class="cart-mini__name-product">
+                  <h4 class="cart-mini__title">Trà đen hương đào tươi - Fresh Peach</h4>
+                  <div class="cart-mini__description">
+                    <p>Phân loại hàng: 200 gram</p>
+                  </div>
+                </div>
+                <div class="cart-mini__list-item cart-mini__list-item--end">
+                  <div class="cart-mini__price">
+                    <div class="cart-mini__sale">$ 392.000</div>
+                  </div>
+                  <div class="cart-mini__quantity">
+                    2
+                  </div>
+                  <div class="cart-mini__money">$ 784.000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-checkout cart-checkout--pt10">
+          <div class="cart-checkout__note">
+            <span>Ghi chú:</span>
+            <textarea name="text" class="cart-checkout__textareare" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="cart-checkout__money">
+            <div class="cart-checkout__text">Tổng thanh toán ( 4 sản phẩm)</div>
+            <div class="cart-checkout__sum">$ 2.234.000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tab -->
+    <section class="section-tab" style="padding: 60px 0;">
+      <div class="container">
+        <!-- Tab items -->
+        <div class="checkout-tab">
+          <div class="tabs tabs--cart">
+            <span class="checkout-tab__payment"> Phương thức thanh toán</span>
+            <div class="tab-item tab-item--border active">
+              Thẻ nội địa NAPAS
+            </div>
+            <div class="tab-item tab-item--border">
+              Thẻ tín dụng/Ghi nợ
+            </div>
+            <div class="tab-item tab-item--border">
+              Thanh toán khi nhận hàng
+            </div>
+            <div class="line"></div>
+          </div>
+          <!-- Tab content -->
+          <div class="tab-content">
+            <div class="tab-pane active">
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" checked>
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/vcb.png" alt="nguon goc">
+                  </div>
+                  <p>Vietcombank - Ngân hàng ngoại thương</p>
+                </div>
+              </div>
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/agrb.png" alt="nguon goc">
+                  </div>
+                  <p>Agribank - Ngân hàng nông nghiệp</p>
+                </div>
+              </div>
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/viettin.png" alt="nguon goc">
+                  </div>
+                  <p>Vietinbank - Ngân hàng công thương</p>
+                </div>
+              </div>
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/bidv.png" alt="nguon goc">
+                  </div>
+                  <p>BIDV - Ngân hàng đầu tư và phát triển Việt Nam</p>
+                </div>
+              </div>
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/sacom.png" alt="nguon goc">
+                  </div>
+                  <p>Sacombank - Ngân hàng TMCP Sài Gòn Thương Tín</p>
+                </div>
+              </div>
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/tech.png" alt="nguon goc">
+                  </div>
+                  <p>Techcombank - Ngân hàng kĩ thương Việt Nam</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane">
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/vcb.png" alt="nguon goc">
+                  </div>
+                  <p>Vietcombank - Ngân hàng ngoại thương</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane ">
+              <div class="tab-pane__box">
+                <div class="tab-pane__content">
+                  <label class="product-checkbox d-flex">
+                    <div class="product-checkbox__content d-flex ">
+                      <input type="checkbox" class="product-checkbox__input" >
+                    </div>
+                  </label>
+                </div>
+                <div class="tab-pane__img">
+                  <div>
+                    <img src="./images/vcb.png" alt="nguon goc">
+                  </div>
+                  <p>Vietcombank - Ngân hàng ngoại thương</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-button">
+            <div class="checkout-button__bill">
+              <div class="checkout-button__label">
+                <span>Phí vận chuyển :</span>
+                <span>Tổng tiền hàng :</span>
+              </div>
+              <div class="checkout-button__money">
+                <span>$ 40.000</span>
+                <span>$ 2.274.000</span>
+              </div>
+            </div>
+            <div class="checkout-button__buy-group">
+              <div class="checkout-button__policy">
+                Nhấn đặt hàng đồng nghĩa với việc bạn đồng ý với <a href="#" class="checkout-button__link-policy">Chính sách và Điều khoản</a> của chúng tôi
+              </div>
+              <button class="button">Đặt hàng</button>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <footer class="section footer">
+      <div class="footer__border">
+        <div class="container">
+          <div class="row">
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__logo">
+                <img src="./images/logo.png" alt="logo">
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Thưởng thức hương vị thanh tao, cảm nhận bình yên trong tâm hồn</div>
+                <div class="footer__address">Địa chỉ: 96 Định Công, Hoàng Mai, Hà Nội</div>
+                <div class="footer__phone">Số điện thoại: 18006868</div>
+                <div class="footer__mail">Mail: tancuongtea@gmail.com</div>
+              </div>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Thông tin
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Liên hệ </a></li>
+                <li><a href="#"> Sản phẩm </a></li>
+                <li><a href="#"> Thanh toán </a></li>
+                <li><a href="#"> Sự kiện </a></li>
+                <li><a href="#"> Điều khoản </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Danh mục
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Trà xanh </a></li>
+                <li><a href="#"> Trà đen </a></li>
+                <li><a href="#"> Trà trái cây </a></li>
+                <li><a href="#"> Trà matcha </a></li>
+                <li><a href="#"> Trà thảo mộc </a></li>
+                <li><a href="#"> Trà an thần </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Kết nối
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Đăng ký để tận hưởng miễn phí vận chuyển cho đơn hàng đầu tiên của bạn
+                </div>
+                <form class="mail-form" methot="post" action="subcrible">
+                  <input type="text" class="input-mail" name="contact[email]" placeholder="Nhập email của bạn">
+                  <button type="submit" class="button-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
+                      <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 6 4.821 3.214L14.643 6" />
+                      <path stroke="#fff" stroke-linecap="round" stroke-width="2"
+                        d="M1 3.679v-.536C1 1.959 1.96 1 3.143 1H17.07c1.184 0 2.143.96 2.143 2.143v10.714c0 1.184-.96 2.143-2.143 2.143H3.143A2.143 2.143 0 0 1 1 13.857v-.536" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © Copyright 2024 \ Giấy phép đăng ký doanh nghiệp số: 0108989168 cấp ngày 15/01/2024 tại sở kế hoạch đầu tư
+            Hà Nội.
+          </div>
+          <div class="footer__payment">
+            <img src="./images/paymet5.png" alt="payment">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    const tabs = $$(".tab-item");
+    const panes = $$(".tab-pane");
+
+    const tabActive = $(".tab-item.active");
+    const line = $(".tabs .line");
+
+    requestIdleCallback(function () {
+      line.style.left = tabActive.offsetLeft + "px";
+      line.style.width = tabActive.offsetWidth + "px";
+    });
+
+    tabs.forEach((tab, index) => {
+      const pane = panes[index];
+
+      tab.onclick = function () {
+        $(".tab-item.active").classList.remove("active");
+        $(".tab-pane.active").classList.remove("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active");
+        pane.classList.add("active");
+      };
+    });
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

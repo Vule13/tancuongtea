@@ -41,6 +41,10 @@
   color: var(--color-accent);
 }
 
+.account-tab__item.active {
+  opacity: 1;
+}
+
 .tab-content {
   padding: 28px 0;
 }
@@ -51,7 +55,18 @@
   transform: 0.3s ease all;
 }
 
+.order-tab {
+  transition: 0.3s ease all;
+  display: none;
+}
+
 .tab-pane.active {
+  display: block;
+  animation: transitionY 0.3s;
+  animation-duration: 0.5s;
+}
+
+.order-tab.active {
   display: block;
   animation: transitionY 0.3s;
   animation-duration: 0.5s;

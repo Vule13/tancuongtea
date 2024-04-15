@@ -1,0 +1,176 @@
+.sign-in__form,
+.login__form,
+.forgot-password__form {
+  max-width: 533px;
+  border-radius: 10px;
+  border: 0.5px solid #ccc;
+  background: var(--button-hover, #fff);
+  padding: 20px 60px;
+  width: 100%;
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: SVN-Gilroy;
+  }
+
+  .sign-in__title,
+  .login__title {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .sign-in__label,
+  .login__label,
+  .forgot-password__label {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    div {
+      height: 1px;
+      width: 100%;
+      background-color: #ccc;
+      flex: 1;
+    }
+    span {
+      padding: 0 16px;
+    }
+  }
+  .sign-in__social,
+  .login__social,
+  .forgot-password__social {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+
+  .sign-in__policy {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    a {
+      text-underline-offset: 4px;
+      text-decoration: underline;
+    }
+  }
+  .sign-in__login {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    a {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+}
+
+.sign-in__form,
+.login__form {
+  input[type="submit"] {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    font-family: SVN-Gilroy;
+    padding: 14px 20px;
+    margin: 20px 0;
+    transition: 0.3s ease-in-out all;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: var(--color-accent);
+  }
+}
+
+.forgot-password__button {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 40px;
+  .forgot-password__cancel {
+    width: 50%;
+    border: 1px solid var(--color-primary);
+    font-family: SVN-Gilroy;
+    padding: 14px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+  }
+
+  .forgot-password__next {
+    width: 50%;
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid #fff;
+    font-family: SVN-Gilroy;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--color-accent);
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.sign-in,
+.login,
+.forgot-password {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in__bg,
+.login__bg,
+.forgot-password__bg {
+  padding-left: 100px;
+}
+
+.login__forgot-password {
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+.login__sign-in, .forgot-password__sign-in {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 20px;
+  a {
+    text-underline-offset: 4px;
+    text-decoration: underline;
+  }
+}
+
+.forgot-password__subtitle {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.forgot-password__title {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+}

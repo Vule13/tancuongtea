@@ -32,7 +32,17 @@
 .footer__item-link {
   li {
     padding-top: 20px;
+    a {
+      transition: 0.3s all ease;
+    }
+    &:hover {
+      a {
+        padding-left: 10px;
+        color: var(--color-accent);
+      }
+    }
   }
+  
 }
 
 .footer__border {
