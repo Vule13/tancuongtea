@@ -17,6 +17,9 @@
   margin-bottom: 10px;
   font-size: 32px;
   font-weight: 600;
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
 }
 
 .review-comment__star {
@@ -34,19 +37,24 @@
 .review-comment__description {
   padding-top: 10px;
   padding-bottom: 5px;
+  @media(max-width: 576px) {
+    font-size: 14px;
+  }
 }
 
 .review-comment__box-img {
   padding-top: 5px;
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .review-comment__avata {
   border-radius: 50%;
   border: 1px dashed;
-  width: 70px;
+  max-width: 70px;
   height: 70px;
+  width: 100%;
   padding: 4px;
 }
 

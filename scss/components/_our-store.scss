@@ -22,10 +22,10 @@
 
 .our-store__subtitle {
   letter-spacing: 4px;
-  text-transform: uppercase;
   color: var(--color-accent);
   font-weight: 600;
   padding-bottom: 8px;
+  font-size: 18px;
   @media (max-width: 576px) {
     font-size: 14px;
     letter-spacing: 2px;

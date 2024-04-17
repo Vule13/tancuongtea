@@ -4,22 +4,33 @@
 
 .section-title__subtitle {
   font-size: 24px;
+  @media(max-width: 576px) {
+    font-size: 14px;
+  }
 }
 
 .section-title__title {
   font-size: 45px;
   padding: 20px 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 1;
   position: relative;
   &::after {
     content: "";
     width: 100px;
-    height: 2px;
+    height: 1px;
     background-color: var(--color-primary);
     bottom: 0;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
+  }
+  @media(max-width: 768px) {
+    font-size: 35px;
+  }
+  @media(max-width: 576px) {
+    font-size: 26px;
+    padding: 15px 0;
+    margin-bottom: 15px;
   }
 }

@@ -25,643 +25,702 @@
 </head>
 
 <body>
-  <header class="header header--fixed">
-    <div class="container">
-      <div class=" row">
-        <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header__logo col">
-          <img src="./images/logo.png" alt="logo">
-        </div>
-        <div style="--col-xs: 4;--col-md: 4; --col-lg: 6; --col-xl: 6" class=" col">
-          <ul class="header-menu">
-            <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
-            <li class="header-menu__item"><a href="product.html">Sản phẩm</a></li>
-            <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
-            <li class="header-menu__item"><a href="#">Liên hệ</a></li>
-          </ul>
-        </div>
-        <div style="--col-xs: 4;--col-md: 4; --col-lg: 3; --col-xl: 3" class="header-icon col">
-          <div class="header-icon__box">
-            <div class="header-icon__search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+  <!-- header -->
+  <div class="wrapper">
+    <header class="header ">
+      <div class="header-box header--fixed">
+        <div class="container">
+          <div class=" row">
+            <div style="--col-xs: 4;--col-md: 4; --col-lg: 2; --col-xl: 3" class="header__logo col">
+              <img src="./images/logo-xanh.png" alt="logo-xanh">
             </div>
-            <div class="header-icon__avata">
-              <img src="./images/avata.jpg" alt="account">
-            </div>
-            <div class="header-icon__wishlist">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="header-icon__cart">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                <path d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z" fill="white"/>
-                <path d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z" fill="white"/>
-                <path d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z" fill="white"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="product-detail">
-    <div class="container">
-      <div class="row product-detail__box">
-        <div style="--col-xs: 12;--col-md: 7; --col-lg: 7; --col-xl: 7" class=" col">
-          <div class="product-detail__left">
-            <img data-image="black" src="images/product4.jpg" alt="">
-            <img data-image="blue" src="images/product3.jpg" alt="">
-            <img data-image="red" class="active" src="images/product2.jpg" alt="">
-          </div>
-        </div>
-        <div style="--col-xs: 12;--col-md: 5; --col-lg: 5; --col-xl: 5" class="col">
-          <div class="product-detail__right">
-            <span class="product-detail__vender">Trà xanh</span>
-            <div class="product-detail__title-product">
-              <h2 class="product-detail__title">Trà xanh Tân Cương</h2>
-              <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="star-comment-sale">
-              <div class="star-comment-sale__star">
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="star-comment-sale__comment">10 đánh giá</div>
-              <div class="star-comment-sale__sale">20 đã bán</div>
-            </div>
-            <div class="product-detail__price">
-              <div class="product-price">
-                <span class="product-price__sale product-price__sale--detail">150.000đ</span>
-                <span class="product-price__del">150.000đ</span>
-              </div>
-              <div class="product-detail__bage">
-                Save 20%
+            <div style="--col-xs: 4;--col-md: 4; --col-lg: 8; --col-xl: 6" class="menu-horizontal col">
+              <ul class="header-menu">
+                <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
+                <li class="header-menu__item header-menu__item--accent"><a href="product.html">Sản phẩm</a></li>
+                <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
+                <li class="header-menu__item"><a href="#">Liên hệ</a></li>
+              </ul>
+              <div class="hamburger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="14" viewBox="0 0 23 14" fill="none">
+                  <path d="M1 1H21.6596" stroke="black" stroke-width="1.5" stroke-linecap="square" />
+                  <path d="M1 7H21.6596" stroke="black" stroke-width="1.5" stroke-linecap="square" />
+                  <path d="M1 13H21.6596" stroke="black" stroke-width="1.5" stroke-linecap="square" />
+                </svg>
               </div>
             </div>
-            <div class="product-detail__description">
-              <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy
-                hóa, có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ
-                miễn dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá
-                trà
-                chưa bị oxy hóa</p>
-            </div>
-            <div class="product-detail__configuration">
-              <div class="product-detail__size-box">
-                <span>Khối lượng</span>
-                <div class="product-detail__size-choose">
-                  <div class="product-detail__kg">
-                    <input data-image="red" type="radio" id="red" name="color" value="red" checked>
-                    <label for="red"><span></span></label>
-                    <span>0.5kg</span>
-                  </div>
-                  <div class="product-detail__kg">
-                    <input data-image="blue" type="radio" id="blue" name="color" value="blue">
-                    <label for="blue"><span></span></label>
-                    <span>1kg</span>
-                  </div>
-                  <div class="product-detail__kg">
-                    <input data-image="black" type="radio" id="black" name="color" value="black">
-                    <label for="black"><span></span></label>
-                    <span>1.5kg</span>
-                  </div>
+            <div style="--col-xs: 4;--col-md: 4; --col-lg: 2; --col-xl: 3" class="header-icon col">
+              <div class="header-icon__box">
+                <div class="header-icon__search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M8.85368 15.7538C5.13348 15.7538 2.10739 12.8496 2.10739 9.27965C2.10739 5.7074 5.13348 2.80168 8.85368 2.80168C12.5739 2.80168 15.6007 5.7074 15.6007 9.27965C15.6007 12.8496 12.5739 15.7538 8.85368 15.7538ZM20.4322 19.1001L15.622 14.4812C16.8481 13.0099 17.5226 11.1667 17.5226 9.27965C17.5226 4.69021 13.634 0.95623 8.85368 0.95623C4.07415 0.95623 0.185547 4.69021 0.185547 9.27965C0.185547 13.8699 4.07415 17.6038 8.85368 17.6038C10.8196 17.6038 12.7376 16.9577 14.266 15.7826L19.077 20.3977C19.258 20.5715 19.4988 20.6675 19.7546 20.6675C20.0096 20.6675 20.2504 20.5715 20.4314 20.3977C20.6132 20.2254 20.7132 19.9949 20.7132 19.7486C20.7132 19.5022 20.6132 19.2725 20.4322 19.1001Z"
+                      fill="#000" />
+                  </svg>
+                </div>
+                <a href="order.html" class="header-icon__avata">
+                  <img src="./images/avata.jpg" alt="account">
+                </a>
+                <div class="header-icon__wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <g clip-path="url(#clip0_1_7148)">
+                      <path
+                        d="M8.09038 4.60541C9.35354 4.60541 10.5415 5.09739 11.4351 5.99017L12.5135 7.06935C12.6791 7.23414 12.8983 7.32534 13.1302 7.32534C13.3622 7.32534 13.5814 7.23414 13.7462 7.06935L14.8158 5.99977C15.7094 5.10699 16.895 4.61501 18.1557 4.61501C19.411 4.61501 20.5957 5.10539 21.49 5.99497C22.3796 6.88535 22.87 8.07092 22.87 9.33489C22.8748 10.5933 22.3845 11.7788 21.49 12.674L13.1182 21.0122L4.76567 12.6596C3.87289 11.766 3.38087 10.5805 3.38087 9.31969C3.38087 8.05492 3.87045 6.87095 4.76083 5.98537C5.65128 5.09579 6.83359 4.60541 8.09038 4.60541ZM22.7276 4.7622H22.7268C21.5076 3.54303 19.8861 2.87185 18.1597 2.87185C16.4342 2.87185 14.8102 3.54463 13.5878 4.767L13.1326 5.22299L12.6671 4.7574C11.4423 3.53263 9.81673 2.85745 8.09038 2.85745C6.36798 2.85745 4.74724 3.52863 3.52805 4.7478C2.30408 5.97177 1.63294 7.59573 1.63772 9.31969C1.63772 11.0396 2.31293 12.662 3.53765 13.8876L12.5039 22.8537C12.6679 23.017 12.8911 23.1113 13.1182 23.1113C13.3478 23.1113 13.5718 23.0193 13.7318 22.8586L22.718 13.906C23.9396 12.6844 24.6124 11.0604 24.6124 9.33489C24.618 7.60693 23.9484 5.98297 22.7276 4.7622Z"
+                        fill="#000" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_7148">
+                        <rect width="24" height="24" fill="#000" transform="translate(0.866211)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="header-icon__cart">
+                  <a href="cart.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                      <path
+                        d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
+                        fill="#000" />
+                      <path
+                        d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
+                        fill="#000" />
+                      <path
+                        d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
+                        fill="#000" />
+                    </svg>
+                  </a>
+                  
                 </div>
               </div>
-
-            </div>
-            <div class="product-detail__quantity">
-              <div class="quantity">
-                <button class="quantity__minus"> - </button>
-                <input class="quantity__number" type="number" value="01" min="01" name="quantity">
-                <button class="quantity__plus"> + </button>
-              </div>
-              <div class="product-detail__stock">100 sản phẩm có sẵn</div>
-            </div>
-            <div class="product-detail__button-cart">
-              <button class="button-border product-detail__add-cart">Thêm vào giỏ hàng <i
-                  class="fa-solid fa-cart-shopping"></i></button>
-              <button class="button product-detail__buy-button">Mua ngay</button>
-            </div>
-            <label class="sidebar-checkbox d-flex">
-              <div class="sidebar-checkbox__content d-flex ">
-                <input type="checkbox" class="sidebar-checkbox__input">
-                <p class="sidebar-checkbox__item">Đồng ý với điều khoản</p>
-              </div>
-            </label>
-            <div class="product-detail__shipping">
-              <i class="fa-solid fa-truck-fast"></i>
-              <p>Dự kiến ​​giao hàng: 26/02 - 01/03</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <div style="--col-xs: 12;--col-md: 7; --col-lg: 7; --col-xl: 7" class="col">
-          <div class="product-detail__component">
-            <div class="product-detail__title-component">Thành phần</div>
-            <div class="product-detail__desc-component">Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà.
-              Trà
-              là nguồn cung cấp chất chống oxy hóa, có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà
-              cũng
-              có thể giúp tăng cường hệ miễn dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư.
-              được
-              làm từ những lá trà chưa bị oxy hóa
-            </div>
-          </div>
-          <div class="product-detail__component-img">
-            <img src="./images/detail01.jpg" alt="anh doi tra">
-          </div>
-        </div>
-        <div style="--col-xs: 12;--col-md: 5; --col-lg: 5; --col-xl: 5" class="col product-detail__box-policy">
-          <div class="product-detail__policy">
-            <img src="./images/policy-dark.png" alt="policy">
-            <p>Đảm bảo thanh toán an toàn và bảo mật</p>
-          </div>
-          <div class="product-detail__component-img">
-            <img src="./images/detail02.jpg" alt="anh doi tra">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section-tab">
-    <div class="container">
-      <!-- Tab items -->
-      <div class="tabs">
-        <div class="tab-item active">
-          Nguồn gốc
-        </div>
-        <div class="tab-item">
-          Hướng dẫn sử dụng
-        </div>
-        <div class="tab-item">
-          Hương vị
-        </div>
-        <div class="line"></div>
-      </div>
-      <!-- Tab content -->
-      <div class="tab-content">
-        <div class="tab-pane active">
-          <div class="tab-pane__box">
-            <div class="tab-pane__content">
-              <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy
-                hóa, có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ
-                miễn dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá
-                trà chưa bị oxy hóa</p>
-              <br>
-              <p>
-                Tân Cương không chỉ là nơi để bán trà, mà còn là một biểu tượng cho sự kết hợp giữa truyền thống và
-                hiện đại. Ý nghĩa của nó nằm ở việc kế thừa và phát triển di sản trà truyền thống của vùng, đồng thời
-                đem lại trải nghiệm mới mẻ và độc đáo cho khách hàng. Mỗi lần tận hưởng một tách trà là như một cuộc
-                phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. Hương
-                thơm của lá trà hòa quyện với không khí, mang lại cảm giác nhẹ nhàng và yên bình, như một lá thư tình
-                yêu từ thiên nhiên.
-              </p>
-            </div>
-            <div class="tab-pane__img">
-              <img src="./images/tab-img.jpg" alt="nguon goc">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane">
-          <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy hóa,
-            có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ miễn
-            dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá trà chưa
-            bị oxy hóa</p>
-        </div>
-        <div class="tab-pane">
-          <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy hóa,
-            có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ miễn
-            dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá trà chưa
-            bị oxy hóa</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="review-comment">
-    <div class="container">
-      <h3 class="review-comment__title">Đánh giá và thảo luận</h3>
-      <div class="review-comment__full-box">
-        <div class="review-comment__box">
-          <div class="review-comment__avata">
-            <img src="./images/avata1.png" alt="avata-customer">
-          </div>
-          <div class="review-comment__content">
-            <div class="review-comment__name">Nguyễn Thảo Phương</div>
-            <div class="review-comment__star">
-              <div>
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
-            </div>
-            <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
-              từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
-            <div class="review-comment__box-img">
-              <img src="./images/review1.jpg" alt="img review">
-              <img src="./images/review2.jpg" alt="img review">
-              <img src="./images/review3.jpg" alt="img review">
-              <img src="./images/review4.jpg" alt="img review">
-            </div>
-          </div>
-        </div>
-        <div class="review-comment__box">
-          <div class="review-comment__avata">
-            <img src="./images/avata1.png" alt="avata-customer">
-          </div>
-          <div class="review-comment__content">
-            <div class="review-comment__name">Nguyễn Thảo Phương</div>
-            <div class="review-comment__star">
-              <div>
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
-            </div>
-            <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
-              từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
-  
-          </div>
-        </div>
-        <div class="review-comment__box">
-          <div class="review-comment__avata">
-            <img src="./images/avata1.png" alt="avata-customer">
-          </div>
-          <div class="review-comment__content">
-            <div class="review-comment__name">Nguyễn Thảo Phương</div>
-            <div class="review-comment__star">
-              <div>
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
-            </div>
-            <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
-              từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
-            <div class="review-comment__box-img">
-              <img src="./images/review1.jpg" alt="img review">
-              <img src="./images/review2.jpg" alt="img review">
-            </div>
-          </div>
-        </div>
-        <div class="review-comment__box">
-          <div class="review-comment__avata">
-            <img src="./images/avata1.png" alt="avata-customer">
-          </div>
-          <div class="review-comment__content">
-            <div class="review-comment__name">Nguyễn Thảo Phương</div>
-            <div class="review-comment__star">
-              <div>
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
-            </div>
-            <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
-              từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
-            <div class="review-comment__box-img">
-              <img src="./images/review1.jpg" alt="img review">
-              <img src="./images/review2.jpg" alt="img review">
-              <img src="./images/review3.jpg" alt="img review">
-              <img src="./images/review4.jpg" alt="img review">
-            </div>
-          </div>
-        </div>
-        <div class="review-comment__box">
-          <div class="review-comment__avata">
-            <img src="./images/avata1.png" alt="avata-customer">
-          </div>
-          <div class="review-comment__content">
-            <div class="review-comment__name">Nguyễn Thảo Phương</div>
-            <div class="review-comment__star">
-              <div>
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
-            </div>
-            <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
-              từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
-  
-          </div>
-        </div>
-        <div class="review-comment__box">
-          <div class="review-comment__avata">
-            <img src="./images/avata1.png" alt="avata-customer">
-          </div>
-          <div class="review-comment__content">
-            <div class="review-comment__name">Nguyễn Thảo Phương</div>
-            <div class="review-comment__star">
-              <div>
-                <img src="./images/rate.svg" alt="star">
-              </div>
-              <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
-            </div>
-            <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
-              từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
-            <div class="review-comment__box-img">
-              <img src="./images/review1.jpg" alt="img review">
-              <img src="./images/review2.jpg" alt="img review">
             </div>
           </div>
         </div>
       </div>
-      <div class="pagination pagination--20  d-flex">
-        <div class="pagination__item d-flex">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M8.75 3.5L5.25 7L8.75 10.5" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="pagination__item d-flex">1</div>
-        <div class="pagination__item d-flex">2</div>
-        <div class="pagination__item d-flex">3</div>
-        <div class="pagination__item d-flex">4</div>
-        <div class="pagination__item d-flex">...</div>
-        <div class="pagination__item d-flex">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M5.25 10.5L8.75 7L5.25 3.5" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-     
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row shop-box">
-        <a href="product-detail.html" class="col product-item" style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
-          <div class="product-item__box">
-            <div class="product-item__img-content">
-              <div class="product-item__img">
-                <img src="images/product.jpg" alt="product">
-              </div>
-              <div class="product-item__sale">30%</div>
-            </div>
-            <div class="product-item__content">
-              <div class="product-item__title">Trà thảo mộc</div>
-              <div class="product-price">
-                <span class="product-price__sale">324.000đ</span>
-                <span class="product-price__del">350.000đ</span>
-              </div>
-              <div class="product-item__star">
-                <img src="./images/rate.svg" alt="star">
-              </div>
-            </div>
-          </div>
-          <div class="product-item__icon">
-            <button class="product-item__icon-wishlist">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                  <g transform="scale(0.1)" id="g12">
-                    <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                      d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                      fill="rgb(var(--color-foreground))"></path>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <button class="product-item__icon-cart">
-              <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                <path
-                  d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                  fill="currentColor"></path>
-                <g>
-                  <path
-                    d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                    fill="currentColor"></path>
-                </g>
-                <path
-                  d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                  fill="currentColor"></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-        <a href="product-detail.html" class="col product-item" style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
-          <div class="product-item__box">
-            <div class="product-item__img-content">
-              <div class="product-item__img">
-                <img src="images/product.jpg" alt="product">
-              </div>
-              <div class="product-item__sale">30%</div>
-            </div>
-            <div class="product-item__content">
-              <div class="product-item__title">Trà thảo mộc</div>
-              <div class="product-price">
-                <span class="product-price__sale">324.000đ</span>
-                <span class="product-price__del">350.000đ</span>
-              </div>
-              <div class="product-item__star">
-                <img src="./images/rate.svg" alt="star">
-              </div>
-            </div>
-          </div>
-          <div class="product-item__icon">
-            <button class="product-item__icon-wishlist">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                  <g transform="scale(0.1)" id="g12">
-                    <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                      d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                      fill="rgb(var(--color-foreground))"></path>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <button class="product-item__icon-cart">
-              <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                <path
-                  d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                  fill="currentColor"></path>
-                <g>
-                  <path
-                    d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                    fill="currentColor"></path>
-                </g>
-                <path
-                  d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                  fill="currentColor"></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-        <a href="product-detail.html" class="col product-item" style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
-          <div class="product-item__box">
-            <div class="product-item__img-content">
-              <div class="product-item__img">
-                <img src="images/product.jpg" alt="product">
-              </div>
-              <div class="product-item__sale">30%</div>
-            </div>
-            <div class="product-item__content">
-              <div class="product-item__title">Trà thảo mộc</div>
-              <div class="product-price">
-                <span class="product-price__sale">324.000đ</span>
-                <span class="product-price__del">350.000đ</span>
-              </div>
-              <div class="product-item__star">
-                <img src="./images/rate.svg" alt="star">
-              </div>
-            </div>
-          </div>
-          <div class="product-item__icon">
-            <button class="product-item__icon-wishlist">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                  <g transform="scale(0.1)" id="g12">
-                    <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                      d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                      fill="rgb(var(--color-foreground))"></path>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <button class="product-item__icon-cart">
-              <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                <path
-                  d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                  fill="currentColor"></path>
-                <g>
-                  <path
-                    d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                    fill="currentColor"></path>
-                </g>
-                <path
-                  d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                  fill="currentColor"></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-        <a href="product-detail.html" class="col product-item" style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
-          <div class="product-item__box">
-            <div class="product-item__img-content">
-              <div class="product-item__img">
-                <img src="images/product.jpg" alt="product">
-              </div>
-              <div class="product-item__sale">30%</div>
-            </div>
-            <div class="product-item__content">
-              <div class="product-item__title">Trà thảo mộc</div>
-              <div class="product-price">
-                <span class="product-price__sale">324.000đ</span>
-                <span class="product-price__del">350.000đ</span>
-              </div>
-              <div class="product-item__star">
-                <img src="./images/rate.svg" alt="star">
-              </div>
-            </div>
-          </div>
-          <div class="product-item__icon">
-            <button class="product-item__icon-wishlist">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                  <g transform="scale(0.1)" id="g12">
-                    <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                      d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                      fill="rgb(var(--color-foreground))"></path>
-                  </g>
-                </g>
-              </svg>
-            </button>
-            <button class="product-item__icon-cart">
-              <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                <path
-                  d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                  fill="currentColor"></path>
-                <g>
-                  <path
-                    d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                    fill="currentColor"></path>
-                </g>
-                <path
-                  d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                  fill="currentColor"></path>
-              </svg>
-            </button>
-          </div>
-        </a>
-      </div>
-    </div>
-   
-  </section>
-  <footer class="section footer">
-    <div class="footer__border">
+    </header>
+    <section class="product-detail mt100">
       <div class="container">
-        <div class="row">
-          <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
-            <div class="footer__logo">
-              <img src="./images/logo.png" alt="logo">
+        <div class="row product-detail__box">
+          <div style="--col-xs: 12;--col-md: 12; --col-lg: 6; --col-xl: 6" class=" product-detail__left-img col">
+            <div class="product-detail__thumbnail">
+              <img src="./images/product-detail1.png" alt="">
+              <img src="./images/product-detail2.jpg" alt="">
+              <img src="./images/product-detail3.jpg" alt="">
+              <img src="./images/product-detail4.jpg" alt="">
+              <img src="./images/product-detail5.jpg" alt="">
             </div>
-            <div class="footer__box-content">
-              <div class="footer__description">Thưởng thức hương vị thanh tao, cảm nhận bình yên trong tâm hồn</div>
-              <div class="footer__address">Địa chỉ: 96 Định Công, Hoàng Mai, Hà Nội</div>
-              <div class="footer__phone">Số điện thoại: 18006868</div>
-              <div class="footer__mail">Mail: tancuongtea@gmail.com</div>
+            <div class="product-detail__left">
+              <img data-image="black" src="images/product4.jpg" alt="">
+              <!-- <img data-image="blue" src="images/product3.jpg" alt="">
+              <img data-image="red" class="active" src="images/product2.jpg" alt=""> -->
             </div>
           </div>
-          <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
-            <div class="footer__link-list">
-              Thông tin
-            </div>
-            <ul class="footer__item-link">
-              <li><a href="#"> Liên hệ </a></li>
-              <li><a href="#"> Sản phẩm </a></li>
-              <li><a href="#"> Thanh toán </a></li>
-              <li><a href="#"> Sự kiện </a></li>
-              <li><a href="#"> Điều khoản </a></li>
-            </ul>
-          </div>
-          <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
-            <div class="footer__link-list">
-              Danh mục
-            </div>
-            <ul class="footer__item-link">
-              <li><a href="#"> Trà xanh </a></li>
-              <li><a href="#"> Trà đen </a></li>
-              <li><a href="#"> Trà trái cây </a></li>
-              <li><a href="#"> Trà matcha </a></li>
-              <li><a href="#"> Trà thảo mộc </a></li>
-              <li><a href="#"> Trà an thần </a></li>
-            </ul>
-          </div>
-          <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
-            <div class="footer__link-list">
-              Kết nối
-            </div>
-            <div class="footer__box-content">
-              <div class="footer__description">Đăng ký để tận hưởng miễn phí vận chuyển cho đơn hàng đầu tiên của bạn
+          <div style="--col-xs: 12;--col-md: 12; --col-lg: 6; --col-xl: 6" class="col">
+            <div class="product-detail__right">
+              <span class="product-detail__vender">Trà xanh</span>
+              <div class="product-detail__title-product">
+                <h2 class="product-detail__title">Trà xanh Tân Cương</h2>
+                <i class="fa-regular fa-heart"></i>
               </div>
-              <form class="mail-form" methot="post" action="subcrible">
-                <input type="text" class="input-mail" name="contact[email]" placeholder="Nhập email của bạn">
-                <button type="submit" class="button-accent">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
-                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 6 4.821 3.214L14.643 6" />
-                    <path stroke="#fff" stroke-linecap="round" stroke-width="2"
-                      d="M1 3.679v-.536C1 1.959 1.96 1 3.143 1H17.07c1.184 0 2.143.96 2.143 2.143v10.714c0 1.184-.96 2.143-2.143 2.143H3.143A2.143 2.143 0 0 1 1 13.857v-.536" />
-                  </svg>
-                </button>
-              </form>
+              <div class="star-comment-sale">
+                <div class="star-comment-sale__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="star-comment-sale__comment">10 đánh giá</div>
+                <div class="star-comment-sale__sale">20 đã bán</div>
+              </div>
+              <div class="product-detail__price">
+                <div class="product-price">
+                  <span class="product-price__sale product-price__sale--detail">150.000đ</span>
+                  <span class="product-price__del">150.000đ</span>
+                </div>
+                <div class="product-detail__bage">
+                  Save 20%
+                </div>
+              </div>
+              <div class="product-detail__description">
+                <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy
+                  hóa, có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ
+                  miễn dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá
+                  trà
+                  chưa bị oxy hóa</p>
+              </div>
+              <div class="product-detail__configuration">
+                <div class="product-detail__size-box">
+                  <span>Khối lượng</span>
+                  <div class="product-detail__size-choose">
+                    <div class="product-detail__kg">
+                      <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                      <label for="red"><span></span></label>
+                      <span>0.5kg</span>
+                    </div>
+                    <div class="product-detail__kg">
+                      <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                      <label for="blue"><span></span></label>
+                      <span>1kg</span>
+                    </div>
+                    <div class="product-detail__kg">
+                      <input data-image="black" type="radio" id="black" name="color" value="black">
+                      <label for="black"><span></span></label>
+                      <span>1.5kg</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="product-detail__quantity">
+                <div class="quantity">
+                  <button class="quantity__minus"> - </button>
+                  <input class="quantity__number" type="number" value="01" min="01" name="quantity">
+                  <button class="quantity__plus"> + </button>
+                </div>
+                <div class="product-detail__stock">100 sản phẩm có sẵn</div>
+              </div>
+              <div class="product-detail__button-cart">
+                <button class="button-border product-detail__add-cart">Thêm vào giỏ hàng <i
+                    class="fa-solid fa-cart-shopping"></i></button>
+                <button class="button product-detail__buy-button">Mua ngay</button>
+              </div>
+              <label class="sidebar-checkbox d-flex">
+                <div class="sidebar-checkbox__content d-flex ">
+                  <input type="checkbox" class="sidebar-checkbox__input">
+                  <p class="sidebar-checkbox__item">Đồng ý với điều khoản</p>
+                </div>
+              </label>
+              <div class="product-detail__shipping">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p>Dự kiến ​​giao hàng: 26/02 - 01/03</p>
+              </div>
             </div>
 
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="footer__bottom">
-        <div class="footer__copyright">
-          © Copyright 2024 \ Giấy phép đăng ký doanh nghiệp số: 0108989168 cấp ngày 15/01/2024 tại sở kế hoạch đầu tư
-          Hà Nội.
+        <div class="row">
+          <div style="--col-xs: 12;--col-md: 12; --col-lg: 7; --col-xl: 7" class="col">
+            <div class="product-detail__component">
+              <div class="product-detail__title-component">Thành phần</div>
+              <div class="product-detail__desc-component">Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà.
+                Trà
+                là nguồn cung cấp chất chống oxy hóa, có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà
+                cũng
+                có thể giúp tăng cường hệ miễn dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung
+                thư.
+                được
+                làm từ những lá trà chưa bị oxy hóa
+              </div>
+            </div>
+            <div class="product-detail__component-img">
+              <img src="./images/detail01.jpg" alt="anh doi tra">
+            </div>
+          </div>
+          <div style="--col-xs: 12;--col-md: 12; --col-lg: 5; --col-xl: 5" class="col product-detail__box-policy">
+            <div class="product-detail__policy">
+              <img src="./images/policy-dark.png" alt="policy">
+              <p>Đảm bảo thanh toán an toàn và bảo mật</p>
+            </div>
+            <div class="product-detail__component-img">
+              <img src="./images/detail02.jpg" alt="anh doi tra">
+            </div>
+          </div>
         </div>
-        <div class="footer__payment">
-          <img src="./images/paymet5.png" alt="payment">
+      </div>
+    </section>
+    <section class="section-tab">
+      <div class="container">
+        <!-- Tab items -->
+        <div class="tabs">
+          <div class="tab-item active">
+            Nguồn gốc
+          </div>
+          <div class="tab-item">
+            Hướng dẫn sử dụng
+          </div>
+          <div class="tab-item">
+            Hương vị
+          </div>
+          <div class="line"></div>
+        </div>
+        <!-- Tab content -->
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <div class="tab-pane__box">
+              <div class="tab-pane__content">
+                <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy
+                  hóa, có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ
+                  miễn dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá
+                  trà chưa bị oxy hóa</p>
+                <br>
+                <p>
+                  Tân Cương không chỉ là nơi để bán trà, mà còn là một biểu tượng cho sự kết hợp giữa truyền thống và
+                  hiện đại. Ý nghĩa của nó nằm ở việc kế thừa và phát triển di sản trà truyền thống của vùng, đồng thời
+                  đem lại trải nghiệm mới mẻ và độc đáo cho khách hàng. Mỗi lần tận hưởng một tách trà là như một cuộc
+                  phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. Hương
+                  thơm của lá trà hòa quyện với không khí, mang lại cảm giác nhẹ nhàng và yên bình, như một lá thư tình
+                  yêu từ thiên nhiên.
+                </p>
+              </div>
+              <div class="tab-pane__img">
+                <img src="./images/tab-img.jpg" alt="nguon goc">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy hóa,
+              có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ miễn
+              dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá trà chưa
+              bị oxy hóa</p>
+          </div>
+          <div class="tab-pane">
+            <p>Có nhiều lợi ích sức khỏe tiềm ẩn liên quan đến việc uống trà. Trà là nguồn cung cấp chất chống oxy hóa,
+              có thể giúp bảo vệ cơ thể khỏi bị tổn thương do các gốc tự do. Trà cũng có thể giúp tăng cường hệ miễn
+              dịch, cải thiện sức khỏe tim mạch và giảm nguy cơ mắc một số loại ung thư. được làm từ những lá trà chưa
+              bị oxy hóa</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <a class="backtop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>
+    <section class="review-comment">
+      <div class="container">
+        <h3 class="review-comment__title">Đánh giá và thảo luận</h3>
+        <div class="review-comment__full-box">
+          <div class="review-comment__box">
+            <div class="review-comment__avata">
+              <img src="./images/avata1.png" alt="avata-customer">
+            </div>
+            <div class="review-comment__content">
+              <div class="review-comment__name">Nguyễn Thảo Phương</div>
+              <div class="review-comment__star">
+                <div>
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
+              </div>
+              <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
+                từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
+              <div class="review-comment__box-img">
+                <img src="./images/review1.jpg" alt="img review">
+                <img src="./images/review2.jpg" alt="img review">
+                <img src="./images/review3.jpg" alt="img review">
+                <img src="./images/review4.jpg" alt="img review">
+              </div>
+            </div>
+          </div>
+          <div class="review-comment__box">
+            <div class="review-comment__avata">
+              <img src="./images/avata1.png" alt="avata-customer">
+            </div>
+            <div class="review-comment__content">
+              <div class="review-comment__name">Nguyễn Thảo Phương</div>
+              <div class="review-comment__star">
+                <div>
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
+              </div>
+              <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
+                từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
+
+            </div>
+          </div>
+          <div class="review-comment__box">
+            <div class="review-comment__avata">
+              <img src="./images/avata1.png" alt="avata-customer">
+            </div>
+            <div class="review-comment__content">
+              <div class="review-comment__name">Nguyễn Thảo Phương</div>
+              <div class="review-comment__star">
+                <div>
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
+              </div>
+              <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
+                từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
+              <div class="review-comment__box-img">
+                <img src="./images/review1.jpg" alt="img review">
+                <img src="./images/review2.jpg" alt="img review">
+              </div>
+            </div>
+          </div>
+          <div class="review-comment__box">
+            <div class="review-comment__avata">
+              <img src="./images/avata1.png" alt="avata-customer">
+            </div>
+            <div class="review-comment__content">
+              <div class="review-comment__name">Nguyễn Thảo Phương</div>
+              <div class="review-comment__star">
+                <div>
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
+              </div>
+              <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
+                từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
+              <div class="review-comment__box-img">
+                <img src="./images/review1.jpg" alt="img review">
+                <img src="./images/review2.jpg" alt="img review">
+                <img src="./images/review3.jpg" alt="img review">
+                <img src="./images/review4.jpg" alt="img review">
+              </div>
+            </div>
+          </div>
+          <div class="review-comment__box">
+            <div class="review-comment__avata">
+              <img src="./images/avata1.png" alt="avata-customer">
+            </div>
+            <div class="review-comment__content">
+              <div class="review-comment__name">Nguyễn Thảo Phương</div>
+              <div class="review-comment__star">
+                <div>
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
+              </div>
+              <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
+                từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
+
+            </div>
+          </div>
+          <div class="review-comment__box">
+            <div class="review-comment__avata">
+              <img src="./images/avata1.png" alt="avata-customer">
+            </div>
+            <div class="review-comment__content">
+              <div class="review-comment__name">Nguyễn Thảo Phương</div>
+              <div class="review-comment__star">
+                <div>
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+                <div class="review-comment__product-detail">Sản phẩm: Trà đen 1kg</div>
+              </div>
+              <div class="review-comment__description">Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế,
+                từng giọt nước trà lạc quan và thơm ngon như một hành trình khám phá mới. </div>
+              <div class="review-comment__box-img">
+                <img src="./images/review1.jpg" alt="img review">
+                <img src="./images/review2.jpg" alt="img review">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination pagination--20  d-flex">
+          <div class="pagination__item d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M8.75 3.5L5.25 7L8.75 10.5" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="pagination__item d-flex">1</div>
+          <div class="pagination__item d-flex">2</div>
+          <div class="pagination__item d-flex">3</div>
+          <div class="pagination__item d-flex">4</div>
+          <div class="pagination__item d-flex">...</div>
+          <div class="pagination__item d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M5.25 10.5L8.75 7L5.25 3.5" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row shop-box">
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="product-detail.html" class="col product-item"
+            style="--col-xs: 6;--col-md: 3; --col-lg: 3; --col-xl: 3">
+            <div class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product.jpg" alt="product">
+                </div>
+                <div class="product-item__sale">30%</div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                  <path
+                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
+                    fill="currentColor"></path>
+                  <g>
+                    <path
+                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
+                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
+                      fill="currentColor"></path>
+                  </g>
+                  <path
+                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <footer class="section footer">
+      <div class="footer__border">
+        <div class="container">
+          <div class="row">
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__logo">
+                <img src="./images/logo.png" alt="logo">
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Thưởng thức hương vị thanh tao, cảm nhận bình yên trong tâm hồn</div>
+                <div class="footer__address">Địa chỉ: 96 Định Công, Hoàng Mai, Hà Nội</div>
+                <div class="footer__phone">Số điện thoại: 18006868</div>
+                <div class="footer__mail">Mail: tancuongtea@gmail.com</div>
+              </div>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Thông tin
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Liên hệ </a></li>
+                <li><a href="#"> Sản phẩm </a></li>
+                <li><a href="#"> Thanh toán </a></li>
+                <li><a href="#"> Sự kiện </a></li>
+                <li><a href="#"> Điều khoản </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Danh mục
+              </div>
+              <ul class="footer__item-link">
+                <li><a href="#"> Trà xanh </a></li>
+                <li><a href="#"> Trà đen </a></li>
+                <li><a href="#"> Trà trái cây </a></li>
+                <li><a href="#"> Trà matcha </a></li>
+                <li><a href="#"> Trà thảo mộc </a></li>
+                <li><a href="#"> Trà an thần </a></li>
+              </ul>
+            </div>
+            <div class="col " style=" --col-xs: 12;--col-md: 6;--col-lg: 3; --col-xl: 3">
+              <div class="footer__link-list">
+                Kết nối
+              </div>
+              <div class="footer__box-content">
+                <div class="footer__description">Đăng ký để tận hưởng miễn phí vận chuyển cho đơn hàng đầu tiên của bạn
+                </div>
+                <form class="mail-form" methot="post" action="subcrible">
+                  <input type="text" class="input-mail" name="contact[email]" placeholder="Nhập email của bạn">
+                  <button type="submit" class="button-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" fill="none">
+                      <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m5 6 4.821 3.214L14.643 6" />
+                      <path stroke="#fff" stroke-linecap="round" stroke-width="2"
+                        d="M1 3.679v-.536C1 1.959 1.96 1 3.143 1H17.07c1.184 0 2.143.96 2.143 2.143v10.714c0 1.184-.96 2.143-2.143 2.143H3.143A2.143 2.143 0 0 1 1 13.857v-.536" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © Copyright 2024 \ Giấy phép đăng ký doanh nghiệp số: 0108989168 cấp ngày 15/01/2024 tại sở kế hoạch đầu tư
+            Hà Nội.
+          </div>
+          <div class="footer__payment">
+            <img src="./images/paymet5.png" alt="payment">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="backtop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
   <script>
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
@@ -693,15 +752,6 @@
     });
 
   </script>
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/main.js"></script>
 </body>
 
 </html>

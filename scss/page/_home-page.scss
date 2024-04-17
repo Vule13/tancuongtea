@@ -7,13 +7,13 @@
 .shop-box--style {
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .blog-main__style {
   gap: unset;
 }
 .shop-box {
-  
-  width: 100%;
+
   border-bottom: 1px solid var(--lines-gray-line);
   padding-bottom: 10px;
 

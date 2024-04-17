@@ -3,7 +3,7 @@
 .forgot-password__form {
   max-width: 533px;
   border-radius: 10px;
-  border: 0.5px solid #ccc;
+  box-shadow: 1px 1px 25px 0px rgba(101, 134, 118, 0.5);
   background: var(--button-hover, #fff);
   padding: 20px 60px;
   width: 100%;
@@ -13,8 +13,9 @@
     width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-primary);
     font-size: 14px;
+    line-height: 1.6;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: SVN-Gilroy;
@@ -34,6 +35,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    padding-top: 20px;
     div {
       height: 1px;
       width: 100%;
@@ -103,13 +105,19 @@
     width: 50%;
     border: 1px solid var(--color-primary);
     font-family: SVN-Gilroy;
-    padding: 14px 20px;
+    padding: 10px 20px;
     margin: 20px 0;
     background-color: #fff;
     border-radius: 5px;
-    text-transform: uppercase;
     transition: 0.3s ease-in-out all;
+    text-align: center;
+    font-size: 16px;
     cursor: pointer;
+    &:hover {
+      background-color: var(--color-accent);
+      color: #fff;
+      border: 1px solid var(--color-accent);
+    }
   }
 
   .forgot-password__next {
@@ -118,13 +126,17 @@
     color: white;
     border: 1px solid #fff;
     font-family: SVN-Gilroy;
-    padding: 14px 20px;
+    padding: 10px 20px;
     margin: 20px 0;
     border: none;
     border-radius: 5px;
-    text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
     transition: 0.3s ease-in-out all;
+    &:hover {
+      border: 1px solid var(--color-accent);
+      background-color: var(--color-accent);
+    }
   }
 
   input[type="submit"]:hover {
@@ -149,10 +161,11 @@
 
 .login__forgot-password {
   text-align: right;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
-.login__sign-in, .forgot-password__sign-in {
+.login__sign-in,
+.forgot-password__sign-in {
   padding-top: 50px;
   text-align: center;
   padding-bottom: 20px;
@@ -173,4 +186,75 @@
   text-align: center;
   font-size: 25px;
   padding-top: 20px;
+}
+
+.login-submit {
+  padding-top: 10px;
+  display: block;
+}
+
+.otp-title {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.otp-subtitle {
+  padding-bottom: 52px;
+  text-align: center;
+  font-size: 24px;
+}
+.otp-form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  input[type="text"] {
+    width: 90px;
+    height: 100px;
+  }
+}
+
+.otp-button {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 52px;
+}
+
+.otp-button__next {
+  display: flex;
+  width: 372px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+  transition: 0.3s ease-in all;
+  &:hover {
+    border: 1px solid var(--color-accent);
+    background-color: var(--color-accent);
+  }
+}
+
+.otp-button__back {
+  display: flex;
+  width: 372px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in all;
+  gap: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  &:hover {
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    color: #fff;
+  }
 }

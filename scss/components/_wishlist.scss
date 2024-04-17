@@ -1,0 +1,10 @@
+.section-wishlist {
+  .product-item__icon-wishlist {
+    svg {
+      color: var(--color-accent);
+      path {
+        fill: var(--color-accent)
+      }
+    }
+  }
+}

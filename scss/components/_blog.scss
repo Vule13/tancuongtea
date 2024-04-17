@@ -2,6 +2,17 @@
   position: relative;
 }
 
+.section-blog__image {
+  border-radius: 8px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  @media(max-width: 576px) {
+    margin-top: 20px;
+  }
+}
+
 .section-blog__tag {
   position: absolute;
   display: flex;

@@ -1,8 +1,6 @@
 .button {
   padding: 15px 40px;
   color: var(--color-background);
-  font-weight: 600;
-  text-transform: uppercase;
   border-radius: 8px;
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
@@ -18,17 +16,37 @@
     color: #fff;
     border: 1px solid var(--color-accent);
   }
+  @media (max-width: 567px) {
+    padding: 12px 30px;
+  }
+}
+
+.button-signin {
+  padding: 12px 40px;
+  color: var(--color-background);
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
 }
 
 button {
   border: unset;
   cursor: pointer;
+  font-size: 16px;
+  @media (max-width: 567px) {
+    font-size: 14px;
+  }
 }
 
 .button-italic {
   font-style: italic;
   text-decoration: underline;
   background: none;
+  color: var(--color-primary);
 }
 
 .button-accent {
@@ -47,22 +65,25 @@ button {
   justify-content: center;
 }
 
-.slide-show-button__next, .slide-show-button__prev {
+.slide-show-button__next,
+.slide-show-button__prev {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
-  transition: 0.5s ;
+  transition: 0.5s;
   &:hover {
     background-color: var(--color-accent);
     color: #fff;
+  }
+  @media (max-width: 567px) {
+    width: 40px;
+    height: 40px;
   }
 }
 
 .button-border {
   padding: 15px 40px;
-  font-weight: 600;
-  text-transform: uppercase;
   border-radius: 8px;
   background-color: #fff;
   display: inline-block;

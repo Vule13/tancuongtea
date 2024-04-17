@@ -251,21 +251,17 @@ input[type="checkbox"]:checked::after {
 
 .price {
   position: relative;
-  height: 2px;
-  width: 100%;
-  background-color: var(--lines-gray-line);
-  margin-top: 15px;
   &::before {
     position: absolute;
     content: "";
-    background-color: var(--action-blue);
+    background-color: #ccc;
     height: 2px;
-    width: calc(100% - 49px);
+    width: 100%;
     right: 0;
   }
 }
 .price__content {
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 20px;
   @media (max-width: 991px) {
     font-size: 13px;
@@ -278,16 +274,15 @@ input[type="checkbox"]:checked::after {
   justify-content: space-between;
 }
 .price__dot--left {
-  padding-left: 35px;
   &::before {
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: var(--action-blue);
+    background-color: var(--color-primary);
     border-radius: 50%;
     top: -5px;
-    transform: translateX(10px);
+    transform: translateX(0px);
   }
 }
 .price__dot {
@@ -353,32 +348,18 @@ input[type="checkbox"]:checked::after {
 }
 
 .blog__main {
-  min-width: 984px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 50px;
+  gap: 20px;
   display: flex;
 }
 
 .price {
-  position: relative;
-  height: 2px;
   width: 100%;
-  background-color: #e7e5ea;
   margin-top: 15px;
 }
 
-.price::before {
-  position: absolute;
-  content: "";
-  background-color: blue;
-  height: 2px;
-  width: calc(100% - 49px);
-  right: 0;
-}
-
 .price__content {
-  justify-content: space-between;
   padding-top: 20px;
 }
 
@@ -389,7 +370,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .text--blue {
-  color: #4f77ff;
+  color: var(--color-primary);
 }
 
 .price__dot--left::before {
@@ -397,22 +378,12 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #4f77ff;
+  background-color: var(--color-primary);
   border-radius: 50%;
   top: -5px;
-  transform: translateX(10px);
+  transform: translateX(0px);
 }
 
-.price__dot--right::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #4f77ff;
-  border-radius: 50%;
-  top: -5px;
-  right: 0;
-}
 
 .select--width {
   width: 210px;
@@ -429,4 +400,17 @@ input[type="checkbox"]:checked::after {
   font-size: 16px;
   height: 48px;
   width: 100%;
+}
+
+
+.blog {
+  .blog-right__box {
+    display: none;
+  }
+}
+
+.md-none {
+  @media(max-width: 991px) {
+    display: none;
+  }
 }

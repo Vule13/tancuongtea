@@ -13,9 +13,12 @@ $('.contact-carousel').owlCarousel({
       items: 1,
     },
     379: {
-      items: 3,
+      items: 1,
     },
     767: {
+      items: 2,
+    },
+    1000: {
       items: 3,
     },
   }
@@ -39,6 +42,54 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var elementA = document.querySelector('.add-new');
+  var elementB = document.querySelector('.address-popup');
+  var elementC = document.querySelector('.address-popup__submit-back');
+  elementA.addEventListener('click', function () {
+    if (elementB.classList.contains('address-popup--opacity')) {
+      elementB.classList.remove('address-popup--opacity');
+    } else {
+      elementB.classList.add('address-popup--opacity');
+    }
+  });
+  elementC.addEventListener('click', function () {
+    if (elementB.classList.contains('address-popup--opacity')) {
+      elementB.classList.remove('address-popup--opacity');
+    } else {
+      elementB.classList.add('address-popup--opacity');
+    }
+  });
+});
+
+
+function toggleDropdown(element) {
+
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("clicked");
+
+  if (dropdown.style.display === "none") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all elements with class 'a'
+  var iconMenu = document.querySelector('.hamburger-menu');
+  var menu = document.querySelector('.header-menu');
+  console.log(111)
+  // Loop through each element and add click event listener
+  iconMenu.addEventListener('click', function () {
+    if (menu.classList.contains('menu-block')) {
+      menu.classList.remove('menu-block');
+    } else {
+      menu.classList.add('menu-block');
+    }
+  });
+});
 
 // product detail
 
@@ -65,27 +116,6 @@ document.getElementById('prev').onclick = function() {
   document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
 
-// quantity
-
-const plus = document.querySelector(".quantity__plus"),
-minus = document.querySelector(".quantity__minus"),
-number = document.querySelector(".quantity__number");
-let soluong = 1;
-plus.addEventListener("click", ()=>{
-  soluong ++;
-  soluong = (soluong < 10) ? "0" + soluong : soluong;
-  number.value = soluong;
-  console.log(soluong);
-});
-
-minus.addEventListener("click", ()=>{
-  if(soluong > 1) {
-    soluong--;
-    soluong = (soluong < 10) ? "0" + soluong : soluong;
-    number.value = soluong;
-  }
-  
-});
 
 // banner video
 
@@ -110,6 +140,30 @@ document.getElementById('popup').addEventListener('click', function(event) {
   // Ngăn chặn sự kiện click trên popup từ propagate lên các phần tử cha
   event.stopPropagation();
 });
+
+// quantity
+
+const plus = document.querySelector(".quantity__plus"),
+minus = document.querySelector(".quantity__minus"),
+number = document.querySelector(".quantity__number");
+let soluong = 1;
+plus.addEventListener("click", ()=>{
+  soluong ++;
+  soluong = (soluong < 10) ? "0" + soluong : soluong;
+  number.value = soluong;
+  console.log(soluong);
+});
+
+minus.addEventListener("click", ()=>{
+  if(soluong > 1) {
+    soluong--;
+    soluong = (soluong < 10) ? "0" + soluong : soluong;
+    number.value = soluong;
+  }
+  
+});
+
+
 
 
 
