@@ -117,7 +117,6 @@ button {
   background-color: var(--color-primary);
   color: var(--color-background);
   padding-top: 45px;
-  background-image: url(../images/patern.png);
 }
 
 .footer__box-content {
@@ -1323,7 +1322,6 @@ input[type=text] {
 
 .banner-video {
   background-image: url("../images/slideshow5.jpg");
-  min-height: 92vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
