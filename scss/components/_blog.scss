@@ -61,6 +61,7 @@
 
 .section-blog__box {
   padding-bottom: 40px;
+  display: block;
 }
 
 // blog right
@@ -99,6 +100,7 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .blog-right__tag-item {
@@ -115,4 +117,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.blog-detail {
+  padding-top: 120px;
+  .blog-detail-heading {
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .section-blog__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    ul {
+      padding-left: 20px;
+      li {
+        list-style: unset;
+      }
+    }
+  }
+}
+
+.blog-detail-next {
+  font-size: 24px;
+  padding-bottom: 13px;
 }

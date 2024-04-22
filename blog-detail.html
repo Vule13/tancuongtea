@@ -9,43 +9,32 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="scss/fontstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Detail-blog</title>
 </head>
 
 <body>
   <!-- header -->
   <header class="header ">
-    <div class="header-box header--fixed header--transparent">
+    <div class="header-box header--fixed">
       <div class="container">
         <div class=" row">
           <div style="--col-xs: 4;--col-md: 4; --col-lg: 2; --col-xl: 3" class="header__logo col">
-            <img class="header__logo-white" src="./images/logo.png" alt="logo">
-            <img class="header__logo-green" src="./images/logo-xanh.png" alt="logo-xanh">
+            <img src="./images/logo-xanh.png" alt="logo-xanh">
           </div>
           <div style="--col-xs: 4;--col-md: 4; --col-lg: 8; --col-xl: 6" class="menu-horizontal col">
             <ul class="header-menu">
-              <li class="header-menu__item"><a href="home-login.html">Trang chủ</a></li>
-              <li class="header-menu__item"><a href="product.html">Sản phẩm</a></li>
-              <li class="header-menu__item header-menu__item--accent"><a href="blog.html">Bài viết</a></li>
+              <li class="header-menu__item"><a href="index.html">Trang chủ</a></li>
+              <li class="header-menu__item header-menu__item--accent"><a href="product.html">Sản phẩm</a></li>
+              <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
               <li class="header-menu__item"><a href="contact.html">Liên hệ</a></li>
             </ul>
             <div class="hamburger-menu">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="14" viewBox="0 0 23 14" fill="none">
-                <path d="M1 1H21.6596" stroke="white" stroke-width="1.5" stroke-linecap="square" />
-                <path d="M1 7H21.6596" stroke="white" stroke-width="1.5" stroke-linecap="square" />
-                <path d="M1 13H21.6596" stroke="white" stroke-width="1.5" stroke-linecap="square" />
+                <path d="M1 1H21.6596" stroke="black" stroke-width="1.5" stroke-linecap="square" />
+                <path d="M1 7H21.6596" stroke="black" stroke-width="1.5" stroke-linecap="square" />
+                <path d="M1 13H21.6596" stroke="black" stroke-width="1.5" stroke-linecap="square" />
               </svg>
             </div>
           </div>
@@ -55,7 +44,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M8.85368 15.7538C5.13348 15.7538 2.10739 12.8496 2.10739 9.27965C2.10739 5.7074 5.13348 2.80168 8.85368 2.80168C12.5739 2.80168 15.6007 5.7074 15.6007 9.27965C15.6007 12.8496 12.5739 15.7538 8.85368 15.7538ZM20.4322 19.1001L15.622 14.4812C16.8481 13.0099 17.5226 11.1667 17.5226 9.27965C17.5226 4.69021 13.634 0.95623 8.85368 0.95623C4.07415 0.95623 0.185547 4.69021 0.185547 9.27965C0.185547 13.8699 4.07415 17.6038 8.85368 17.6038C10.8196 17.6038 12.7376 16.9577 14.266 15.7826L19.077 20.3977C19.258 20.5715 19.4988 20.6675 19.7546 20.6675C20.0096 20.6675 20.2504 20.5715 20.4314 20.3977C20.6132 20.2254 20.7132 19.9949 20.7132 19.7486C20.7132 19.5022 20.6132 19.2725 20.4322 19.1001Z"
-                    fill="white" />
+                    fill="#000" />
                 </svg>
               </div>
               <a href="order.html" class="header-icon__avata">
@@ -66,27 +55,30 @@
                   <g clip-path="url(#clip0_1_7148)">
                     <path
                       d="M8.09038 4.60541C9.35354 4.60541 10.5415 5.09739 11.4351 5.99017L12.5135 7.06935C12.6791 7.23414 12.8983 7.32534 13.1302 7.32534C13.3622 7.32534 13.5814 7.23414 13.7462 7.06935L14.8158 5.99977C15.7094 5.10699 16.895 4.61501 18.1557 4.61501C19.411 4.61501 20.5957 5.10539 21.49 5.99497C22.3796 6.88535 22.87 8.07092 22.87 9.33489C22.8748 10.5933 22.3845 11.7788 21.49 12.674L13.1182 21.0122L4.76567 12.6596C3.87289 11.766 3.38087 10.5805 3.38087 9.31969C3.38087 8.05492 3.87045 6.87095 4.76083 5.98537C5.65128 5.09579 6.83359 4.60541 8.09038 4.60541ZM22.7276 4.7622H22.7268C21.5076 3.54303 19.8861 2.87185 18.1597 2.87185C16.4342 2.87185 14.8102 3.54463 13.5878 4.767L13.1326 5.22299L12.6671 4.7574C11.4423 3.53263 9.81673 2.85745 8.09038 2.85745C6.36798 2.85745 4.74724 3.52863 3.52805 4.7478C2.30408 5.97177 1.63294 7.59573 1.63772 9.31969C1.63772 11.0396 2.31293 12.662 3.53765 13.8876L12.5039 22.8537C12.6679 23.017 12.8911 23.1113 13.1182 23.1113C13.3478 23.1113 13.5718 23.0193 13.7318 22.8586L22.718 13.906C23.9396 12.6844 24.6124 11.0604 24.6124 9.33489C24.618 7.60693 23.9484 5.98297 22.7276 4.7622Z"
-                      fill="white" />
+                      fill="#000" />
                   </g>
                   <defs>
                     <clipPath id="clip0_1_7148">
-                      <rect width="24" height="24" fill="white" transform="translate(0.866211)" />
+                      <rect width="24" height="24" fill="#000" transform="translate(0.866211)" />
                     </clipPath>
                   </defs>
                 </svg>
               </div>
               <div class="header-icon__cart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                  <path
-                    d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
-                    fill="white" />
-                  <path
-                    d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
-                    fill="white" />
-                  <path
-                    d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
-                    fill="white" />
-                </svg>
+                <a href="cart.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                      d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
+                      fill="#000" />
+                    <path
+                      d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
+                      fill="#000" />
+                    <path
+                      d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
+                      fill="#000" />
+                  </svg>
+                </a>
+
               </div>
             </div>
           </div>
@@ -95,22 +87,15 @@
     </div>
   </header>
   <!-- breadcrumb -->
-  <section class="breadcrumb">
-    <div class="container">
-      <div class="breadcrumb__heading-box">
-        <h2 class="breadcrumb__heading">Bài viết</h2>
-        <div class="breadcrumb__subtitle">Trang chủ / Bài viết</div>
-      </div>
-    </div>
-  </section>
+
   <!-- blog -->
-  <section class="section-blog">
+  <section class="blog-detail">
     <div class="container">
       <div class="row">
-        <div class="col section-blog__left"
+        <div class="col  section-blog__left"
           style="--col-xs: 12;--col-md: 12; --col-lg: 8; --col-xl: 8; padding-right: 30px;">
-          <h3 class="blog-heading">Bài viết gần đây</h3>
-          <a href="blog-detail.html" class="section-blog__box">
+          <h3 class="blog-detail-heading">Công dụng tuyệt vời của trà đen có thể bạn chưa biết</h3>
+          <div class="blog-detail__box">
             <div class="section-blog__image-tag">
               <div class="section-blog__image">
                 <img src="./images/blog1.jpg" alt="image blog">
@@ -123,104 +108,62 @@
             </div>
             <div class="section-blog__content">
               <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+              <div class="section-blog__title">Lorem ipsum dolor sit amet consectetur. </div>
               <div class="section-blog__text">
-                Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
-                tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
-                Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng cholesterol
-                tốt HDL và giảm huyết áp.
+                <p>
+                  Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
+                  tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
+                  Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng
+                  cholesterol
+                  tốt HDL và giảm huyết áp.
+                </p>
+                <p>
+                  Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
+                  tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
+                  Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng
+                  cholesterol
+                  tốt HDL và giảm huyết áp.
+                </p>
+                <img src="./images/blog5.jpg" alt="anh blog">
+                <p>
+                  Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
+                  tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
+                  Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng
+                  cholesterol
+                  tốt HDL và giảm huyết áp.
+                </p>
               </div>
-              <button class="button-italic">Xem thêm</button>
-            </div>
-          </a>
-          <div class="section-blog__box">
-            <div class="section-blog__image-tag">
-              <div class="section-blog__image">
-                <img src="./images/blog7.jpg" alt="image blog">
-              </div>
-              <div class="section-blog__tag">
-                <div class="section-blog__tag-item">Sức khỏe</div>
-                <div class="section-blog__tag-item">Trà đen</div>
-                <div class="section-blog__tag-item">Trẻ hóa</div>
-              </div>
-            </div>
-            <div class="section-blog__content">
-              <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+              <div class="section-blog__title">Lorem ipsum dolor sit amet consectetur. </div>
               <div class="section-blog__text">
-                Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
-                tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
-                Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng cholesterol
-                tốt HDL và giảm huyết áp.
+                <p>
+                  Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
+                  tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
+                  Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng
+                  cholesterol
+                  tốt HDL và giảm huyết áp.
+                </p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur</li>
+                  <li>Montes mi feugiat aliquet urna sit et morbi turpis</li>
+                  <li>Egestas aliquet diam vitae lectus blandit vulputate arcu mauris</li>
+                  <li>Odio molestie egestas adipiscing nisi ultrices tincidunt et aliquam</li>
+                  <li>Risus nec gravida tempor neque consequat a adipiscing urna</li>
+                </ul>
+                <img src="./images/blog5.jpg" alt="anh blog">
+                <p>
+                  Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
+                  tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
+                  Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng
+                  cholesterol
+                  tốt HDL và giảm huyết áp.
+                </p>
               </div>
-              <button class="button-italic">Xem thêm</button>
             </div>
           </div>
-          <div class="section-blog__box">
-            <div class="section-blog__image-tag">
-              <div class="section-blog__image">
-                <img src="./images/blog5.jpg" alt="image blog">
-              </div>
-              <div class="section-blog__tag">
-                <div class="section-blog__tag-item">Sức khỏe</div>
-                <div class="section-blog__tag-item">Trà đen</div>
-                <div class="section-blog__tag-item">Trẻ hóa</div>
-              </div>
-            </div>
-            <div class="section-blog__content">
-              <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
-              <div class="section-blog__text">
-                Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
-                tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
-                Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng cholesterol
-                tốt HDL và giảm huyết áp.
-              </div>
-              <button class="button-italic">Xem thêm</button>
-            </div>
-          </div>
-          <div class="section-blog__box">
-            <div class="section-blog__image-tag">
-              <div class="section-blog__image">
-                <img src="./images/blog6.jpg" alt="image blog">
-              </div>
-              <div class="section-blog__tag">
-                <div class="section-blog__tag-item">Sức khỏe</div>
-                <div class="section-blog__tag-item">Trà đen</div>
-                <div class="section-blog__tag-item">Trẻ hóa</div>
-              </div>
-            </div>
-            <div class="section-blog__content">
-              <div class="section-blog__date">20-12-2024</div>
-              <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
-              <div class="section-blog__text">
-                Trà đen chứa nhiều polyphenol và catechin, là những chất chống oxy hóa mạnh mẽ giúp bảo vệ cơ thể khỏi
-                tác hại của các gốc tự do, góp phần giảm nguy cơ mắc các bệnh mãn tính như ung thư, tim mạch và
-                Alzheimer. Trà đen giúp cải thiện sức khỏe tim mạch bằng cách giảm cholesterol xấu LDL, tăng cholesterol
-                tốt HDL và giảm huyết áp.
-              </div>
-              <button class="button-italic">Xem thêm</button>
-            </div>
-          </div>
-          <div class="pagination pagination--style  d-flex">
-            <div class="pagination__item d-flex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M8.75 3.5L5.25 7L8.75 10.5" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="pagination__item d-flex">1</div>
-            <div class="pagination__item d-flex">2</div>
-            <div class="pagination__item d-flex">3</div>
-            <div class="pagination__item d-flex">4</div>
-            <div class="pagination__item d-flex">...</div>
-            <div class="pagination__item d-flex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M5.25 10.5L8.75 7L5.25 3.5" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </div>
-
+          <div class="blog-right__tag-list">
+            <span>Thẻ: </span>
+            <div class="blog-right__tag-item">#Sức khỏe</div>
+            <div class="blog-right__tag-item">#Trà đen</div>
           </div>
         </div>
         <div class="col blog-right" style="--col-xs: 12;--col-md: 12; --col-lg: 4; --col-xl: 4; padding-left: 30px;">
@@ -287,74 +230,72 @@
     </div>
   </section>
 
-  <!-- testimonial -->
+  <!-- section blog -->
   <section class="section">
     <div class="container">
-      <div class="testimonial">
-        <div class="contact-carousel owl-carousel owl-theme">
-          <div class="item testimonial__box">
-            <div class="testimonial__star">
-              <img src="./images/rate.svg" alt="">
+      <h3 class="blog-detail-next">Bài viết tương tự</h3>
+      <div class="row">
+        <div class="col section-blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
+          <div class="section-blog__image-tag">
+            <div class="section-blog__image">
+              <img src="./images/img-blog.jpg" alt="image blog">
             </div>
-            <div class="testimonial__description">
-              Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-              ngon như một hành trình khám phá mới.
-            </div>
-            <div class="testimonial__info">
-              <div class="testimonial__avata">
-                <img src="./images/avata.jpg" alt="avata">
-              </div>
-              <div class="testimonial__name">Nguyễn Thảo Phương</div>
+            <div class="section-blog__tag">
+              <div class="section-blog__tag-item">Sức khỏe</div>
+              <div class="section-blog__tag-item">Trà đen</div>
             </div>
           </div>
-          <div class="item testimonial__box">
-            <div class="testimonial__star">
-              <img src="./images/rate.svg" alt="">
+          <div class="section-blog__content">
+            <div class="section-blog__date">20-12-2024</div>
+            <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+            <div class="section-blog__text">
+              Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
+              ...
             </div>
-            <div class="testimonial__description">
-              Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-              ngon như một hành trình khám phá mới.
+            <button class="button-italic">Xem thêm</button>
+          </div>
+        </div>
+        <div class="col section-blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
+          <div class="section-blog__image-tag">
+            <div class="section-blog__image">
+              <img src="./images/blog3.jpg" alt="image blog">
             </div>
-            <div class="testimonial__info">
-              <div class="testimonial__avata">
-                <img src="./images/avata.jpg" alt="avata">
-              </div>
-              <div class="testimonial__name">Nguyễn Thảo Phương</div>
+            <div class="section-blog__tag">
+              <div class="section-blog__tag-item">Sức khỏe</div>
+              <div class="section-blog__tag-item">Trà đen</div>
             </div>
           </div>
-          <div class="item testimonial__box">
-            <div class="testimonial__star">
-              <img src="./images/rate.svg" alt="">
+          <div class="section-blog__content">
+            <div class="section-blog__date">20-12-2024</div>
+            <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+            <div class="section-blog__text">
+              Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
+              ...
             </div>
-            <div class="testimonial__description">
-              Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-              ngon như một hành trình khám phá mới.
+            <button class="button-italic">Xem thêm</button>
+          </div>
+        </div>
+        <div class="col section-blog" style=" --col-xs: 12;--col-md: 6;--col-lg: 4; --col-xl: 4">
+          <div class="section-blog__image-tag">
+            <div class="section-blog__image">
+              <img src="./images/blog4.jpg" alt="image blog">
             </div>
-            <div class="testimonial__info">
-              <div class="testimonial__avata">
-                <img src="./images/avata.jpg" alt="avata">
-              </div>
-              <div class="testimonial__name">Nguyễn Thảo Phương</div>
+            <div class="section-blog__tag">
+              <div class="section-blog__tag-item">Sức khỏe</div>
+              <div class="section-blog__tag-item">Trà đen</div>
             </div>
           </div>
-          <div class="item testimonial__box">
-            <div class="testimonial__star">
-              <img src="./images/rate.svg" alt="">
+          <div class="section-blog__content">
+            <div class="section-blog__date">20-12-2024</div>
+            <div class="section-blog__title">Công dụng tuyệt vời của trà đen có thể bạn chưa biết? </div>
+            <div class="section-blog__text">
+              Trải nghiệm sâu sắc nhất không chỉ đến từ hương vị trà tinh tế mà còn từ khoảnh khắc chậm rãi, khi tận
+              ...
             </div>
-            <div class="testimonial__description">
-              Mỗi lần tận hưởng một tách trà là như một cuộc phiêu lưu tinh tế, từng giọt nước trà lạc quan và thơm
-              ngon như một hành trình khám phá mới.
-            </div>
-            <div class="testimonial__info">
-              <div class="testimonial__avata">
-                <img src="./images/avata.jpg" alt="avata">
-              </div>
-              <div class="testimonial__name">Nguyễn Thảo Phương</div>
-            </div>
+            <button class="button-italic">Xem thêm</button>
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <footer class="section footer">
@@ -378,7 +319,7 @@
             </div>
             <ul class="footer__item-link">
               <li><a href="contact.html"> Liên hệ </a></li>
-              <li><a href="product.html"> Sản phẩm </a></li>
+              <li><a href="#"> Sản phẩm </a></li>
               <li><a href="#"> Thanh toán </a></li>
               <li><a href="#"> Sự kiện </a></li>
               <li><a href="#"> Điều khoản </a></li>

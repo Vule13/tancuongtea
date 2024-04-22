@@ -1172,6 +1172,7 @@ input[type=checkbox]:checked::after {
 
 .section-blog__box {
   padding-bottom: 40px;
+  display: block;
 }
 
 .blog-right__popular {
@@ -1208,6 +1209,7 @@ input[type=checkbox]:checked::after {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .blog-right__tag-item {
@@ -1224,6 +1226,30 @@ input[type=checkbox]:checked::after {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blog-detail {
+  padding-top: 120px;
+}
+.blog-detail .blog-detail-heading {
+  font-size: 26px;
+  padding-bottom: 30px;
+}
+.blog-detail .section-blog__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.blog-detail .section-blog__text ul {
+  padding-left: 20px;
+}
+.blog-detail .section-blog__text ul li {
+  list-style: unset;
+}
+
+.blog-detail-next {
+  font-size: 24px;
+  padding-bottom: 13px;
 }
 
 .testimonial__box {
@@ -3275,6 +3301,76 @@ input[type=checkbox]:checked::after {
 .dropdown {
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.contact {
+  text-align: center;
+}
+.contact .contact__name-email,
+.contact .contact__phone-subject {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.contact .contact__name-email input,
+.contact .contact__phone-subject input {
+  width: 50%;
+  border: 0.5px solid rgba(204, 204, 204, 0.8);
+}
+.contact .contact__textarea {
+  width: 100%;
+  padding: 20px;
+  padding: 12px 20px;
+  line-height: 1.6;
+  font-family: SVN-Gilroy;
+  font-size: 14px;
+  border: 0.5px solid rgba(204, 204, 204, 0.8);
+  border-radius: 5px;
+}
+.contact button {
+  margin-top: 30px;
+}
+
+.contact-box {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 45px 50px 50px;
+  transition: all 0.3s;
+}
+.contact-box:hover {
+  transform: translateY(-20px);
+}
+.contact-box .contact-box__title {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.contact-box .contact-box__location {
+  padding-bottom: 10px;
+}
+.contact-box .contact-box__time {
+  position: relative;
+  padding-left: 20px;
+}
+.contact-box .contact-box__time::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ccc;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .shop-box__title {
