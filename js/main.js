@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get all elements with class 'a'
   var iconMenu = document.querySelector('.hamburger-menu');
   var menu = document.querySelector('.header-menu');
-  console.log(111)
+
   // Loop through each element and add click event listener
   iconMenu.addEventListener('click', function () {
     if (menu.classList.contains('menu-block')) {

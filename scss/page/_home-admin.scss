@@ -1,0 +1,135 @@
+.admin-container {
+  display: flex;
+}
+
+.admin-left {
+  max-width: 276px;
+  padding-top: 40px;
+  padding-left: 44px;
+  padding-right: 30px;
+  .admin-left__logo {
+    padding-bottom: 40px;
+    max-width: 150px;
+  }
+}
+
+.admin-left__menu {
+  .admin-left__menu-item {
+    padding: 24px 0;
+    .admin-left__item-link {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      transition: all 0.3s ease;
+      svg {
+        width: 30px;
+        path {
+          transition: all 0.3s;
+        }
+      }
+      &:hover {
+        color: var(--color-accent);
+        svg {
+          path {
+            fill: var(--color-accent);
+          }
+        }
+        .icon-order {
+          path {
+            fill: unset;
+            stroke: var(--color-accent);
+          }
+        }
+      }
+    }
+    .admin-left__item-link--ac {
+      color: var(--color-accent);
+      svg {
+        path {
+          fill: var(--color-accent);
+        }
+      }
+      .icon-order {
+        path {
+          fill: unset;
+          stroke: var(--color-accent);
+        }
+      }
+    }
+  }
+}
+
+.admin-right {
+  flex: 1;
+  background-color: #fafbfc;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .admin-right__header {
+    display: flex;
+    padding: 20px 44px 20px 30px;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;    
+    .admin-right__title {
+      font-size: 26px;
+    }
+    .admin-right__search {
+      max-width: 513px;
+      width: 100%;
+      position: relative;
+      input {
+        width: 100%;
+        padding-left: 50px;
+        border-radius: 8px;
+        background: var(--Greys-Blue-Grey-300, #f9fafb);
+        border: unset;
+        &:focus-visible {
+          outline: unset;
+        }
+      }
+      svg {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .admin-right__account {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      .admin-right__account-logo {
+        width: 60px;
+        height: 60px;
+      }
+      .admin-right__account-item {
+        display: flex;
+        gap: 20px;
+        .admin-right__position {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.4;
+        }
+        .admin-right__name {
+          font-size: 16px;
+        }
+      }
+      .admin-right__notifi {
+        position: relative;
+        &::before {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: var(--color-primary);
+          top: -10px;
+          right: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+

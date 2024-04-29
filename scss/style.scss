@@ -26,9 +26,13 @@
 @import './components/wishlist';
 @import './components/account';
 @import './components/contact';
+@import './components/admin-sale';
 
 // Page
 @import './page/_home-page';
+@import './page/home-admin';
+@import './page/order-admin';
+@import './page/product-admin-detail';
 
 // Base
 @import './base/_reset';

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="scss/fontstyle.css">
+  <title> Chi tiết sản phẩm</title>
+</head>
+
+<body>
+  <div class="wrapper-admin">
+    <div class="admin-container">
+      <div class="admin-left">
+        <div class="admin-left__logo">
+          <img src="./images/logo-xanh.png" alt="logo">
+        </div>
+        <ul class="admin-left__menu">
+          <li class="admin-left__menu-item">
+            <a href="home-admin.html" class="admin-left__item-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <mask id="mask0_184_9987" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28"
+                  height="28">
+                  <rect width="28" height="28" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_184_9987)">
+                  <path
+                    d="M13.9997 25.6663C12.3858 25.6663 10.8691 25.3601 9.44968 24.7476C8.03023 24.1351 6.79551 23.3038 5.74551 22.2538C4.69551 21.2038 3.86426 19.9691 3.25176 18.5497C2.63926 17.1302 2.33301 15.6136 2.33301 13.9997C2.33301 12.3858 2.63926 10.8691 3.25176 9.44968C3.86426 8.03023 4.69551 6.79551 5.74551 5.74551C6.79551 4.69551 8.03023 3.86426 9.44968 3.25176C10.8691 2.63926 12.3858 2.33301 13.9997 2.33301C15.6136 2.33301 17.1302 2.63926 18.5497 3.25176C19.9691 3.86426 21.2038 4.69551 22.2538 5.74551C23.3038 6.79551 24.1351 8.03023 24.7476 9.44968C25.3601 10.8691 25.6663 12.3858 25.6663 13.9997C25.6663 15.6136 25.3601 17.1302 24.7476 18.5497C24.1351 19.9691 23.3038 21.2038 22.2538 22.2538C21.2038 23.3038 19.9691 24.1351 18.5497 24.7476C17.1302 25.3601 15.6136 25.6663 13.9997 25.6663ZM13.9997 23.333C16.6052 23.333 18.8122 22.4288 20.6205 20.6205C22.4288 18.8122 23.333 16.6052 23.333 13.9997H13.9997V4.66634C11.3941 4.66634 9.18718 5.57051 7.37884 7.37884C5.57051 9.18718 4.66634 11.3941 4.66634 13.9997C4.66634 16.6052 5.57051 18.8122 7.37884 20.6205C9.18718 22.4288 11.3941 23.333 13.9997 23.333Z"
+                    fill="#000" />
+                </g>
+              </svg>
+              <span>Tổng quan</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="order-admin.html" class="admin-left__item-link ">
+              <svg class="icon-order" xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26"
+                fill="none">
+                <path
+                  d="M17.5833 3.66602H2.41667C1.77233 3.66602 1.25 4.18835 1.25 4.83268V23.4993C1.25 24.1437 1.77233 24.666 2.41667 24.666H17.5833C18.2277 24.666 18.75 24.1437 18.75 23.4993V4.83268C18.75 4.18835 18.2277 3.66602 17.5833 3.66602Z"
+                  stroke="#111111" stroke-width="2.33333" stroke-linejoin="round" />
+                <path
+                  d="M6.49967 1.33301V4.83301M13.4997 1.33301V4.83301M5.33301 10.083H14.6663M5.33301 14.7497H12.333M5.33301 19.4163H9.99967"
+                  stroke="#111111" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Đơn hàng</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="product-admin.html" class="admin-left__item-link admin-left__item-link--ac">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M13.125 1.64062L24.5 7.32812V21.5469L13.125 27.2207L1.75 21.5469V7.32812L13.125 1.64062ZM21.6699 7.875L13.125 3.60938L9.83008 5.25L18.3203 9.54297L21.6699 7.875ZM13.125 12.1406L16.3789 10.5273L7.875 6.23438L4.58008 7.875L13.125 12.1406ZM3.5 9.29688V20.4531L12.25 24.8281V13.6719L3.5 9.29688ZM14 24.8281L22.75 20.4531V9.29688L14 13.6719V24.8281Z"
+                  fill="black" />
+              </svg>
+              <span>Sản phẩm</span>
+            </a>
+
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="colection-admin.html" class="admin-left__item-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <g clip-path="url(#clip0_184_9996)">
+                  <path
+                    d="M1.75 24.5C1.75 24.7461 1.79557 24.974 1.88672 25.1836C1.97786 25.3932 2.10091 25.5755 2.25586 25.7305C2.41081 25.8854 2.59766 26.013 2.81641 26.1133C3.03516 26.2135 3.26302 26.2591 3.5 26.25H12.25L15.7637 28H3.5C3.01693 28 2.56576 27.9089 2.14648 27.7266C1.72721 27.5443 1.35352 27.2936 1.02539 26.9746C0.697266 26.6556 0.446615 26.2865 0.273438 25.8672C0.10026 25.4479 0.00911458 24.9922 0 24.5V3.5C0 3.05339 0.0957031 2.62044 0.287109 2.20117C0.478516 1.7819 0.738281 1.4082 1.06641 1.08008C1.39453 0.751953 1.76823 0.492188 2.1875 0.300781C2.60677 0.109375 3.04427 0.00911458 3.5 0H22.75V9.31055L21 8.43555V1.75H3.5C3.29036 1.75 3.08073 1.80013 2.87109 1.90039C2.66146 2.00065 2.47461 2.13737 2.31055 2.31055C2.14648 2.48372 2.01432 2.67057 1.91406 2.87109C1.8138 3.07161 1.75911 3.28125 1.75 3.5V21.4922C2.01432 21.3372 2.29232 21.2188 2.58398 21.1367C2.87565 21.0547 3.18099 21.0091 3.5 21H10.5V22.75H3.5C3.25391 22.75 3.02604 22.7956 2.81641 22.8867C2.60677 22.9779 2.42448 23.1009 2.26953 23.2559C2.11458 23.4108 1.98698 23.5977 1.88672 23.8164C1.78646 24.0352 1.74089 24.263 1.75 24.5ZM28 13.877V24.2949L20.125 28.2188L12.25 24.2949V13.877L20.125 9.95312L28 13.877ZM20.125 11.9082L15.0801 14.4238L20.125 16.9395L25.1699 14.4238L20.125 11.9082ZM14 23.2148L19.25 25.8262V18.457L14 15.832V23.2148ZM26.25 23.2148V15.832L21 18.457V25.8262L26.25 23.2148Z"
+                    fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_184_9996">
+                    <rect width="28" height="28" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Danh mục</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="dicount-admin.html" class="admin-left__item-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.5953 3.79199H16.4043C18.5545 3.79199 20.2567 3.79199 21.589 3.97049C22.9587 4.15483 24.0682 4.54216 24.9432 5.41483C26.1448 6.61299 26.4365 8.26149 26.5287 10.4513V10.4793C26.538 10.6707 26.5462 10.8655 26.538 11.03C26.5344 11.2661 26.4748 11.498 26.3642 11.7067C26.2833 11.8463 26.1773 11.9697 26.0515 12.0707C25.9571 12.1466 25.8581 12.2168 25.7552 12.2807C25.565 12.4008 25.306 12.5455 25.0038 12.7147L24.9805 12.7263C24.7532 12.8525 24.5639 13.0372 24.432 13.2612C24.3002 13.4852 24.2306 13.7404 24.2306 14.0003C24.2306 14.2603 24.3002 14.5155 24.432 14.7395C24.5639 14.9635 24.7532 15.1482 24.9805 15.2743L25.0038 15.286C25.3072 15.4552 25.5638 15.5998 25.7552 15.72C25.8543 15.783 25.9582 15.853 26.0515 15.93C26.1378 16.0012 26.2673 16.1213 26.3642 16.294C26.5042 16.5437 26.531 16.7957 26.5392 16.9707C26.5462 17.134 26.538 17.33 26.5298 17.5213L26.5287 17.5493C26.4353 19.738 26.1437 21.3877 24.9432 22.5858C24.0682 23.4585 22.9598 23.8458 21.589 24.0302C20.2567 24.2087 18.5545 24.2087 16.4043 24.2087H11.5965C9.44633 24.2087 7.74417 24.2087 6.41183 24.0302C5.041 23.8458 3.93267 23.4585 3.05767 22.5858C1.856 21.3877 1.56433 19.7392 1.47217 17.5493V17.5213C1.46124 17.338 1.45774 17.1543 1.46167 16.9707C1.46983 16.7957 1.49667 16.5437 1.63667 16.294C1.71753 16.1544 1.82354 16.031 1.94933 15.93C2.04374 15.854 2.1427 15.7839 2.24567 15.72C2.43583 15.5998 2.69483 15.4552 2.997 15.286L3.02033 15.2743C3.2476 15.1482 3.43697 14.9635 3.56883 14.7395C3.70068 14.5155 3.77021 14.2603 3.77021 14.0003C3.77021 13.7404 3.70068 13.4852 3.56883 13.2612C3.43697 13.0372 3.2476 12.8525 3.02033 12.7263L2.997 12.7147C2.69367 12.5455 2.437 12.4008 2.24567 12.2807C2.14252 12.217 2.04354 12.1469 1.94933 12.0707C1.82354 11.9697 1.71753 11.8463 1.63667 11.7067C1.52563 11.4981 1.46565 11.2662 1.46167 11.03C1.45734 10.837 1.46124 10.644 1.47333 10.4513C1.56433 8.26266 1.856 6.61299 3.05767 5.41483C3.93267 4.54216 5.041 4.15483 6.41183 3.97049C7.743 3.79199 9.444 3.79199 11.5953 3.79199ZM24.7915 17.1807V17.204L24.781 17.4758C24.69 19.6412 24.3948 20.6632 23.7077 21.3468C23.213 21.8415 22.534 22.1378 21.3568 22.2953C20.1552 22.4563 18.5697 22.4587 16.3402 22.4587H11.6618C9.43233 22.4587 7.84683 22.4563 6.64517 22.2953C5.46683 22.1378 4.789 21.8415 4.29317 21.3468C3.60717 20.6632 3.312 19.6412 3.21983 17.4758C3.2159 17.3775 3.21279 17.2791 3.2105 17.1807C3.35517 17.0908 3.564 16.9742 3.87317 16.8015C4.37198 16.5234 4.78748 16.1171 5.07673 15.6246C5.36598 15.1322 5.51848 14.5714 5.51848 14.0003C5.51848 13.4292 5.36598 12.8685 5.07673 12.376C4.78748 11.8836 4.37198 11.4773 3.87317 11.1992C3.6499 11.077 3.42897 10.9506 3.2105 10.82V10.7967L3.221 10.5248C3.312 8.35949 3.60717 7.33749 4.29433 6.65383C4.789 6.15916 5.46683 5.86283 6.64517 5.70533C7.84683 5.54433 9.43233 5.54199 11.6618 5.54199H16.3402C18.5697 5.54199 20.1552 5.54433 21.3568 5.70533C22.5352 5.86283 23.213 6.15916 23.7088 6.65383C24.3937 7.33749 24.69 8.35949 24.781 10.5248L24.7915 10.7967V10.82C24.6468 10.9098 24.438 11.0265 24.1288 11.1992C23.6297 11.477 23.2139 11.8832 22.9244 12.3757C22.6349 12.8682 22.4823 13.4291 22.4823 14.0003C22.4823 14.5716 22.6349 15.1325 22.9244 15.625C23.2139 16.1174 23.6297 16.5236 24.1288 16.8015C24.4368 16.9742 24.6468 17.0908 24.7915 17.1807ZM18.1182 9.88199C18.282 10.0461 18.3741 10.2684 18.3741 10.5003C18.3741 10.7322 18.282 10.9546 18.1182 11.1187L11.1182 18.1187C10.9523 18.2732 10.7329 18.3574 10.5062 18.3534C10.2795 18.3494 10.0633 18.2575 9.90294 18.0972C9.74263 17.9369 9.65079 17.7206 9.6468 17.4939C9.6428 17.2672 9.72694 17.0479 9.8815 16.882L16.8815 9.88199C17.0456 9.71813 17.268 9.6261 17.4998 9.6261C17.7317 9.6261 17.9541 9.71813 18.1182 9.88199Z"
+                  fill="black" />
+                <path
+                  d="M18.0837 16.917C18.0837 17.2264 17.9607 17.5232 17.7419 17.7419C17.5232 17.9607 17.2264 18.0837 16.917 18.0837C16.6076 18.0837 16.3108 17.9607 16.092 17.7419C15.8732 17.5232 15.7503 17.2264 15.7503 16.917C15.7503 16.6076 15.8732 16.3108 16.092 16.092C16.3108 15.8732 16.6076 15.7503 16.917 15.7503C17.2264 15.7503 17.5232 15.8732 17.7419 16.092C17.9607 16.3108 18.0837 16.6076 18.0837 16.917ZM12.2503 11.0837C12.2503 11.3931 12.1274 11.6898 11.9086 11.9086C11.6898 12.1274 11.3931 12.2503 11.0837 12.2503C10.7742 12.2503 10.4775 12.1274 10.2587 11.9086C10.0399 11.6898 9.91699 11.3931 9.91699 11.0837C9.91699 10.7742 10.0399 10.4775 10.2587 10.2587C10.4775 10.0399 10.7742 9.91699 11.0837 9.91699C11.3931 9.91699 11.6898 10.0399 11.9086 10.2587C12.1274 10.4775 12.2503 10.7742 12.2503 11.0837Z"
+                  fill="#111111" />
+              </svg>
+              <span>Khuyến mại</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="customer-admin.html" class="admin-left__item-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M14.0003 4.66699C15.238 4.66699 16.425 5.15866 17.3002 6.03383C18.1753 6.909 18.667 8.09598 18.667 9.33366C18.667 10.5713 18.1753 11.7583 17.3002 12.6335C16.425 13.5087 15.238 14.0003 14.0003 14.0003C12.7626 14.0003 11.5757 13.5087 10.7005 12.6335C9.82532 11.7583 9.33366 10.5713 9.33366 9.33366C9.33366 8.09598 9.82532 6.909 10.7005 6.03383C11.5757 5.15866 12.7626 4.66699 14.0003 4.66699ZM14.0003 7.00033C13.3815 7.00033 12.788 7.24616 12.3504 7.68374C11.9128 8.12133 11.667 8.71482 11.667 9.33366C11.667 9.9525 11.9128 10.546 12.3504 10.9836C12.788 11.4212 13.3815 11.667 14.0003 11.667C14.6192 11.667 15.2127 11.4212 15.6502 10.9836C16.0878 10.546 16.3337 9.9525 16.3337 9.33366C16.3337 8.71482 16.0878 8.12133 15.6502 7.68374C15.2127 7.24616 14.6192 7.00033 14.0003 7.00033ZM14.0003 15.167C17.1153 15.167 23.3337 16.7187 23.3337 19.8337V23.3337H4.66699V19.8337C4.66699 16.7187 10.8853 15.167 14.0003 15.167ZM14.0003 17.3837C10.5353 17.3837 6.88366 19.087 6.88366 19.8337V21.117H21.117V19.8337C21.117 19.087 17.4653 17.3837 14.0003 17.3837Z"
+                  fill="black" />
+              </svg>
+              <span>Khách hàng</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="blog-admin.html" class="admin-left__item-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M22.1667 5.83333V22.1667H5.83333V5.83333H22.1667ZM24.5 3.5H3.5V24.5H24.5V3.5ZM19.8333 19.8333H8.16667V18.6667H19.8333V19.8333ZM19.8333 17.5H8.16667V16.3333H19.8333V17.5ZM19.8333 14H8.16667V8.16667H19.8333V14Z"
+                  fill="#111111" />
+              </svg>
+              <span>Bài viết</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="analytics.html" class="admin-left__item-link">
+              <svg class="icon-order" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M1.5 1.5V20.1667C1.5 20.7855 1.74583 21.379 2.18342 21.8166C2.621 22.2542 3.21449 22.5 3.83333 22.5H22.5"
+                  stroke="#111111" stroke-width="2.33333" stroke-miterlimit="5.759" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.16699 14.333L10.8337 9.66634L15.5003 14.333L22.5003 7.33301" stroke="#111111"
+                  stroke-width="2.33333" stroke-miterlimit="5.759" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 7.33301H22.5V10.833" stroke="#111111" stroke-width="2.33333" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <span>Thống kê</span>
+            </a>
+          </li>
+          <li class="admin-left__menu-item">
+            <a href="index.html" class="admin-left__item-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <mask id="mask0_184_10011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28"
+                  height="28">
+                  <rect width="28" height="28" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_184_10011)">
+                  <path
+                    d="M5.83333 24.5C5.19167 24.5 4.64236 24.2715 4.18542 23.8146C3.72847 23.3576 3.5 22.8083 3.5 22.1667V5.83333C3.5 5.19167 3.72847 4.64236 4.18542 4.18542C4.64236 3.72847 5.19167 3.5 5.83333 3.5H14V5.83333H5.83333V22.1667H14V24.5H5.83333ZM18.6667 19.8333L17.0625 18.1417L20.0375 15.1667H10.5V12.8333H20.0375L17.0625 9.85833L18.6667 8.16667L24.5 14L18.6667 19.8333Z"
+                    fill="#1C1B1F" />
+                </g>
+              </svg>
+              <span>Đăng xuất</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="admin-right">
+        <div class="admin-right__header">
+          <h3 class="admin-right__title">Sản phẩm</h3>
+          <form action="" class="admin-right__search">
+            <input type="text" placeholder="Tìm kiếm ở đây">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M27.414 24.586L22.337 19.509C23.386 17.928 24 16.035 24 14C24 8.486 19.514 4 14 4C8.486 4 4 8.486 4 14C4 19.514 8.486 24 14 24C16.035 24 17.928 23.386 19.509 22.337L24.586 27.414C25.366 28.195 26.634 28.195 27.414 27.414C28.195 26.633 28.195 25.367 27.414 24.586ZM7 14C7 10.14 10.14 7 14 7C17.86 7 21 10.14 21 14C21 17.86 17.86 21 14 21C10.14 21 7 17.86 7 14Z"
+                fill="#194A33" />
+            </svg>
+          </form>
+          <div class="admin-right__account">
+            <a href="" class="admin-right__notifi">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21.6732 18.5536C21.0303 17.9805 20.4675 17.3235 19.9999 16.6003C19.4894 15.602 19.1834 14.5117 19.0999 13.3936V10.1003C19.1043 8.344 18.4672 6.64658 17.3084 5.32691C16.1495 4.00724 14.5486 3.15617 12.8065 2.93359V2.07359C12.8065 1.83755 12.7128 1.61118 12.5459 1.44427C12.379 1.27736 12.1526 1.18359 11.9165 1.18359C11.6805 1.18359 11.4541 1.27736 11.2872 1.44427C11.1203 1.61118 11.0265 1.83755 11.0265 2.07359V2.94693C9.30004 3.18555 7.71852 4.04176 6.57489 5.357C5.43126 6.67223 4.80302 8.35736 4.80654 10.1003V13.3936C4.72304 14.5117 4.41705 15.602 3.90654 16.6003C3.44712 17.3218 2.89333 17.9788 2.25987 18.5536C2.18876 18.6161 2.13176 18.693 2.09268 18.7792C2.0536 18.8654 2.03332 18.9589 2.0332 19.0536V19.9603C2.0332 20.1371 2.10344 20.3066 2.22847 20.4317C2.35349 20.5567 2.52306 20.6269 2.69987 20.6269H21.2332C21.41 20.6269 21.5796 20.5567 21.7046 20.4317C21.8296 20.3066 21.8999 20.1371 21.8999 19.9603V19.0536C21.8997 18.9589 21.8795 18.8654 21.8404 18.7792C21.8013 18.693 21.7443 18.6161 21.6732 18.5536ZM3.41987 19.2936C4.04014 18.6944 4.58627 18.0229 5.04654 17.2936C5.68961 16.0879 6.06482 14.7576 6.14654 13.3936V10.1003C6.1201 9.31895 6.25115 8.54031 6.5319 7.81071C6.81265 7.0811 7.23734 6.41545 7.7807 5.85339C8.32406 5.29134 8.97496 4.84437 9.69466 4.53911C10.4144 4.23385 11.1881 4.07653 11.9699 4.07653C12.7516 4.07653 13.5254 4.23385 14.2451 4.53911C14.9648 4.84437 15.6157 5.29134 16.159 5.85339C16.7024 6.41545 17.1271 7.0811 17.4078 7.81071C17.6886 8.54031 17.8196 9.31895 17.7932 10.1003V13.3936C17.8749 14.7576 18.2501 16.0879 18.8932 17.2936C19.3535 18.0229 19.8996 18.6944 20.5199 19.2936H3.41987Z"
+                  fill="#194A33" />
+                <path
+                  d="M11.9996 22.853C12.4195 22.8433 12.8225 22.6855 13.1373 22.4073C13.4521 22.1291 13.6583 21.7486 13.7196 21.333H10.2129C10.2759 21.7599 10.4918 22.1493 10.8204 22.4289C11.1491 22.7085 11.5681 22.8592 11.9996 22.853Z"
+                  fill="#194A33" />
+              </svg>
+            </a>
+            <div class="admin-right__account-item">
+              <div class="admin-right__account-logo">
+                <img src="./images/avata.jpg" alt="avata">
+              </div>
+              <div class="admin-right__name-account">
+                <div class="admin-right__name">Dung Nguyễn</div>
+                <div class="admin-right__position">Admin</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-background" style="padding: 30px 66px;">
+          <div class="admin-right__label" style="padding-left: 0;">
+            <a href="product-admin-data.html" class="admin-right__back-page">
+              <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
+                  <path
+                    d="M25 8.88911L7 8.88911C6.44 8.88911 6 8.498 6 8.00022C6 7.50244 6.44 7.11133 7 7.11133L25 7.11133C25.56 7.11133 26 7.50244 26 8.00022C26 8.498 25.56 8.88911 25 8.88911Z"
+                    fill="black" />
+                  <path
+                    d="M12 15.1109C11.8688 15.1123 11.7388 15.0893 11.6183 15.0434C11.4977 14.9975 11.3893 14.9296 11.3 14.8442L4.3 8.622C3.9 8.26645 3.9 7.71534 4.3 7.35978L11.3 1.15534C11.7 0.799783 12.32 0.799783 12.72 1.15534C13.12 1.51089 13.12 2.06201 12.72 2.41756L6.42 8.01756L12.72 13.6176C13.12 13.9731 13.12 14.5242 12.72 14.8798C12.52 15.0576 12.26 15.1464 12.02 15.1464L12 15.1109Z"
+                    fill="black" />
+                </svg>
+                <span>Tạo sản phẩm</span>
+              </h3>
+            </a>
+          </div>
+          <div class="row product-admin" style="--grid-col-gap-vertical:125px">
+            <div class="col" style="--col-xl: 8">
+              <div class="product-admin__title">Tên sản phẩm</div>
+              <input type="text" value="Trà matcha Tân Cương">
+              <div class="product-admin__title">Mô tả</div>
+              <textarea name="" id="" cols="30" rows="8">Hương vị của trà matcha thường có sự pha trộn giữa đắng, ngọt và hương thơm đặc trưng của lá trà xanh. Nó thường mang đến cảm giác tươi mát và sảng khoái khi thưởng thức. Màu sắc của trà matcha thường là một màu xanh đậm và đẹp mắt, nhờ vào quá trình trồng và bảo quản lá trà dưới bóng râm. Ngoài việc được sử dụng để pha trà, trà matcha còn được sử dụng trong nhiều món ăn và đồ uống khác nhau như kem, bánh, bánh ngọt, smoothies và nhiều loại đồ uống cà phê khác nhau.
+              </textarea>
+              <div class="product-admin__title">Ảnh</div>
+              <div class="row product-admin__img-box" style="--grid-col-gap-vertical:15px">
+                <div class="col" style="--col-xl:6">
+                  <img src="./images/product-admin1.jpg" alt="product">
+                </div>
+                <div class="col" style="--col-xl:6">
+                  <div class="row" style="height: 100%; --grid-col-gap-horizontal:0px">
+                    <div class="col" style="--col-xl:6; padding-bottom: 7.5px;">
+                      <img src="./images/product-admin2.jpg" alt="product">
+                    </div>
+                    <div class="col" style="--col-xl:6 ; padding-bottom: 7.5px;">
+                      <img src="./images/product-admin3.jpg" alt="product">
+                    </div>
+                    <div class="col" style="--col-xl:6; padding-top: 7.5px;">
+                      <img src="./images/product-admin4.jpg" alt="product">
+                    </div>
+                    <div class="col product-detail__button-gray" style="--col-xl:6">
+                      <button class="button-gray">Thêm ảnh</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-admin__flex">
+                <div class="product-admin__flex-left">
+                  <div class="product-admin__title">Giá</div>
+                  <input type="text" value="đ 300.000">
+                  <div class="product-admin__title">Khối lượng</div> 
+                  <div class="product-admin__input-box">
+                    <input type="text" value="0.5kg"><span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M1 8.5H8.5M8.5 8.5H16M8.5 8.5V1M8.5 8.5V16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>                    
+                  </div>
+                  <div class="product-admin__title">Loại trà</div>
+                  <div class="product-admin__input-box">
+                    <input type="text" value="Hộp trà 555">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M1 8.5H8.5M8.5 8.5H16M8.5 8.5V1M8.5 8.5V16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>                    
+                  </div>
+                  <div class="product-admin__input-box" style="padding-top: 15px;">
+                    <input type="text" value="Hộp trà xanh Yên">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M1 8.5H8.5M8.5 8.5H16M8.5 8.5V1M8.5 8.5V16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>                    
+                  </div>
+                </div>
+                <div class="product-admin__flex-right" >
+                  <div class="product-admin__title">So sánh theo giá</div>
+                  <input type="text" value="550.000đ">
+                  <div class="product-admin__title">Số lượng</div>
+                  <input type="text" value="30">
+                  <div class="product-admin__input-box" style="gap: 30px">
+                    <div class="product-admin__title" style="width: 50%;">Số lượng</div>
+                    <div class="product-admin__title" style="width: 50%;">Giá</div>         
+                  </div>
+                  <div class="product-admin__input-box" style="gap: 30px">
+                    <input type="text" value="5">
+                    <input type="text" value="300.000đ">           
+                  </div>
+                  <div class="product-admin__input-box" style="gap: 30px; padding-top: 15px;">
+                    <input type="text" value="15">
+                    <input type="text" value="350.000đ">           
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--col-xl: 4">
+              <div class="product-admin__title">Trạng thái</div>
+              <select class="product-admin__select">
+                <option value="">Hoạt động</option>
+                <option value="">Ngưng bán</option>
+              </select>
+              <div class="product-admin__title">Loại sản phẩm</div>
+              <select class="product-admin__select">
+                <option value="">Matcha</option>
+                <option value="">Trà đen</option>
+              </select>
+            </div>
+          </div>
+          <div class="product-admin__group-button">
+            <a href="product-admin-data.html">
+              <button class="button-border">Hủy</button>
+            </a>
+            <a href="product-admin-data.html">
+              <button class="button-border" style="border: 1px solid #A50505; color: #A50505;">Xóa sản phẩm</button>
+            </a>
+            <a href="product-admin-data.html">
+              <button class="button">Lưu</button> 
+            </a>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    const tabs = $$(".order-admin__tab-item");
+    const panes = $$(".order-admin__tab-pane");
+
+    const tabActive = $(".order-admin__tab-item.active");
+    const line = $(".order-admin__tabs .line");
+
+    requestIdleCallback(function () {
+      line.style.left = tabActive.offsetLeft + "px";
+      line.style.width = tabActive.offsetWidth + "px";
+    });
+
+    tabs.forEach((tab, index) => {
+      const pane = panes[index];
+
+      tab.onclick = function () {
+        $(".order-admin__tab-item.active").classList.remove("active");
+        $(".order-admin__tab-pane.active").classList.remove("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active");
+        pane.classList.add("active");
+      };
+    });
+
+  </script>
+</body>
+
+</html>
