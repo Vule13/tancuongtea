@@ -1,0 +1,40 @@
+.section-policy {
+  padding-top: 80px;
+  @media (max-width: 576px) {
+    padding-top: 40px;
+  }
+}
+
+.section-policy__box {
+  text-align: center;
+  padding: 24px 15px;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+}
+
+.section-policy__box-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #6D6A6A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  @media (max-width: 576px) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.section-policy__title {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.section-policy__description {
+  padding-bottom: 14px;
+  font-weight: 400;
+}

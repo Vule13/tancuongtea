@@ -12,23 +12,29 @@
     &:hover {
       color: var(--color-accent);
     }
+    @media (max-width: 991px) {
+      padding: 20px 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-bottom: 1px solid;
+      margin: 0 15px;
+    }
   }
   @media (max-width: 991px) {
     position: absolute;
     flex-direction: column;
     background: #fff;
     color: #000;
-    height: 100dvh;
-    width: 300px;
-    left: -300px;
+    width: 100%;
+    left: 0;
     transition: 0.3s ease all;
-    top: 0;
-    justify-content: flex-start;
+    top: -500px;
   }
 }
 
 .menu-block {
   left: 0;
+  top: 76px;
 }
 
 .header-icon {
@@ -57,7 +63,8 @@
 }
 
 .header-icon__search,
-.header-icon__avata, .header-icon__avata-svg,
+.header-icon__avata,
+.header-icon__avata-svg,
 .header-icon__wishlist,
 .header-icon__cart {
   margin: 0 10px;
@@ -72,7 +79,7 @@
     svg {
       color: var(--color-accent);
       path {
-        fill: var(--color-accent)
+        fill: var(--color-accent);
       }
     }
   }
@@ -84,6 +91,7 @@
 .header-icon__cart {
   margin-right: 0;
   line-height: 0;
+  padding-top: 5px;
 }
 
 .header-icon__search {
@@ -156,7 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media(max-width: 991px) {
+  @media (max-width: 991px) {
     justify-content: flex-start;
   }
 }
@@ -170,25 +178,24 @@
   }
 }
 
-
 .header-icon__avata {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   overflow: hidden;
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
 }
 
 .header-icon__avata-svg {
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
 }
 
 .header-icon__wishlist {
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
 }
@@ -209,5 +216,17 @@
       transform: translateX(-50%);
     }
   }
-  
+}
+
+.header-menu__item--hd {
+  display: none;
+  &:last-child {
+    @media (max-width: 991px) {
+    display: block;
+    border-bottom: none !important;
+  }
+  }
+  @media (max-width: 991px) {
+    display: block;
+  }
 }

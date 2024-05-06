@@ -29,6 +29,7 @@
                 <li class="header-menu__item "><a href="product.html">Sản phẩm</a></li>
                 <li class="header-menu__item"><a href="blog.html">Bài viết</a></li>
                 <li class="header-menu__item"><a href="contact.html">Liên hệ</a></li>
+                <li class="header-menu__item header-menu__item--hd"><a href="order.html">Tài khoản cá nhân</a></li>
               </ul>
               <div class="hamburger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="14" viewBox="0 0 23 14" fill="none">
@@ -65,16 +66,8 @@
                   </svg>
                 </div>
                 <div class="header-icon__cart">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                    <path
-                      d="M12.8664 0C9.96641 0 7.56641 2.4 7.56641 5.3V6.3H18.0664V5.3C18.0664 2.4 15.7664 0 12.8664 0ZM12.8664 1.8C14.4664 1.8 15.8664 2.9 16.2664 4.5H9.46641C9.86641 2.9 11.2664 1.8 12.8664 1.8Z"
-                      fill="#000" />
-                    <path
-                      d="M18.4662 6.2C19.3662 6.2 20.0662 6.9 20.0662 7.8V20.7C20.0662 21.6 19.3662 22.3 18.4662 22.3H7.26621C6.36621 22.3 5.66621 21.6 5.66621 20.7V7.8C5.66621 6.9 6.36621 6.2 7.26621 6.2H18.4662ZM18.4662 4.5H7.26621C5.36621 4.5 3.86621 6 3.86621 7.8V20.7C3.86621 22.5 5.36621 24 7.26621 24H18.5662C20.3662 24 21.8662 22.5 21.8662 20.7V7.8C21.8662 6 20.3662 4.5 18.4662 4.5Z"
-                      fill="#000" />
-                    <path
-                      d="M15.6662 8.7999H10.0662C9.66621 8.7999 9.36621 8.4999 9.36621 8.0999C9.36621 7.6999 9.66621 7.3999 10.0662 7.3999H15.7662C16.1662 7.3999 16.4662 7.6999 16.4662 8.0999C16.3662 8.4999 16.0662 8.7999 15.6662 8.7999Z"
-                      fill="#000" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18C4 17.45 4.19583 16.9792 4.5875 16.5875C4.97917 16.1958 5.45 16 6 16C6.55 16 7.02083 16.1958 7.4125 16.5875C7.80417 16.9792 8 17.45 8 18C8 18.55 7.80417 19.0208 7.4125 19.4125C7.02083 19.8042 6.55 20 6 20ZM16 20C15.45 20 14.9792 19.8042 14.5875 19.4125C14.1958 19.0208 14 18.55 14 18C14 17.45 14.1958 16.9792 14.5875 16.5875C14.9792 16.1958 15.45 16 16 16C16.55 16 17.0208 16.1958 17.4125 16.5875C17.8042 16.9792 18 17.45 18 18C18 18.55 17.8042 19.0208 17.4125 19.4125C17.0208 19.8042 16.55 20 16 20ZM5.15 4L7.55 9H14.55L17.3 4H5.15ZM4.2 2H18.95C19.3333 2 19.625 2.17083 19.825 2.5125C20.025 2.85417 20.0333 3.2 19.85 3.55L16.3 9.95C16.1167 10.2833 15.8708 10.5417 15.5625 10.725C15.2542 10.9083 14.9167 11 14.55 11H7.1L6 13H18V15H6C5.25 15 4.68333 14.6708 4.3 14.0125C3.91667 13.3542 3.9 12.7 4.25 12.05L5.6 9.6L2 2H0V0H3.25L4.2 2Z" fill="black"/>
                   </svg>
                 </div>
               </div>
@@ -92,7 +85,7 @@
             <div class="cart-title__checkbox">
               <label class="product-checkbox d-flex">
                 <div class="product-checkbox__content d-flex ">
-                  <input type="checkbox" class="product-checkbox__input">
+                  <input type="checkbox" class="product-checkbox__input" >
                   <p class="product-checkbox__item">Tất cả sản phẩm</p>
                 </div>
               </label>
@@ -107,7 +100,7 @@
             <div class="cart-mini__checkbox">
               <label class="product-checkbox d-flex">
                 <div class="product-checkbox__content d-flex ">
-                  <input type="checkbox" class="product-checkbox__input">
+                  <input type="checkbox" class="product-checkbox__input" checked>
                 </div>
               </label>
             </div>
@@ -151,7 +144,7 @@
             <div class="cart-mini__checkbox">
               <label class="product-checkbox d-flex">
                 <div class="product-checkbox__content d-flex ">
-                  <input type="checkbox" class="product-checkbox__input">
+                  <input type="checkbox" class="product-checkbox__input" checked>
                 </div>
               </label>
             </div>
@@ -302,12 +295,11 @@
       <div class="container">
         <h3 class="title-border">Có thể bạn cũng thích</h3>
         <div class="cart-product row">
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
+          <div  class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html" class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
+                  <img src="images/product-card2.jpg" alt="product">
                 </div>
                 <div class="product-item__sale">30%</div>
               </div>
@@ -321,7 +313,7 @@
                   <img src="./images/rate.svg" alt="star">
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-item__icon">
               <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
@@ -335,30 +327,22 @@
                 </svg>
               </button>
               <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
                   </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
                 </svg>
               </button>
             </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
+          </div>
+          <div  class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html" class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
+                  <img src="images/product-card1.jpg" alt="product">
                 </div>
                 <div class="product-item__sale">30%</div>
               </div>
@@ -372,7 +356,7 @@
                   <img src="./images/rate.svg" alt="star">
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-item__icon">
               <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
@@ -386,30 +370,22 @@
                 </svg>
               </button>
               <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
                   </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
                 </svg>
               </button>
             </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
+          </div>
+          <div class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html"  class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
+                  <img src="images/product-card4.jpg" alt="product">
                 </div>
                 <div class="product-item__sale">30%</div>
               </div>
@@ -423,7 +399,7 @@
                   <img src="./images/rate.svg" alt="star">
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-item__icon">
               <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
@@ -437,30 +413,69 @@
                 </svg>
               </button>
               <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
                   </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
                 </svg>
               </button>
             </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
+          </div>
+          <div class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html"  class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img product-item__img--sold-out">
+                  <img src="images/product-card3.jpg" alt="product">
+                </div>
+                <div class="product-item__sold-out">
+                  Hết hàng
+                </div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc</div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </a>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <div class="overlay-gray"></div>
+              <button class="product-item__icon-cart disable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+          <div class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html"  class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
+                  <img src="images/product-card1.jpg" alt="product">
                 </div>
                 <div class="product-item__sale">30%</div>
               </div>
@@ -474,7 +489,7 @@
                   <img src="./images/rate.svg" alt="star">
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-item__icon">
               <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
@@ -488,30 +503,64 @@
                 </svg>
               </button>
               <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
                   </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
                 </svg>
               </button>
             </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
+          </div>
+          <div class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html"  class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
+                  <img src="images/product-card3.jpg" alt="product">
+                </div>
+              </div>
+              <div class="product-item__content">
+                <div class="product-item__title">Trà thảo mộc </div>
+                <div class="product-price">
+                  <span class="product-price__sale">324.000đ</span>
+                  <span class="product-price__del">350.000đ</span>
+                </div>
+                <div class="product-item__star">
+                  <img src="./images/rate.svg" alt="star">
+                </div>
+              </div>
+            </a>
+            <div class="product-item__icon">
+              <button class="product-item__icon-wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
+                    <g transform="scale(0.1)" id="g12">
+                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
+                        fill="rgb(var(--color-foreground))"></path>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button class="product-item__icon-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html"  class="product-item__box">
+              <div class="product-item__img-content">
+                <div class="product-item__img">
+                  <img src="images/product-card4.jpg" alt="product">
                 </div>
                 <div class="product-item__sale">30%</div>
               </div>
@@ -525,7 +574,7 @@
                   <img src="./images/rate.svg" alt="star">
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-item__icon">
               <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
@@ -539,32 +588,23 @@
                 </svg>
               </button>
               <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
                   </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
                 </svg>
               </button>
             </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
+          </div>
+          <div class="col product-item" style="--col-md: 4; --col-xs: 6;--col-lg: 3; --col-xl: 3">
+            <a href="product-detail.html"  class="product-item__box">
               <div class="product-item__img-content">
                 <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
+                  <img src="images/product-card2.jpg" alt="product">
                 </div>
-                <div class="product-item__sale">30%</div>
               </div>
               <div class="product-item__content">
                 <div class="product-item__title">Trà thảo mộc</div>
@@ -576,7 +616,7 @@
                   <img src="./images/rate.svg" alt="star">
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-item__icon">
               <button class="product-item__icon-wishlist">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
@@ -590,126 +630,17 @@
                 </svg>
               </button>
               <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
-                  </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
-                </svg>
-              </button>
-            </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
-              <div class="product-item__img-content">
-                <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
-                </div>
-                <div class="product-item__sale">30%</div>
-              </div>
-              <div class="product-item__content">
-                <div class="product-item__title">Trà thảo mộc</div>
-                <div class="product-price">
-                  <span class="product-price__sale">324.000đ</span>
-                  <span class="product-price__del">350.000đ</span>
-                </div>
-                <div class="product-item__star">
-                  <img src="./images/rate.svg" alt="star">
-                </div>
-              </div>
-            </div>
-            <div class="product-item__icon">
-              <button class="product-item__icon-wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                    <g transform="scale(0.1)" id="g12">
-                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                        fill="rgb(var(--color-foreground))"></path>
-                    </g>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <mask id="mask0_313_10887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                    <rect x="0.527344" width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_313_10887)">
+                    <path d="M7.52734 22C6.97734 22 6.50651 21.8042 6.11484 21.4125C5.72318 21.0208 5.52734 20.55 5.52734 20C5.52734 19.45 5.72318 18.9792 6.11484 18.5875C6.50651 18.1958 6.97734 18 7.52734 18C8.07734 18 8.54818 18.1958 8.93984 18.5875C9.33151 18.9792 9.52734 19.45 9.52734 20C9.52734 20.55 9.33151 21.0208 8.93984 21.4125C8.54818 21.8042 8.07734 22 7.52734 22ZM17.5273 22C16.9773 22 16.5065 21.8042 16.1148 21.4125C15.7232 21.0208 15.5273 20.55 15.5273 20C15.5273 19.45 15.7232 18.9792 16.1148 18.5875C16.5065 18.1958 16.9773 18 17.5273 18C18.0773 18 18.5482 18.1958 18.9398 18.5875C19.3315 18.9792 19.5273 19.45 19.5273 20C19.5273 20.55 19.3315 21.0208 18.9398 21.4125C18.5482 21.8042 18.0773 22 17.5273 22ZM6.67734 6L9.07734 11H16.0773L18.8273 6H6.67734ZM5.72734 4H20.4773C20.8607 4 21.1523 4.17083 21.3523 4.5125C21.5523 4.85417 21.5607 5.2 21.3773 5.55L17.8273 11.95C17.644 12.2833 17.3982 12.5417 17.0898 12.725C16.7815 12.9083 16.444 13 16.0773 13H8.62734L7.52734 15H19.5273V17H7.52734C6.77734 17 6.21068 16.6708 5.82734 16.0125C5.44401 15.3542 5.42734 14.7 5.77734 14.05L7.12734 11.6L3.52734 4H1.52734V2H4.77734L5.72734 4Z" fill="black"/>
                   </g>
                 </svg>
               </button>
-              <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                      M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
-                  </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
-                </svg>
-              </button>
             </div>
-          </a>
-          <a href="product-detail.html" class="col product-item"
-            style="--col-xs: 6;--col-md: 4; --col-lg: 3; --col-xl: 3">
-            <div class="product-item__box">
-              <div class="product-item__img-content">
-                <div class="product-item__img">
-                  <img src="images/product.jpg" alt="product">
-                </div>
-                <div class="product-item__sale">30%</div>
-              </div>
-              <div class="product-item__content">
-                <div class="product-item__title">Trà thảo mộc</div>
-                <div class="product-price">
-                  <span class="product-price__sale">324.000đ</span>
-                  <span class="product-price__del">350.000đ</span>
-                </div>
-                <div class="product-item__star">
-                  <img src="./images/rate.svg" alt="star">
-                </div>
-              </div>
-            </div>
-            <div class="product-item__icon">
-              <button class="product-item__icon-wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24px" version="1.1">
-                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,400)" id="g10">
-                    <g transform="scale(0.1)" id="g12">
-                      <path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                        d="m 903,2424.4 c 157.9,0 306.4,-61.5 418.1,-173.1 l 134.8,-134.9 c 20.7,-20.6 48.1,-32 77.1,-32 29,0 56.4,11.4 77,32 l 133.7,133.7 c 111.7,111.6 259.9,173.1 417.5,173.1 156.91,0 305,-61.3 416.8,-172.5 111.2,-111.3 172.5,-259.5 172.5,-417.5 0.6,-157.3 -60.69,-305.5 -172.5,-417.4 L 1531.5,373.5 487.402,1417.6 c -111.601,111.7 -173.105,259.9 -173.105,417.5 0,158.1 61.199,306.1 172.5,416.8 111.308,111.2 259.101,172.5 416.203,172.5 z m 1829.7,-19.6 c 0,0 0,0 -0.1,0 -152.4,152.4 -355.1,236.3 -570.9,236.3 -215.7,0 -418.7,-84.1 -571.5,-236.9 l -56.9,-57 -58.2,58.2 c -153.1,153.1 -356.3,237.5 -572.1,237.5 -215.305,0 -417.902,-83.9 -570.305,-236.3 -153,-153 -236.8942,-356 -236.2966,-571.5 0,-215 84.4026,-417.8 237.4966,-571 L 1454.7,143.301 c 20.5,-20.403 48.41,-32.199 76.8,-32.199 28.7,0 56.7,11.5 76.7,31.597 L 2731.5,1261.8 c 152.7,152.7 236.8,355.7 236.8,571.4 0.7,216 -83,419 -235.6,571.6"
-                        fill="rgb(var(--color-foreground))"></path>
-                    </g>
-                  </g>
-                </svg>
-              </button>
-              <button class="product-item__icon-cart">
-                <svg width="24" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    d="M12,0C9.1,0,6.7,2.4,6.7,5.3v1h10.5v-1C17.2,2.4,14.9,0,12,0z M12,1.8c1.6,0,3,1.1,3.4,2.7H8.6C9,2.9,10.4,1.8,12,1.8"
-                    fill="currentColor"></path>
-                  <g>
-                    <path
-                      d="M17.6,6.2c0.9,0,1.6,0.7,1.6,1.6v12.9c0,0.9-0.7,1.6-1.6,1.6H6.4c-0.9,0-1.6-0.7-1.6-1.6V7.8c0-0.9,0.7-1.6,1.6-1.6H17.6
-                    M17.6,4.5H6.4C4.5,4.5,3,6,3,7.8v12.9C3,22.5,4.5,24,6.4,24h11.3c1.8,0,3.3-1.5,3.3-3.3V7.8C21,6,19.5,4.5,17.6,4.5L17.6,4.5z"
-                      fill="currentColor"></path>
-                  </g>
-                  <path
-                    d="M14.8,8.8H9.2c-0.4,0-0.7-0.3-0.7-0.7v0c0-0.4,0.3-0.7,0.7-0.7h5.7c0.4,0,0.7,0.3,0.7,0.7v0C15.5,8.5,15.2,8.8,14.8,8.8z"
-                    fill="currentColor"></path>
-                </svg>
-              </button>
-            </div>
-          </a>
+          </div>
         </div>
         <div class="cart-product-btn">
           <button class="button-italic">Xem thêm</button>
@@ -801,6 +732,7 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
+  <script src="js/script.js"></script> 
 </body>
 
 </html>

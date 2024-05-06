@@ -1,18 +1,20 @@
 .sign-in__form,
 .login__form,
 .forgot-password__form {
-  max-width: 533px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 25px 0px rgba(101, 134, 118, 0.5);
-  background: var(--button-hover, #fff);
-  padding: 20px 60px;
   width: 100%;
+  @media (min-width: 768px) {
+    max-width: 533px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 25px 0px rgba(101, 134, 118, 0.5);
+    background: var(--button-hover, #fff);
+    padding: 20px 60px;
+    width: 100%;
+  }
 
   input[type="text"],
   input[type="password"] {
     width: 100%;
     padding: 12px 20px;
-    margin: 10px 0;
     border: 1px solid var(--color-primary);
     font-size: 14px;
     line-height: 1.6;
@@ -20,7 +22,11 @@
     box-sizing: border-box;
     font-family: SVN-Gilroy;
   }
-
+  label {
+    padding-top: 12px;
+    padding-bottom: 5px;
+    display: block;
+  }
   .sign-in__title,
   .login__title {
     text-transform: uppercase;
@@ -72,6 +78,10 @@
       text-underline-offset: 4px;
     }
   }
+}
+
+.sign-in-form {
+  padding-bottom: 18px;
 }
 
 .sign-in__form,
@@ -157,6 +167,9 @@
 .login__bg,
 .forgot-password__bg {
   padding-left: 100px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .login__forgot-password {
@@ -197,13 +210,21 @@
   text-align: center;
   font-size: 45px;
   padding-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .otp-subtitle {
   padding-bottom: 52px;
   text-align: center;
   font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 13px;
+    padding-bottom: 32px;
+  }
 }
+
 .otp-form {
   text-align: center;
   display: flex;
@@ -211,7 +232,15 @@
   gap: 30px;
   input[type="text"] {
     width: 90px;
+    font-size: 30px;
     height: 100px;
+    text-align: center;
+    @media (max-width: 768px) {
+      width: 36px;
+      height: 44px;
+      padding: 5px;
+      text-align: center;
+    }
   }
 }
 
@@ -222,6 +251,9 @@
   align-items: center;
   gap: 20px;
   padding-top: 52px;
+  @media (max-width: 768px) {
+    padding-top: 32px;
+  }
 }
 
 .otp-button__next {
@@ -240,6 +272,10 @@
     border: 1px solid var(--color-accent);
     background-color: var(--color-accent);
   }
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
 }
 
 .otp-button__back {
@@ -257,4 +293,34 @@
     border: 1px solid var(--color-accent);
     color: #fff;
   }
+  @media (max-width: 768px) {
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+}
+
+.show-password,
+.show-repassword, .show-repassword2 {
+  .icon-show-password {
+    display: none;
+  }
+  cursor: pointer;
+}
+
+.show-icon-pw {
+  .icon-show-password {
+    display: unset;
+  }
+  .icon-hiden-password {
+    display: none;
+  }
+}
+
+.sign-in_form-box {
+  position: relative;
+}
+.show-password, .show-repassword {
+  position: absolute;
+  right: 15px;
+  transform: translateY(50%);
 }

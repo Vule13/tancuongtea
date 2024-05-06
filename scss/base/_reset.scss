@@ -28,8 +28,10 @@ body {
   line-height: 1.6;
   font-weight: 500;
 }
+
 .wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 h1,
@@ -113,4 +115,43 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .pt25 {
   padding-top: 25px;
+}
+
+.popup-add-to-cart {
+  text-align: center;
+  padding: 16px 32px;
+  color: #194a33;
+  border-bottom: 1px solid #194a33;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  right: 0;
+  transition: 0.3s ease all;
+  display: none;
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15);
+  @media (max-width: 576px) {
+    padding: 10px 15px;
+    font-size: 14px;    
+  }
+}
+
+
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.overlay-gray {
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  right: 0;
+  z-index: 100;
 }

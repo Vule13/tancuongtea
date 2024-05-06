@@ -42,10 +42,42 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// add to cart
+
+document.addEventListener("DOMContentLoaded", function() {
+  var cartButtons = document.querySelectorAll('.product-item__icon-cart');
+  var popup_cart = document.querySelector('.popup-add-to-cart');
+
+  cartButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      popup_cart.style.display = 'block';
+      setTimeout(function() {
+        popup_cart.style.display = 'none';
+      }, 3000);
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var cartButtons1 = document.querySelectorAll('.product-detail__add-cart');
+  var popup_cart2 = document.querySelector('.popup-add-to-cart');
+
+  cartButtons1.forEach(function(button) {
+    button.addEventListener('click', function() {
+      popup_cart2.style.display = 'block';
+      setTimeout(function() {
+        popup_cart2.style.display = 'none';
+      }, 3000);
+    });
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var elementA = document.querySelector('.add-new');
   var elementB = document.querySelector('.address-popup');
   var elementC = document.querySelector('.address-popup__submit-back');
+  
   elementA.addEventListener('click', function () {
     if (elementB.classList.contains('address-popup--opacity')) {
       elementB.classList.remove('address-popup--opacity');
@@ -60,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       elementB.classList.add('address-popup--opacity');
     }
   });
+  
 });
 
 
@@ -91,17 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// product detail
-
-$(document).ready(function() {
-  $('.product-detail__size-choose input').on('click', function() {
-      var headphonesColor = $(this).attr('data-image');
-      $('.active').removeClass('active');
-      $('.product-detail__left img[data-image = ' + headphonesColor + ']').addClass('active');
-      $(this).addClass('active');
-  });
-
-});
 
 // slideshow
 
@@ -141,27 +163,7 @@ document.getElementById('popup').addEventListener('click', function(event) {
   event.stopPropagation();
 });
 
-// quantity
 
-const plus = document.querySelector(".quantity__plus"),
-minus = document.querySelector(".quantity__minus"),
-number = document.querySelector(".quantity__number");
-let soluong = 1;
-plus.addEventListener("click", ()=>{
-  soluong ++;
-  soluong = (soluong < 10) ? "0" + soluong : soluong;
-  number.value = soluong;
-  console.log(soluong);
-});
-
-minus.addEventListener("click", ()=>{
-  if(soluong > 1) {
-    soluong--;
-    soluong = (soluong < 10) ? "0" + soluong : soluong;
-    number.value = soluong;
-  }
-  
-});
 
 
 
@@ -197,4 +199,5 @@ minus.addEventListener("click", ()=>{
 //     pane.classList.add("active");
 //   };
 // });
+
 
